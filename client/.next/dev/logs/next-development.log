@@ -46,3 +46,6 @@ Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allow
 [02:06:29.882] Browser LOG     {"id":1,"name":"nestor","role":"razrabotchik"}
 [02:16:11.385] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
 [02:16:12.196] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[05:11:24.761] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[05:11:34.647] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[06:38:43.638] Server  ERROR    ⨯ ReferenceError: localStorage is not defined

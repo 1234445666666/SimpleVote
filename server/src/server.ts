@@ -1,17 +1,27 @@
+// === Библиотеки ===
 import WebSocket from "ws";
 import express, { NextFunction, Request, Response } from "express";
 import cors from "cors";
 import helmet from "helmet";
-import "./db/database";
-import { usersDB } from "./db/database";
-import pull from "../src/routes/pull";
+import "./config/db";
 
+// === Конфигурация ===
+import { env } from "./config/env";
+
+// === Маршруты ===
+import authRoutes from "./routes/auth";
+import pollRoutes from "./routes/poll";
+
+// === Middleware ===
+import { notFound } from "./middleware/notFound";
+import { errorHandler } from "./middleware/errorHandler";
+
+// === Создание приложения ===
 const app = express();
-const Port = 6700;
 
+// === Глобальные middleware ===
 app.use(express.json());
 app.use(helmet());
-
 app.use(
   cors({
     origin: [
@@ -23,29 +33,21 @@ app.use(
   })
 );
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
+// === Маршруты ===
+app.use("/api/auth", authRoutes);
+app.use("/api/polls", pollRoutes);
+
+// === 404 обработка (ДОЛЖНА БЫТЬ ПОСЛЕ ВСЕХ РОУТОВ) ===
+app.use(notFound); // ← УБРАЛ дублирование
+
+// === Обработка ошибок (ДОЛЖНА БЫТЬ ПОСЛЕДНЕЙ) ===
+app.use(errorHandler);
+
+// === Запуск сервера ===
+app.listen(env.Port, () => {
+  console.log(`Сервер запущен на порту ${env.Port}`);
+  console.log(`API: http://localhost:${env.Port}/api`);
 });
-
-app.use("/api", pull);
-
-app.get("/test", (req, res) => {
-  res.json({
-    id: 1,
-    name: "nestor",
-    role: "razrabotchik",
-  });
-});
-
-app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
-  console.error(err.stack);
-  res.status(500).send("Something went wrong!");
-});
-
-app.listen(Port, () => {
-  console.log(`Сервер запущен на порту ${Port}`);
-});
-
 // const wss = new WebSocket.Server({ port: 8080 });
 
 // wss.on("connection", (ws) => {
