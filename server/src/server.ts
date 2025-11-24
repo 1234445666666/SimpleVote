@@ -37,10 +37,10 @@ app.use(
 app.use("/api/auth", authRoutes);
 app.use("/api/polls", pollRoutes);
 
-// === 404 обработка (ДОЛЖНА БЫТЬ ПОСЛЕ ВСЕХ РОУТОВ) ===
-app.use(notFound); // ← УБРАЛ дублирование
+// === 404 обработка ===
+app.use(notFound);
 
-// === Обработка ошибок (ДОЛЖНА БЫТЬ ПОСЛЕДНЕЙ) ===
+// === Обработка ошибок  ===
 app.use(errorHandler);
 
 // === Запуск сервера ===
