@@ -46,7 +46,7 @@ app.use(errorHandler);
 // === Запуск сервера ===
 app.listen(env.Port, () => {
   console.log(`Сервер запущен на порту ${env.Port}`);
-  console.log(`API: http://localhost:${env.Port}/api`);
+  console.log(`API: http://localhost:${env.Port}/poll`);
 });
 // const wss = new WebSocket.Server({ port: 8080 });
 

@@ -49,3 +49,9 @@ Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allow
 [05:11:24.761] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
 [05:11:34.647] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
 [06:38:43.638] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[20:03:13.049] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[20:03:14.669] Browser ERROR   Ошибка WebSocket: {"isTrusted":true}
+[20:03:14.669] Browser LOG     Соединение закрыто
+[20:03:36.180] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[21:39:03.520] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[21:39:04.183] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
