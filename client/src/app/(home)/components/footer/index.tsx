@@ -1,4 +1,11 @@
+"use client";
 import "./footer.css";
+import {
+  footerInfoSimpleVote,
+  footerInfoProduct,
+  footerInfoLegal,
+} from "./const.footer.info";
+import Link from "next/link";
 export default function Footer() {
   return (
     <footer>
@@ -6,37 +13,19 @@ export default function Footer() {
         <div className="footer-content">
           <div className="footer-column">
             <h3>SimpleVote</h3>
-            <ul>
-              <li>
-                <a href="#">О нас</a>
-              </li>
-              <li>
-                <a href="#">Блог</a>
-              </li>
-              <li>
-                <a href="#">Вакансии</a>
-              </li>
-              <li>
-                <a href="#">Контакты</a>
-              </li>
-            </ul>
+            {footerInfoSimpleVote.map((item) => (
+              <ul key={item.id}>
+                <Link href={item.link}>{item.title}</Link>
+              </ul>
+            ))}
           </div>
           <div className="footer-column">
             <h3>Продукт</h3>
-            <ul>
-              <li>
-                <a href="#">Функции</a>
-              </li>
-              <li>
-                <a href="#">Тарифы</a>
-              </li>
-              <li>
-                <a href="#">Примеры</a>
-              </li>
-              <li>
-                <a href="#">Обновления</a>
-              </li>
-            </ul>
+            {footerInfoProduct.map((item) => (
+              <ul key={item.id}>
+                <Link href={item.link}>{item.title}</Link>
+              </ul>
+            ))}
           </div>
           <div className="footer-column">
             <h3>Поддержка</h3>
@@ -57,17 +46,11 @@ export default function Footer() {
           </div>
           <div className="footer-column">
             <h3>Правовая информация</h3>
-            <ul>
-              <li>
-                <a href="#">Политика конфиденциальности</a>
-              </li>
-              <li>
-                <a href="#">Условия использования</a>
-              </li>
-              <li>
-                <a href="#">Cookie</a>
-              </li>
-            </ul>
+            {footerInfoLegal.map((item) => (
+              <ul key={item.id}>
+                <Link href={item.link}>{item.title}</Link>
+              </ul>
+            ))}
           </div>
         </div>
         <div className="copyright">

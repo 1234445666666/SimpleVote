@@ -228,9 +228,10 @@
   cursor: pointer;
 }
 
-.back-icon {
-  width: 2rem;
-  height: 2rem;
+.back-icon:hover {
+  color: #4a6ee0;
+  transform: scale(0.6);
+  transition: all 0.4s ease;
 }
 
 /* Адаптивность */

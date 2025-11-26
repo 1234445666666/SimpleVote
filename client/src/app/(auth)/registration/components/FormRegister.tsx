@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { ToastContainer } from "react-toastify";
 import { useRouter } from "next/navigation";
 
@@ -24,7 +25,9 @@ export default function FormRegister({
       <div className="container">
         <div className="registration-container">
           <button onClick={() => router.push("/")} className="back-btn">
-            <img
+            <Image
+              width={35}
+              height={35}
               className="back-icon"
               src="/cross-small-svgrepo-com (1).svg"
               alt=""
