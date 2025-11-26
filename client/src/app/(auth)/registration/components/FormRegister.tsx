@@ -8,6 +8,7 @@ interface IFormRegisterProps {
   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
   handleLogin: () => void;
   inputNameRef: React.RefObject<HTMLInputElement | null>;
+  inputEmailRef: React.RefObject<HTMLInputElement | null>;
   inputPasswordRef: React.RefObject<HTMLInputElement | null>;
   inputConfirmPasswordRef: React.RefObject<HTMLInputElement | null>;
 }
@@ -16,6 +17,7 @@ export default function FormRegister({
   handleRegistration,
   handleLogin,
   inputNameRef,
+  inputEmailRef,
   inputPasswordRef,
   inputConfirmPasswordRef,
 }: IFormRegisterProps) {
@@ -46,6 +48,19 @@ export default function FormRegister({
                   ref={inputNameRef}
                   type="text"
                   placeholder="Придумайте логин"
+                  className="form-input"
+                  required
+                />
+              </div>
+
+              <div className="form-group">
+                <label className="form-label" htmlFor="">
+                  Электронная почта
+                </label>
+                <input
+                  ref={inputEmailRef}
+                  type="email"
+                  placeholder="Введите электронную почту"
                   className="form-input"
                   required
                 />

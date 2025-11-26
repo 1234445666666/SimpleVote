@@ -22,8 +22,8 @@ export const schemas = {
     name: Joi.string().min(2).required(),
   }),
   login: Joi.object({
-    email: Joi.string().email().required(),
-    name: Joi.string().min(2).required(),
+    email: Joi.string().email().optional(),
+    name: Joi.string().min(2).optional(),
     password: Joi.string().required(),
   }).xor("email", "name"),
   poll: Joi.object({

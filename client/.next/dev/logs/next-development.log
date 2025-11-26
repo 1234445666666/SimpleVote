@@ -1,383 +1,1465 @@
-[00:00:03.199] Server  LOG      ✓ Ready in 2.5s
-[00:00:07.793] Server  LOG      ○ Compiling / ...
-[00:00:12.969] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:00:13.461] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:00:43.117] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:00:44.710] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:00:44.727] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:06.171] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:01:07.023] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:01:22.655] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:01:24.074] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:01:24.094] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:16.259] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:05:17.489] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:01:36.328] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:01:36.340] Browser ERROR   uncaughtError: TypeError: can't access property "map", Map.footerInfoSimpleVote is undefined
-[01:01:36.341] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:01:36.342] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
-[01:01:38.721] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:01:39.198] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:01:40.417] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:01:41.414] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
-[01:01:41.478] Browser ERROR   uncaughtError: TypeError: can't access property "map", Map.footerInfoSimpleVote is undefined
-[01:04:08.427] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:04:08.446] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:04:09.546] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:04:10.107] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:04:11.435] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+[00:00:03.016] Server  LOG      ✓ Ready in 2.6s
+[00:00:06.317] Server  LOG      ○ Compiling /registration ...
+[00:00:12.767] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764164174536,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:00:13.162] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764164174536,"tool":"next.js browser"},null],"method":"networkLoggingHandlerInstalled","version":"1.0.0"}
+[00:01:13.612] Browser ERROR   Ошибка регистрации: {}
+[00:01:14.051] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:01:16.007] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:01:50.907] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764164270582,"tool":"next.js browser"},null],"method":"networkLoggingHandlerInstalled","version":"1.0.0"}
+[00:01:51.447] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764164270582,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:01:59.660] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:03:26.838] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:03:29.237] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:03:31.114] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:33.662] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764164375451,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:03:36.660] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764164375451,"tool":"next.js browser"},null],"method":"networkLoggingHandlerInstalled","version":"1.0.0"}
+[00:04:27.098] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:27.195] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764164375141,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:05:27.347] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764164375141,"tool":"next.js browser"},null],"method":"networkLoggingHandlerInstalled","version":"1.0.0"}
+[00:06:28.254] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764164375180,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:07:28.295] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764164375180,"tool":"next.js browser"},null],"method":"networkLoggingHandlerInstalled","version":"1.0.0"}
+[00:13:02.687] Server  ERROR    ⨯ ./src/app/(auth)/login/page.tsx:22:17
+Syntax error: Identifier 'login' has already been declared.
 
-Check the render method of `div`.  It was passed a child from Footer.
-[01:04:11.435] Browser ERROR   uncaughtError: Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
-Open your browser's console to view the Component stack trace.
-[01:04:11.616] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:04:12.618] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
-
-Check the render method of `div`.  It was passed a child from Footer.
-[01:04:12.618] Browser ERROR   uncaughtError: Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
-Open your browser's console to view the Component stack trace.
-[01:04:28.543] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:04:28.549] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:04:29.359] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:04:29.896] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:04:31.189] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
-
-Check the render method of `div`.  It was passed a child from Footer.
-[01:04:31.190] Browser ERROR   uncaughtError: Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
-Open your browser's console to view the Component stack trace.
-[01:04:31.353] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:04:33.314] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
-
-Check the render method of `div`.  It was passed a child from Footer.
-[01:04:33.315] Browser ERROR   uncaughtError: Error: Failed prop type: The prop `href` expects a `string` or `object` in `<Link>`, but got `undefined` instead.
-Open your browser's console to view the Component stack trace.
-[01:04:38.522] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:04:38.525] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:04:39.182] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:04:39.685] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:04:40.178] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:04:41.286] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
-
-Check the render method of `div`.  It was passed a child from Footer.
-[01:04:42.123] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:04:42.899] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
-
-Check the render method of `div`.  It was passed a child from Footer.
-[01:06:33.278] Server  WARN     ⚠ ./src/app/(home)/components/footer/index.tsx
-Attempted import error: 'footerInfoProduct' is not exported from './const.footer.info' (imported as 'footerInfoProduct').
+  20 |     const success = login(name, password);
+  21 |   }
+> 22 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  23 |     try {
+  24 |       const response = await fetch("http://localhost:6700/api/auth/register", {
+  25 |         method: "POST",
+[00:13:02.698] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (20:19)
+|         const success = login(name, password);
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/register", {
 
 Import trace for requested module:
-./src/app/(home)/components/footer/index.tsx
-./src/app/(home)/page.tsx
-
-./src/app/(home)/components/footer/index.tsx
-Attempted import error: 'footerInfoProduct' is not exported from './const.footer.info' (imported as 'footerInfoProduct').
-
-Import trace for requested module:
-./src/app/(home)/components/footer/index.tsx
-./src/app/(home)/page.tsx
-[01:06:33.386] Browser WARN    ./src/app/(home)/components/footer/index.tsx
-Attempted import error: 'footerInfoProduct' is not exported from './const.footer.info' (imported as 'footerInfoProduct').
+./src/app/(auth)/login/page.tsx
+[00:13:03.619] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (20:19)
+|         const success = login(name, password);
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/register", {
 
 Import trace for requested module:
-./src/app/(home)/components/footer/index.tsx
-./src/app/(home)/page.tsx
-[01:06:33.453] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:06:33.453] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
-[01:06:34.204] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:06:34.222] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:06:34.223] Browser WARN    ./src/app/(home)/components/footer/index.tsx
-Attempted import error: 'footerInfoProduct' is not exported from './const.footer.info' (imported as 'footerInfoProduct').
+./src/app/(auth)/login/page.tsx
+[00:13:03.620] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (20:19)
+|         const success = login(name, password);
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/register", {
 
 Import trace for requested module:
-./src/app/(home)/components/footer/index.tsx
-./src/app/(home)/page.tsx
-[01:06:34.223] Browser ERROR   uncaughtError: TypeError: can't access property "map", _const_footer_info__WEBPACK_IMPORTED_MODULE_3__.footerInfoProduct is undefined
-[01:06:34.696] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:06:35.910] Browser WARN    ./src/app/(home)/components/footer/index.tsx
-Attempted import error: 'footerInfoProduct' is not exported from './const.footer.info' (imported as 'footerInfoProduct').
-[01:06:35.910] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
-[01:06:36.070] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:06:36.079] Browser WARN    ./src/app/(home)/components/footer/index.tsx
-Attempted import error: 'footerInfoProduct' is not exported from './const.footer.info' (imported as 'footerInfoProduct').
-[01:06:37.156] Browser WARN    ./src/app/(home)/components/footer/index.tsx
-Attempted import error: 'footerInfoProduct' is not exported from './const.footer.info' (imported as 'footerInfoProduct').
-[01:06:37.156] Browser ERROR   uncaughtError: TypeError: can't access property "map", _const_footer_info__WEBPACK_IMPORTED_MODULE_3__.footerInfoProduct is undefined
-[01:06:52.034] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:06:52.039] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:06:53.609] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:06:54.181] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:06:54.631] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:06:55.121] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:06:56.446] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+./src/app/(auth)/login/page.tsx
+[00:13:05.750] Browser ERROR   ./src/app/(auth)/login/page.tsx:22:17
+Syntax error: Identifier 'login' has already been declared.
 
-Check the render method of `div`.  It was passed a child from Footer.
-[01:06:57.294] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:06:58.111] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+  20 |     const success = login(name, password);
+  21 |   }
+> 22 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  23 |     try {
+  24 |       const response = await fetch("http://localhost:6700/api/auth/register", {
+  25 |         method: "POST",
+[00:13:05.751] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:13:05.856] Server  ERROR    ⨯ ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
 
-Check the render method of `div`.  It was passed a child from Footer.
-[01:08:28.990] Server  ERROR    ⨯ ./src/app/(home)/components/footer/const.footer.info.ts
-Error:   × 'const' declarations must be initialized
-    ╭─[/home/pasha/coding/live-poll/client/src/app/(home)/components/footer/const.footer.info.ts:55:1]
- 52 │   },
- 53 │ ];
- 54 │ 
- 55 │ export const footerInfoLegal;
-    ·              ───────────────
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/register", {
+  24 |         method: "POST",
+[00:13:06.661] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/register", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:13:06.742] Browser ERROR   ./src/app/(auth)/login/page.tsx:22:17
+Syntax error: Identifier 'login' has already been declared.
+
+  20 |     const success = login(name, password);
+  21 |   }
+> 22 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  23 |     try {
+  24 |       const response = await fetch("http://localhost:6700/api/auth/register", {
+  25 |         method: "POST",
+[00:13:06.742] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/register", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:13:06.747] Browser ERROR   ./src/app/(auth)/login/page.tsx:22:17
+Syntax error: Identifier 'login' has already been declared.
+
+  20 |     const success = login(name, password);
+  21 |   }
+> 22 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  23 |     try {
+  24 |       const response = await fetch("http://localhost:6700/api/auth/register", {
+  25 |         method: "POST",
+[00:13:06.747] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/register", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:13:18.220] Server  ERROR    ⨯ ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "GET",
+[00:13:18.665] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/register", {
+  24 |         method: "POST",
+[00:13:18.665] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:13:18.665] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:13:19.083] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/register", {
+  24 |         method: "POST",
+[00:13:19.083] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:13:19.083] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/register", {
+  24 |         method: "POST",
+[00:13:19.083] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:13:40.764] Server  ERROR    ⨯ ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "GET",
+[00:13:41.574] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "GET",
+[00:13:41.574] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:13:41.577] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "GET",
+[00:13:41.577] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:13:41.659] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "GET",
+[00:13:41.659] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:13:42.661] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:13:42.661] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:13:48.208] Server  ERROR    ⨯ ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "GET",
+[00:13:48.662] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "GET",
+[00:13:48.663] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:13:49.115] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "GET",
+[00:13:49.115] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:13:49.115] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "GET",
+[00:13:49.115] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:14:00.269] Server  ERROR    ⨯ ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "GET",
+[00:14:00.663] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "GET",
+[00:14:00.664] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:14:01.141] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "GET",
+[00:14:01.141] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:14:01.142] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "GET",
+[00:14:01.142] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:14:03.659] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:14:03.659] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:14:34.165] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:14:34.165] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:14:34.166] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:14:34.166] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:14:34.166] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:14:34.166] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:14:34.166] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:14:34.166] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:14:34.166] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:14:34.166] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:14:34.166] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:14:53.522] Server  ERROR    ⨯ ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "POST",
+[00:14:53.659] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "GET",
+[00:14:53.660] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:14:54.422] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "GET",
+[00:14:54.422] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:14:54.422] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "GET",
+[00:14:54.422] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:14:55.660] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:14:55.660] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:15:07.366] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "POST",
+[00:15:08.463] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "POST",
+[00:15:08.463] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "POST",
+[00:15:09.338] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "POST",
+[00:15:10.280] Server  LOG      ○ Compiling /_error ...
+[00:15:10.299] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:15:10.299] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "POST",
+[00:15:10.299] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "POST",
+[00:15:10.622] Server  ERROR    ⨯ ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "POST",
+[00:15:10.897] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:15:10.994] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "POST",
+[00:15:10.994] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:15:10.994] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "POST",
+[00:15:10.994] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "POST",
+[00:15:10.994] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:15:11.026] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "POST",
+[00:15:11.026] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:15:11.026] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "POST",
+[00:15:11.027] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "POST",
+[00:15:11.027] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:15:14.127] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+[00:15:14.127] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+[00:15:14.127] Browser ERROR   uncaughtError: Error: Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "POST",
+[00:15:14.179] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+[00:15:14.180] Browser ERROR   uncaughtError: Error: Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "POST",
+[00:15:15.676] Browser ERROR   uncaughtError: Error: Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "POST",
+[00:15:15.781] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+[00:15:16.681] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+[00:15:16.681] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Module parse failed: Identifier 'login' has already been declared (19:19)
+|         const password = form.get("password");
+|     }
+>     async function login(name, email, password) {
+|         try {
+|             const response = await fetch("http://localhost:6700/api/auth/login", {
+[00:15:52.666] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "POST",
+[00:15:53.409] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "POST",
+[00:15:53.409] Browser ERROR   ./src/app/(auth)/login/page.tsx:21:17
+Syntax error: Identifier 'login' has already been declared.
+
+  19 |     const password = form.get("password") as string;
+  20 |   }
+> 21 |   async function login(name: string, email: string, password: string) {
+     |                  ^
+  22 |     try {
+  23 |       const response = await fetch("http://localhost:6700/api/auth/login", {
+  24 |         method: "POST",
+[00:15:54.153] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:15:54.162] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:15:54.177] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:15:54.668] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:15:56.711] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:15:56.821] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:15:58.751] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:59.682] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165122856,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:16:03.233] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165123322,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:16:03.431] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165123322,"tool":"next.js browser"},null],"method":"networkLoggingHandlerInstalled","version":"1.0.0"}
+[00:16:15.381] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:16:17.593] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:16:18.803] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:19.252] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:16:19.334] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165142837,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:16:19.334] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165142837,"tool":"next.js browser"},null],"method":"networkLoggingHandlerInstalled","version":"1.0.0"}
+[00:16:26.660] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165146488,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:16:27.661] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165146488,"tool":"next.js browser"},null],"method":"networkLoggingHandlerInstalled","version":"1.0.0"}
+[00:16:27.963] Browser ERROR   Ошибка в логине: {}
+[00:16:58.729] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:58.730] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165122887,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:17:04.582] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165185119,"tool":"next.js browser"},null],"method":"networkLoggingHandlerInstalled","version":"1.0.0"}
+[00:17:04.582] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165185119,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:17:04.661] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165185124,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:17:06.660] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165185124,"tool":"next.js browser"},null],"method":"networkLoggingHandlerInstalled","version":"1.0.0"}
+[00:17:59.233] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165146239,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:17:59.245] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:04.967] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165245994,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:18:04.967] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165245994,"tool":"next.js browser"},null],"method":"networkLoggingHandlerInstalled","version":"1.0.0"}
+[00:18:07.660] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165245984,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:18:07.660] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165245984,"tool":"next.js browser"},null],"method":"networkLoggingHandlerInstalled","version":"1.0.0"}
+[00:18:17.475] Browser ERROR   Ошибка в логине: {}
+[00:18:17.994] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:18:20.500] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:18:37.384] Browser ERROR   Ошибка в логине: {}
+[00:18:38.680] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:18:39.520] Browser ERROR   Ошибка в логине: {}
+[00:18:39.998] Browser ERROR   Ошибка в логине: {}
+[00:18:40.624] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:18:40.624] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:18:40.624] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:18:42.979] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:18:42.979] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:18:45.041] Browser ERROR   Ошибка в логине: {}
+[00:18:45.709] Browser ERROR   Ошибка в логине: {}
+[00:18:45.912] Browser ERROR   Ошибка в логине: {}
+[00:18:46.229] Browser ERROR   Ошибка в логине: {}
+[00:18:46.229] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:18:46.229] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:18:46.230] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:18:46.230] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:18:46.230] Browser ERROR   Ошибка в логине: {}
+[00:18:46.396] Browser ERROR   Ошибка в логине: {}
+[00:18:48.660] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:18:48.660] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:18:48.660] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:18:48.660] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:18:48.660] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:18:48.660] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:18:58.674] Browser ERROR   Ошибка в логине: {}
+[00:18:59.520] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:18:59.540] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:00.039] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:19:00.387] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165184849,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:20:00.895] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165184849,"tool":"next.js browser"},null],"method":"networkLoggingHandlerInstalled","version":"1.0.0"}
+[00:20:37.746] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
     ╰────
 
 Caused by:
     Syntax Error
 
 Import trace for requested module:
-./src/app/(home)/components/footer/const.footer.info.ts
-./src/app/(home)/components/footer/index.tsx
-./src/app/(home)/page.tsx
-[01:08:29.411] Browser ERROR   ./src/app/(home)/components/footer/const.footer.info.ts
-Error:   × 'const' declarations must be initialized
-    ╭─[/home/pasha/coding/live-poll/client/src/app/(home)/components/footer/const.footer.info.ts:55:1]
- 52 │   },
- 53 │ ];
- 54 │ 
- 55 │ export const footerInfoLegal;
-    ·              ───────────────
+./src/app/(auth)/login/page.tsx
+[00:20:38.017] Server  ERROR    ⨯ ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
     ╰────
 
 Caused by:
     Syntax Error
 
 Import trace for requested module:
-./src/app/(home)/components/footer/const.footer.info.ts
-./src/app/(home)/components/footer/index.tsx
-./src/app/(home)/page.tsx
-[01:08:29.847] Browser ERROR   ./src/app/(home)/components/footer/const.footer.info.ts
-Error:   × 'const' declarations must be initialized
-    ╭─[/home/pasha/coding/live-poll/client/src/app/(home)/components/footer/const.footer.info.ts:55:1]
- 52 │   },
- 53 │ ];
- 54 │ 
- 55 │ export const footerInfoLegal;
-    ·              ───────────────
+./src/app/(auth)/login/page.tsx
+[00:20:38.661] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
     ╰────
 
 Caused by:
     Syntax Error
 
 Import trace for requested module:
-./src/app/(home)/components/footer/const.footer.info.ts
-./src/app/(home)/components/footer/index.tsx
-./src/app/(home)/page.tsx
-[01:08:40.411] Browser ERROR   ./src/app/(home)/components/footer/const.footer.info.ts
-Error:   × 'const' declarations must be initialized
-    ╭─[/home/pasha/coding/live-poll/client/src/app/(home)/components/footer/const.footer.info.ts:55:1]
- 52 │   },
- 53 │ ];
- 54 │ 
- 55 │ export const footerInfoLegal;
-    ·              ───────────────
+./src/app/(auth)/login/page.tsx
+[00:20:38.661] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:20:38.697] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
     ╰────
 
 Caused by:
     Syntax Error
 
 Import trace for requested module:
-./src/app/(home)/components/footer/const.footer.info.ts
-./src/app/(home)/components/footer/index.tsx
-./src/app/(home)/page.tsx
-[01:08:40.469] Browser ERROR   ./src/app/(home)/components/footer/const.footer.info.ts
-Error:   × 'const' declarations must be initialized
-    ╭─[/home/pasha/coding/live-poll/client/src/app/(home)/components/footer/const.footer.info.ts:55:1]
- 52 │   },
- 53 │ ];
- 54 │ 
- 55 │ export const footerInfoLegal;
-    ·              ───────────────
+./src/app/(auth)/login/page.tsx
+[00:20:38.697] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
     ╰────
 
 Caused by:
     Syntax Error
 
 Import trace for requested module:
-./src/app/(home)/components/footer/const.footer.info.ts
-./src/app/(home)/components/footer/index.tsx
-./src/app/(home)/page.tsx
-[01:09:22.632] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:09:23.093] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:09:25.356] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:11:40.699] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:11:42.255] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:11:42.272] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:11:42.787] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:11:46.401] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:12:54.114] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:12:54.115] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
-
-Check the render method of `FormRegister`.
-[01:12:54.890] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:12:56.566] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:12:56.660] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:12:57.220] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:12:57.581] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
-
-Check the render method of `FormRegister`.
-[01:13:00.051] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:13:21.032] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
-Error:   × Expected ';', got 'import'
-   ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:2:1]
- 1 │ "use client";
- 2 │ import Image from 'next/image'import { ToastContainer } from "react-toastify";
-   ·                               ──────
- 3 │ import { useRouter } from "next/navigation";
- 4 │ 
- 5 │ // Исправьте ваш интерфейс пропсов таким образом:
-   ╰────
+./src/app/(auth)/login/page.tsx
+[00:20:39.659] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:20:56.697] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
+    ╰────
 
 Caused by:
     Syntax Error
 
 Import trace for requested module:
-./src/app/(auth)/registration/components/FormRegister.tsx
-./src/app/(auth)/registration/page.tsx
-[01:13:21.149] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/FormRegister.tsx
-Error:   × Expected ';', got 'import'
-   ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:2:1]
- 1 │ "use client";
- 2 │ import Image from 'next/image'import { ToastContainer } from "react-toastify";
-   ·                               ──────
- 3 │ import { useRouter } from "next/navigation";
- 4 │ 
- 5 │ // Исправьте ваш интерфейс пропсов таким образом:
-   ╰────
+./src/app/(auth)/login/page.tsx
+[00:20:56.698] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
+    ╰────
 
 Caused by:
     Syntax Error
 
 Import trace for requested module:
-./src/app/(auth)/registration/components/FormRegister.tsx
-./src/app/(auth)/registration/page.tsx
-[01:13:21.410] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
-Error:   × Expected ';', got 'import'
-   ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:2:1]
- 1 │ "use client";
- 2 │ import Image from 'next/image'import { ToastContainer } from "react-toastify";
-   ·                               ──────
- 3 │ import { useRouter } from "next/navigation";
- 4 │ 
- 5 │ // Исправьте ваш интерфейс пропсов таким образом:
-   ╰────
+./src/app/(auth)/login/page.tsx
+[00:20:56.704] Server  ERROR    ⨯ ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
+    ╰────
 
 Caused by:
     Syntax Error
 
 Import trace for requested module:
-./src/app/(auth)/registration/components/FormRegister.tsx
-./src/app/(auth)/registration/page.tsx
-[01:13:22.035] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
-Error:   × Expected ';', got 'import'
-   ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:2:1]
- 1 │ "use client";
- 2 │ import Image from 'next/image'import { ToastContainer } from "react-toastify";
-   ·                               ──────
- 3 │ import { useRouter } from "next/navigation";
- 4 │ 
- 5 │ // Исправьте ваш интерфейс пропсов таким образом:
-   ╰────
+./src/app/(auth)/login/page.tsx
+[00:20:57.086] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
+    ╰────
 
 Caused by:
     Syntax Error
 
 Import trace for requested module:
-./src/app/(auth)/registration/components/FormRegister.tsx
-./src/app/(auth)/registration/page.tsx
-[01:13:23.126] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
-Error:   × Expected ';', got 'import'
-   ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:2:1]
- 1 │ "use client";
- 2 │ import Image from 'next/image'import { ToastContainer } from "react-toastify";
-   ·                               ──────
- 3 │ import { useRouter } from "next/navigation";
- 4 │ 
- 5 │ // Исправьте ваш интерфейс пропсов таким образом:
-   ╰────
+./src/app/(auth)/login/page.tsx
+[00:20:57.114] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
+    ╰────
 
 Caused by:
     Syntax Error
 
 Import trace for requested module:
-./src/app/(auth)/registration/components/FormRegister.tsx
-./src/app/(auth)/registration/page.tsx
-[01:13:23.428] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
-Error:   × Expected ';', got 'import'
-   ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:2:1]
- 1 │ "use client";
- 2 │ import Image from 'next/image'import { ToastContainer } from "react-toastify";
-   ·                               ──────
- 3 │ import { useRouter } from "next/navigation";
- 4 │ 
- 5 │ // Исправьте ваш интерфейс пропсов таким образом:
-   ╰────
+./src/app/(auth)/login/page.tsx
+[00:20:57.662] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:20:58.663] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:21:01.125] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165245693,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:21:01.125] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:21:01.125] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:21:04.645] Server  ERROR    ⨯ ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
+    ╰────
 
 Caused by:
     Syntax Error
 
 Import trace for requested module:
-./src/app/(auth)/registration/components/FormRegister.tsx
-./src/app/(auth)/registration/page.tsx
-[01:13:24.096] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
-Error:   × Expected ';', got 'import'
-   ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:2:1]
- 1 │ "use client";
- 2 │ import Image from 'next/image'import { ToastContainer } from "react-toastify";
-   ·                               ──────
- 3 │ import { useRouter } from "next/navigation";
- 4 │ 
- 5 │ // Исправьте ваш интерфейс пропсов таким образом:
-   ╰────
+./src/app/(auth)/login/page.tsx
+[00:21:04.661] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
+    ╰────
 
 Caused by:
     Syntax Error
 
 Import trace for requested module:
-./src/app/(auth)/registration/components/FormRegister.tsx
-./src/app/(auth)/registration/page.tsx
-[01:13:24.157] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:13:25.208] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:13:25.763] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:13:26.293] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:13:28.526] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:13:28.741] Browser ERROR   uncaughtError: Error: Image with src "/cross-small-svgrepo-com (1).svg" is missing required "width" property.
-[01:13:29.487] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:14:13.518] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:14:14.663] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:14:14.870] Browser ERROR   uncaughtError: Error: Image with src "/cross-small-svgrepo-com (1).svg" is missing required "width" property.
-[01:14:27.680] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:14:28.485] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:14:29.892] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:14:29.913] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:14:30.379] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:14:30.702] Browser ERROR   uncaughtError: Error: Image with src "/cross-small-svgrepo-com (1).svg" is missing required "height" property.
-[01:14:32.765] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:14:36.379] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:14:37.446] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:14:38.122] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:14:38.465] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:14:40.581] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:14:42.156] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:15:11.686] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:15:13.164] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:15:13.206] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:15:13.587] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:15:17.111] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:15:34.286] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:15:37.099] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:15:37.124] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:15:37.730] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:15:38.116] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:15:41.398] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:15:41.402] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:16:45.158] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:16:46.473] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:16:46.938] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[01:16:48.876] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:16:48.896] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:16:55.921] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+./src/app/(auth)/login/page.tsx
+[00:21:04.662] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:21:05.081] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:21:05.093] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:21:06.666] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:21:07.213] Server  ERROR    ⨯ ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:21:07.516] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:21:07.659] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:21:07.659] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:21:08.126] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:21:08.659] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:21:29.565] Server  ERROR    ⨯ ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:21:29.661] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:21:29.661] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:21:30.886] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:21:30.886] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:34:1]
+ 31 │           "Content-Type": "application/json",
+ 32 │         },
+ 33 │         body: JSON.stringify({
+ 34 │           ,
+    ·           ─
+ 35 │           password,
+ 36 │         }),
+ 37 │       });
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:21:32.663] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:21:45.519] Server  ERROR    ⨯ ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:35:1]
+ 32 │           "Content-Type": "application/json",
+ 33 │         },
+ 34 │         body: JSON.stringify({
+ 35 │           ,
+    ·           ─
+ 36 │           password,
+ 37 │         }),
+ 38 │       });
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:21:45.660] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:35:1]
+ 32 │           "Content-Type": "application/json",
+ 33 │         },
+ 34 │         body: JSON.stringify({
+ 35 │           ,
+    ·           ─
+ 36 │           password,
+ 37 │         }),
+ 38 │       });
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:21:45.660] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:35:1]
+ 32 │           "Content-Type": "application/json",
+ 33 │         },
+ 34 │         body: JSON.stringify({
+ 35 │           ,
+    ·           ─
+ 36 │           password,
+ 37 │         }),
+ 38 │       });
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:21:45.954] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:35:1]
+ 32 │           "Content-Type": "application/json",
+ 33 │         },
+ 34 │         body: JSON.stringify({
+ 35 │           ,
+    ·           ─
+ 36 │           password,
+ 37 │         }),
+ 38 │       });
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:21:45.965] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unexpected token `,`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:35:1]
+ 32 │           "Content-Type": "application/json",
+ 33 │         },
+ 34 │         body: JSON.stringify({
+ 35 │           ,
+    ·           ─
+ 36 │           password,
+ 37 │         }),
+ 38 │       });
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:21:48.659] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:22:01.299] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165245693,"tool":"next.js browser"},null],"method":"networkLoggingHandlerInstalled","version":"1.0.0"}
+[00:23:02.204] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:23:02.204] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:23:02.204] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:23:02.204] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:23:02.204] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:23:02.204] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:23:18.695] Browser ERROR   Ошибка в логине: {}
+[00:23:22.659] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:24:26.026] Browser ERROR   Ошибка в логине: {}
+[00:24:27.818] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:24:29.583] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:25:04.061] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:25:04.061] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:25:04.061] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:25:04.061] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:25:24.559] Browser ERROR   Ошибка в логине: {}
+[00:25:25.681] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:25:31.557] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165692242,"tool":"next.js browser"},null],"method":"networkLoggingHandlerInstalled","version":"1.0.0"}
+[00:25:31.837] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:31.879] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165692242,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:25:35.659] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165696260,"tool":"next.js browser"},null],"method":"networkLoggingHandlerInstalled","version":"1.0.0"}
+[00:25:37.659] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165696260,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:25:39.707] Browser ERROR   Ошибка в логине: {}
+[00:25:40.262] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:25:42.121] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:26:03.158] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:04.164] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165695867,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:26:48.921] Browser ERROR   Ошибка в логине: {}
+[00:26:49.565] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:26:56.503] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:26:56.530] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165775514,"tool":"next.js browser"},null],"method":"networkLoggingHandlerInstalled","version":"1.0.0"}
+[00:26:56.530] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165775514,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:26:57.629] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:02.141] Browser ERROR   Ошибка в логине: {}
+[00:27:02.490] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:27:03.693] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:27:04.239] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165695867,"tool":"next.js browser"},null],"method":"networkLoggingHandlerInstalled","version":"1.0.0"}
+[00:27:23.064] Browser ERROR   Ошибка в логине: {}
+[00:27:24.183] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:27:24.750] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:27:54.002] Browser ERROR   Ошибка в логине: {}
+[00:27:54.257] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:27:54.257] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:28:06.686] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165695897,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:29:06.721] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165695897,"tool":"next.js browser"},null],"method":"networkLoggingHandlerInstalled","version":"1.0.0"}
+[00:30:18.297] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:30:28.664] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165989873,"tool":"next.js browser"},null],"method":"networkLoggingHandlerInstalled","version":"1.0.0"}
+[00:30:29.042] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:30.667] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165989873,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:30:32.661] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165993378,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:30:33.664] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165993378,"tool":"next.js browser"},null],"method":"networkLoggingHandlerInstalled","version":"1.0.0"}
+[00:30:54.257] Browser ERROR   Ошибка в логине: {}
+[00:30:55.106] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error
+[00:31:06.845] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:07.845] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165993113,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:32:08.358] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165993113,"tool":"next.js browser"},null],"method":"networkLoggingHandlerInstalled","version":"1.0.0"}
+[00:33:09.875] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165993135,"tool":"next.js browser"},null],"method":"errorHandlerInstalled","version":"1.0.0"}
+[00:34:09.875] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error {"args":[{"id":1764165993135,"tool":"next.js browser"},null],"method":"networkLoggingHandlerInstalled","version":"1.0.0"}
+[00:38:02.316] Browser WARN    Console Ninja failed to send logs, refreshing the page may help; also see https://tinyurl.com/37x8b79t: logger websocket error

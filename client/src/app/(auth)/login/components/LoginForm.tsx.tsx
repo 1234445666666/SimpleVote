@@ -31,7 +31,7 @@ export default function LoginForm({
               <input
                 ref={inputNameRef}
                 type="text"
-                placeholder="Имя пользователя"
+                placeholder="Имя пользователя или электронная почта"
                 className="form-input"
               />
             </div>
