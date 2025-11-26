@@ -23,8 +23,12 @@ export default function FormRegister({
     <div className="registration-page">
       <div className="container">
         <div className="registration-container">
-          <button onClick={() => router.push("/")} className="btn btn-light">
-            Назад
+          <button onClick={() => router.push("/")} className="back-btn">
+            <img
+              className="back-icon"
+              src="/cross-small-svgrepo-com (1).svg"
+              alt=""
+            />
           </button>
           <h1 className="registration-title">Регистрация</h1>
           <p className="registration-subtitle">Создайте свой аккаунт</p>
