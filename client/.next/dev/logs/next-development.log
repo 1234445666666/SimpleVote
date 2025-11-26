@@ -1,6 +1,14 @@
-[00:00:03.256] Server  LOG      ✓ Ready in 2.6s
-[00:00:56.270] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:00:57.069] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:28.497] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? class className
-[00:12:04.721] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:12:05.257] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.199] Server  LOG      ✓ Ready in 2.5s
+[00:00:07.793] Server  LOG      ○ Compiling / ...
+[00:00:12.969] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:00:13.461] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:00:43.117] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:00:44.710] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:00:44.727] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:06.171] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:01:07.023] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:01:22.655] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:01:24.074] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:01:24.094] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:16.259] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:05:17.489] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
