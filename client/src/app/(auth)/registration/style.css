@@ -221,6 +221,18 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.back-btn {
+  position: relative;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.back-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
 /* Адаптивность */
 @media (max-width: 768px) {
   .registration-page {

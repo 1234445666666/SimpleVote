@@ -21,8 +21,9 @@ export default function LoginForm({
     <div className="login-page">
       <div className="container">
         <div className="login-container">
-          <button onClick={() => router.push("/")} className="btn btn-light">
-            Назад
+          <button className="exit-toggle" onClick={() => router.push("/")}>
+            <span className="cross">✕</span>
+            <span className="text">EXIT</span>
           </button>
           <h1 className="login-title">Логин</h1>
           <form onSubmit={handleRegistration} className="login-form">

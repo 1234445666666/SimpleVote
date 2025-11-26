@@ -1,57 +1,6 @@
-[00:00:02.874] Server  LOG      ✓ Ready in 2.2s
-[00:05:39.110] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:05:40.262] Server  WARN     ⚠ Cross origin request detected from redundantly-agile-redfish.cloudpub.ru to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
-Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:08:56.466] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:09:30.821] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:09:31.185] Server  LOG     {}
-[00:09:32.497] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
-[00:09:32.498] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
-[00:09:40.358] Server  LOG     {}
-[00:09:41.975] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
-[00:09:41.975] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
-[00:09:49.038] Server  LOG     {}
-[00:09:50.631] Browser LOG     {"id":1,"name":"nestor","role":"razrabotchik"}
-[00:09:50.631] Browser LOG     {"id":1,"name":"nestor","role":"razrabotchik"}
-[00:10:16.017] Server  LOG     {}
-[00:10:17.638] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
-[00:10:17.638] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
-[00:10:33.506] Server  LOG     {}
-[00:10:35.074] Browser LOG     {"id":1,"name":"nestor","role":"razrabotchik"}
-[00:10:35.074] Browser LOG     {"id":1,"name":"nestor","role":"razrabotchik"}
-[00:13:11.322] Server  ERROR   TypeError: fetch failed
-[00:13:11.327] Server  ERROR    ⨯ "unhandledRejection:" TypeError: fetch failed
-[00:13:11.330] Server  ERROR    ⨯ "unhandledRejection: " TypeError: fetch failed
-[00:13:12.946] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
-[00:13:12.946] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
-[00:13:21.820] Server  ERROR   TypeError: fetch failed
-[00:13:21.823] Server  ERROR    ⨯ "unhandledRejection:" TypeError: fetch failed
-[00:13:21.826] Server  ERROR    ⨯ "unhandledRejection: " TypeError: fetch failed
-[00:15:44.826] Server  LOG     {}
-[00:15:46.393] Browser LOG     {"id":1,"name":"nestor","role":"razrabotchik"}
-[00:15:46.393] Browser LOG     {"id":1,"name":"nestor","role":"razrabotchik"}
-[00:16:36.423] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:16:42.300] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:16:42.609] Server  LOG     {}
-[00:16:44.884] Browser LOG     {"id":1,"name":"nestor","role":"razrabotchik"}
-[00:16:44.885] Browser LOG     {"id":1,"name":"nestor","role":"razrabotchik"}
-[00:16:57.445] Server  LOG     {}
-[00:16:59.881] Browser LOG     {"id":1,"name":"nestor","role":"razrabotchik"}
-[00:16:59.881] Browser LOG     {"id":1,"name":"nestor","role":"razrabotchik"}
-[02:06:26.871] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[02:06:27.374] Server  ERROR   TypeError: fetch failed
-[02:06:27.383] Server  ERROR    ⨯ "unhandledRejection:" TypeError: fetch failed
-[02:06:27.388] Server  ERROR    ⨯ "unhandledRejection: " TypeError: fetch failed
-[02:06:29.882] Browser LOG     {"id":1,"name":"nestor","role":"razrabotchik"}
-[02:06:29.882] Browser LOG     {"id":1,"name":"nestor","role":"razrabotchik"}
-[02:16:11.385] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[02:16:12.196] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[05:11:24.761] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[05:11:34.647] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[06:38:43.638] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[20:03:13.049] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[20:03:14.669] Browser ERROR   Ошибка WebSocket: {"isTrusted":true}
-[20:03:14.669] Browser LOG     Соединение закрыто
-[20:03:36.180] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[21:39:03.520] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[21:39:04.183] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:00:03.256] Server  LOG      ✓ Ready in 2.6s
+[00:00:56.270] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:00:57.069] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:28.497] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? class className
+[00:12:04.721] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:12:05.257] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
