@@ -8,7 +8,9 @@ export default function Hero() {
     router.push("/survey/create");
   }
 
-  const authUser = useAuthStore((state) => state.currentUser);
+  const authUser = useAuthStore(
+    (state: { currentUser: any }) => state.currentUser
+  );
 
   return (
     <section className="hero">
