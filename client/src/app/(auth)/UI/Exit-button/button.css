@@ -1,0 +1,41 @@
+.exit-toggle {
+  width: 40px;
+  height: 40px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: width 0.3s ease, border-radius 0.3s ease;
+  position: relative;
+}
+
+.exit-toggle .cross {
+  transition: opacity 0.2s ease;
+}
+
+.exit-toggle .text {
+  position: absolute;
+  opacity: 0;
+  font-size: 14px;
+  font-weight: bold;
+  transition: opacity 0.2s ease;
+}
+
+.exit-toggle:hover {
+  width: 80px;
+  border-radius: 20px;
+}
+
+.exit-toggle:hover .cross {
+  opacity: 0;
+}
+
+.exit-toggle:hover .text {
+  opacity: 1;
+}

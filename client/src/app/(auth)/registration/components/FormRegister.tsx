@@ -2,6 +2,8 @@
 import Image from "next/image";
 import { ToastContainer } from "react-toastify";
 import { useRouter } from "next/navigation";
+import ExitButton from "../../UI/Exit-button/button";
+import "../../UI/Exit-button/button.css";
 
 // Исправьте ваш интерфейс пропсов таким образом:
 interface IFormRegisterProps {
@@ -26,15 +28,7 @@ export default function FormRegister({
     <div className="registration-page">
       <div className="container">
         <div className="registration-container">
-          <button onClick={() => router.push("/")} className="back-btn">
-            <Image
-              width={35}
-              height={35}
-              className="back-icon"
-              src="/cross-small-svgrepo-com (1).svg"
-              alt=""
-            />
-          </button>
+          <ExitButton />
           <h1 className="registration-title">Регистрация</h1>
           <p className="registration-subtitle">Создайте свой аккаунт</p>
 

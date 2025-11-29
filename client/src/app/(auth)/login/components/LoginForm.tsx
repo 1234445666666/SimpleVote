@@ -2,6 +2,8 @@
 import { ToastContainer } from "react-toastify";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import ExitButton from "../../UI/Exit-button/button";
+import "../../UI/Exit-button/button.css";
 
 interface IFormRegisterProps {
   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
@@ -21,10 +23,7 @@ export default function LoginForm({
     <div className="login-page">
       <div className="container">
         <div className="login-container">
-          <button className="exit-toggle" onClick={() => router.push("/")}>
-            <span className="cross">✕</span>
-            <span className="text">EXIT</span>
-          </button>
+          <ExitButton />
           <h1 className="login-title">Логин</h1>
           <form onSubmit={handleRegistration} className="login-form">
             <div className="form-group">

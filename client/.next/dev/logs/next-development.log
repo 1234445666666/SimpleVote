@@ -1,5 +1,161 @@
-[00:00:02.485] Server  LOG      ✓ Ready in 2.1s
-[00:00:05.559] Server  LOG      ○ Compiling /registration ...
-[00:00:08.313] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:25.443] Browser ERROR   Ошибка регистрации: {}
-[01:45:23.092] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:02.871] Server  LOG      ✓ Ready in 2.4s
+[00:00:06.514] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:23.650] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expression expected
+    ╭─[E:\proekt\online-survey\client\src\app\(auth)\registration\components\FormRegister.tsx:32:1]
+ 29 │       <div className="container">
+ 30 │         <div className="registration-container">
+ 31 │           <ExitButton
+ 32 │           <h1 className="registration-title">Регистрация</h1>
+    ·           ─
+ 33 │           <p className="registration-subtitle">Создайте свой аккаунт</p>
+ 34 │ 
+ 34 │           <form onSubmit={handleRegistration} className="registration-form">
+    ╰────
+  × Expected ',', got 'className'
+    ╭─[E:\proekt\online-survey\client\src\app\(auth)\registration\components\FormRegister.tsx:32:1]
+ 29 │       <div className="container">
+ 30 │         <div className="registration-container">
+ 31 │           <ExitButton
+ 32 │           <h1 className="registration-title">Регистрация</h1>
+    ·               ─────────
+ 33 │           <p className="registration-subtitle">Создайте свой аккаунт</p>
+ 34 │ 
+ 34 │           <form onSubmit={handleRegistration} className="registration-form">
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:01:23.675] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expression expected
+    ╭─[E:\proekt\online-survey\client\src\app\(auth)\registration\components\FormRegister.tsx:32:1]
+ 29 │       <div className="container">
+ 30 │         <div className="registration-container">
+ 31 │           <ExitButton
+ 32 │           <h1 className="registration-title">Регистрация</h1>
+    ·           ─
+ 33 │           <p className="registration-subtitle">Создайте свой аккаунт</p>
+ 34 │ 
+ 34 │           <form onSubmit={handleRegistration} className="registration-form">
+    ╰────
+  × Expected ',', got 'className'
+    ╭─[E:\proekt\online-survey\client\src\app\(auth)\registration\components\FormRegister.tsx:32:1]
+ 29 │       <div className="container">
+ 30 │         <div className="registration-container">
+ 31 │           <ExitButton
+ 32 │           <h1 className="registration-title">Регистрация</h1>
+    ·               ─────────
+ 33 │           <p className="registration-subtitle">Создайте свой аккаунт</p>
+ 34 │ 
+ 34 │           <form onSubmit={handleRegistration} className="registration-form">
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:01:30.797] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expression expected
+    ╭─[E:\proekt\online-survey\client\src\app\(auth)\registration\components\FormRegister.tsx:32:1]
+ 29 │       <div className="container">
+ 30 │         <div className="registration-container">
+ 31 │           <ExitButton
+ 32 │           <h1 className="registration-title">Регистрация</h1>
+    ·           ─
+ 33 │           <p className="registration-subtitle">Создайте свой аккаунт</p>
+ 34 │ 
+ 34 │           <form onSubmit={handleRegistration} className="registration-form">
+    ╰────
+  × Expected ',', got 'className'
+    ╭─[E:\proekt\online-survey\client\src\app\(auth)\registration\components\FormRegister.tsx:32:1]
+ 29 │       <div className="container">
+ 30 │         <div className="registration-container">
+ 31 │           <ExitButton
+ 32 │           <h1 className="registration-title">Регистрация</h1>
+    ·               ─────────
+ 33 │           <p className="registration-subtitle">Создайте свой аккаунт</p>
+ 34 │ 
+ 34 │           <form onSubmit={handleRegistration} className="registration-form">
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:03:14.315] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:03:15.049] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:52.853] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
+Module not found: Can't resolve '../../UI/Exit-button/button.css'
+  3 | import { useState } from "react";
+  4 | import ExitButton from "@/app/(auth)/UI/Exit-button/button";
+> 5 | import "../../UI/Exit-button/button.css";
+    | ^
+  6 | export default function Page() {
+  7 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
+  8 |   const [question, setQuestion] = useState<string>("");
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:52.915] Server  ERROR    ⨯ ./src/app/survey/create/page.tsx:5:1
+Module not found: Can't resolve '../../UI/Exit-button/button.css'
+  3 | import { useState } from "react";
+  4 | import ExitButton from "@/app/(auth)/UI/Exit-button/button";
+> 5 | import "../../UI/Exit-button/button.css";
+    | ^
+  6 | export default function Page() {
+  7 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
+  8 |   const [question, setQuestion] = useState<string>("");
+
+https://nextjs.org/docs/messages/module-not-found
+[00:05:10.973] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
+Module not found: Can't resolve '../../UI/Exit-button/button.css'
+  3 | import { useState } from "react";
+  4 | import ExitButton from "@/app/(auth)/UI/Exit-button/button";
+> 5 | import "../../UI/Exit-button/button.css";
+    | ^
+  6 | export default function Page() {
+  7 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
+  8 |   const [question, setQuestion] = useState<string>("");
+
+https://nextjs.org/docs/messages/module-not-found
+[00:05:11.196] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
+Module not found: Can't resolve '../../../UI/Exit-button/button.css'
+  3 | import { useState } from "react";
+  4 | import ExitButton from "@/app/(auth)/UI/Exit-button/button";
+> 5 | import "../../../UI/Exit-button/button.css";
+    | ^
+  6 | export default function Page() {
+  7 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
+  8 |   const [question, setQuestion] = useState<string>("");
+
+https://nextjs.org/docs/messages/module-not-found
+[00:05:11.250] Server  ERROR    ⨯ ./src/app/survey/create/page.tsx:5:1
+Module not found: Can't resolve '../../../UI/Exit-button/button.css'
+  3 | import { useState } from "react";
+  4 | import ExitButton from "@/app/(auth)/UI/Exit-button/button";
+> 5 | import "../../../UI/Exit-button/button.css";
+    | ^
+  6 | export default function Page() {
+  7 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
+  8 |   const [question, setQuestion] = useState<string>("");
+
+https://nextjs.org/docs/messages/module-not-found
+[00:05:21.086] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
+Module not found: Can't resolve '../../../UI/Exit-button/button.css'
+  3 | import { useState } from "react";
+  4 | import ExitButton from "@/app/(auth)/UI/Exit-button/button";
+> 5 | import "../../../UI/Exit-button/button.css";
+    | ^
+  6 | export default function Page() {
+  7 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
+  8 |   const [question, setQuestion] = useState<string>("");
+
+https://nextjs.org/docs/messages/module-not-found
+[00:06:01.017] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

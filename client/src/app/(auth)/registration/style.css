@@ -223,19 +223,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.back-btn {
-  position: relative;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-.back-icon:hover {
-  color: #4a6ee0;
-  transform: scale(0.6);
-  transition: all 0.4s ease;
-}
-
 /* Адаптивность */
 @media (max-width: 768px) {
   .registration-page {

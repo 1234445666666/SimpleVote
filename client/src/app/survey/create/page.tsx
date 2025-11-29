@@ -1,6 +1,9 @@
 "use client";
 import "./style.css";
 import { useState } from "react";
+import ExitButton from "@/app/(auth)/UI/Exit-button/button";
+import "@/app/(auth)/UI/Exit-button/button.css";
+
 export default function Page() {
   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
   const [question, setQuestion] = useState<string>("");
@@ -33,6 +36,7 @@ export default function Page() {
     <div className="create-survey-page">
       <div className="container">
         <div className="survey-form-container">
+          <ExitButton />
           <h1 className="survey-title">Создание опроса</h1>
           <form className="survey-form" onSubmit={handleSubmit}>
             <div className="form-group">
