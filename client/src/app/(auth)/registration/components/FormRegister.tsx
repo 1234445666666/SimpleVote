@@ -2,8 +2,8 @@
 import Image from "next/image";
 import { ToastContainer } from "react-toastify";
 import { useRouter } from "next/navigation";
-import ExitButton from "../../../components/ui/exitButton/button";
-import "../../../components/ui/exitButton/button.css";
+import ExitButton from "../../../../components/ui/exitButton/button";
+import "../../../../components/ui/exitButton/button.css";
 
 // Исправьте ваш интерфейс пропсов таким образом:
 interface IFormRegisterProps {

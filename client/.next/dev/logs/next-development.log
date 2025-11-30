@@ -775,3 +775,157 @@ https://nextjs.org/docs/messages/module-not-found
 [00:19:31.207] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
 [00:19:32.447] Server  WARN    Error: Route "/account/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
 [00:19:32.677] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:19:34.463] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/account/2" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:20:28.278] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
+Module not found: Can't resolve '@/app/components/ui/exitButton/button.css'
+  3 | import { useState } from "react";
+  4 | import ExitButton from "@/components/ui/exitButton/button";
+> 5 | import "@/app/components/ui/exitButton/button.css";
+    | ^
+  6 |
+  7 | export default function Page() {
+  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
+
+https://nextjs.org/docs/messages/module-not-found
+[00:20:29.147] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
+Module not found: Can't resolve '@/app/components/ui/exitButton/button.css'
+  3 | import { useState } from "react";
+  4 | import ExitButton from "@/components/ui/exitButton/button";
+> 5 | import "@/app/components/ui/exitButton/button.css";
+    | ^
+  6 |
+  7 | export default function Page() {
+  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
+
+https://nextjs.org/docs/messages/module-not-found
+[00:20:29.147] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
+Module not found: Can't resolve '@/app/components/ui/exitButton/button.css'
+  3 | import { useState } from "react";
+  4 | import ExitButton from "@/components/ui/exitButton/button";
+> 5 | import "@/app/components/ui/exitButton/button.css";
+    | ^
+  6 |
+  7 | export default function Page() {
+  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
+
+https://nextjs.org/docs/messages/module-not-found
+[00:20:29.147] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
+Module not found: Can't resolve '@/app/components/ui/exitButton/button.css'
+  3 | import { useState } from "react";
+  4 | import ExitButton from "@/components/ui/exitButton/button";
+> 5 | import "@/app/components/ui/exitButton/button.css";
+    | ^
+  6 |
+  7 | export default function Page() {
+  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
+
+https://nextjs.org/docs/messages/module-not-found
+[00:20:29.668] Server  ERROR    ⨯ ./src/app/survey/create/page.tsx:5:1
+Module not found: Can't resolve '@/app/components/ui/exitButton/button.css'
+  3 | import { useState } from "react";
+  4 | import ExitButton from "@/components/ui/exitButton/button";
+> 5 | import "@/app/components/ui/exitButton/button.css";
+    | ^
+  6 |
+  7 | export default function Page() {
+  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
+
+https://nextjs.org/docs/messages/module-not-found
+[00:20:30.133] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
+Module not found: Can't resolve '@/app/components/ui/exitButton/button.css'
+  3 | import { useState } from "react";
+  4 | import ExitButton from "@/components/ui/exitButton/button";
+> 5 | import "@/app/components/ui/exitButton/button.css";
+    | ^
+  6 |
+  7 | export default function Page() {
+  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
+
+https://nextjs.org/docs/messages/module-not-found
+[00:20:51.261] Server  ERROR    ⨯ ./src/app/survey/create/page.tsx:5:1
+Module not found: Can't resolve '@/app/components/ui/exitButton/button.css'
+  3 | import { useState } from "react";
+  4 | import ExitButton from "@/components/ui/exitButton/button";
+> 5 | import "@/app/components/ui/exitButton/button.css";
+    | ^
+  6 |
+  7 | export default function Page() {
+  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
+
+https://nextjs.org/docs/messages/module-not-found
+[00:20:52.132] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
+Module not found: Can't resolve '@/app/components/ui/exitButton/button.css'
+  3 | import { useState } from "react";
+  4 | import ExitButton from "@/components/ui/exitButton/button";
+> 5 | import "@/app/components/ui/exitButton/button.css";
+    | ^
+  6 |
+  7 | export default function Page() {
+  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
+
+https://nextjs.org/docs/messages/module-not-found
+[00:20:52.132] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
+Module not found: Can't resolve '@/app/components/ui/exitButton/button.css'
+  3 | import { useState } from "react";
+  4 | import ExitButton from "@/components/ui/exitButton/button";
+> 5 | import "@/app/components/ui/exitButton/button.css";
+    | ^
+  6 |
+  7 | export default function Page() {
+  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
+
+https://nextjs.org/docs/messages/module-not-found
+[00:20:52.132] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
+Module not found: Can't resolve '@/app/components/ui/exitButton/button.css'
+  3 | import { useState } from "react";
+  4 | import ExitButton from "@/components/ui/exitButton/button";
+> 5 | import "@/app/components/ui/exitButton/button.css";
+    | ^
+  6 |
+  7 | export default function Page() {
+  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
+
+https://nextjs.org/docs/messages/module-not-found
+[00:21:00.133] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
+Module not found: Can't resolve '@/app/components/ui/exitButton/button.css'
+  3 | import { useState } from "react";
+  4 | import ExitButton from "@/components/ui/exitButton/button";
+> 5 | import "@/app/components/ui/exitButton/button.css";
+    | ^
+  6 |
+  7 | export default function Page() {
+  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
+
+https://nextjs.org/docs/messages/module-not-found

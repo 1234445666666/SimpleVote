@@ -2,8 +2,8 @@
 import { ToastContainer } from "react-toastify";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import ExitButton from "../../../components/ui/exitButton/button";
-import "../../../components/ui/exitButton/button.css";
+import ExitButton from "../../../../components/ui/exitButton/button";
+import "../../../../components/ui/exitButton/button.css";
 
 interface IFormRegisterProps {
   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;

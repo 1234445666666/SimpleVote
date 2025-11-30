@@ -1,8 +1,8 @@
 "use client";
 import "./style.css";
 import { useState } from "react";
-import ExitButton from "@/app/components/ui/exitButton/button";
-import "@/app/components/ui/exitButton/button.css";
+import ExitButton from "@/components/ui/exitButton/button";
+import "@/components/ui/exitButton/button.css";
 
 export default function Page() {
   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
