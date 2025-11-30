@@ -5,8 +5,12 @@ interface Props {
 }
 
 async function getUserData(id: string) {
-  const res = await fetch(`http://localhost:3000/api/users/${id}`);
-  return res.json();
+  const res = {
+    id: 1,
+    name: "John Doe",
+    email: "T9oTt@example.com",
+  };
+  return res;
 }
 
 export default async function AccountPage({ params }: Props) {
