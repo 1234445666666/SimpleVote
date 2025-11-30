@@ -4,24 +4,19 @@ import { ToastContainer } from "react-toastify";
 import { useRouter } from "next/navigation";
 import ExitButton from "../../../../components/ui/exitButton/button";
 import "../../../../components/ui/exitButton/button.css";
+import { register } from "module";
+import { UseFormRegister } from "react-hook-form";
 
-// Исправьте ваш интерфейс пропсов таким образом:
 interface IFormRegisterProps {
   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
   handleLogin: () => void;
-  inputNameRef: React.RefObject<HTMLInputElement | null>;
-  inputEmailRef: React.RefObject<HTMLInputElement | null>;
-  inputPasswordRef: React.RefObject<HTMLInputElement | null>;
-  inputConfirmPasswordRef: React.RefObject<HTMLInputElement | null>;
+  register: UseFormRegister<any>;
 }
 
 export default function FormRegister({
   handleRegistration,
   handleLogin,
-  inputNameRef,
-  inputEmailRef,
-  inputPasswordRef,
-  inputConfirmPasswordRef,
+  register,
 }: IFormRegisterProps) {
   const router = useRouter();
   return (
@@ -39,7 +34,10 @@ export default function FormRegister({
               <div className="form-group">
                 <label className="form-label">Имя пользователя </label>
                 <input
-                  ref={inputNameRef}
+                  {...(register("name"),
+                  {
+                    required: "Необходимо заполнить поле",
+                  })}
                   type="text"
                   placeholder="Придумайте логин"
                   className="form-input"
@@ -52,7 +50,14 @@ export default function FormRegister({
                   Электронная почта
                 </label>
                 <input
-                  ref={inputEmailRef}
+                  {...(register("email"),
+                  {
+                    required: "Необходимо заполнить поле",
+                    pattern: {
+                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                      message: "Некорректный адрес электронной почты",
+                    },
+                  })}
                   type="email"
                   placeholder="Введите электронную почту"
                   className="form-input"
@@ -64,7 +69,6 @@ export default function FormRegister({
                 <div className="form-group">
                   <label className="form-label">Пароль </label>
                   <input
-                    ref={inputPasswordRef}
                     type="password"
                     placeholder="Минимум 8 символов"
                     className="form-input"
@@ -75,7 +79,6 @@ export default function FormRegister({
                 <div className="form-group">
                   <label className="form-label">Подтвердите пароль </label>
                   <input
-                    ref={inputConfirmPasswordRef}
                     type="password"
                     placeholder="Повторите пароль"
                     className="form-input"

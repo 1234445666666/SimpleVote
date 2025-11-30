@@ -1,1205 +1,6 @@
-[00:00:03.172] Server  LOG      ✓ Ready in 2.6s
-[00:01:08.541] Server  LOG      ○ Compiling / ...
-[00:01:20.508] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:04.817] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/Exit-button/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/UI/exitButton/button";
-> 5 | import "@/app/(auth)/UI/Exit-button/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:02:05.022] Server  ERROR    ⨯ ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/Exit-button/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/UI/exitButton/button";
-> 5 | import "@/app/(auth)/UI/Exit-button/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:02:05.207] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/Exit-button/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/UI/exitButton/button";
-> 5 | import "@/app/(auth)/UI/Exit-button/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:02:05.301] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/Exit-button/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/UI/exitButton/button";
-> 5 | import "@/app/(auth)/UI/Exit-button/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:02:05.636] Server  ERROR    ⨯ ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/Exit-button/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/UI/exitButton/button";
-> 5 | import "@/app/(auth)/UI/Exit-button/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:02:05.656] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/Exit-button/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/UI/exitButton/button";
-> 5 | import "@/app/(auth)/UI/Exit-button/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:02:06.220] Server  LOG      ○ Compiling /_not-found ...
-[00:02:07.819] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/Exit-button/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/UI/exitButton/button";
-> 5 | import "@/app/(auth)/UI/Exit-button/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:02:10.656] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/Exit-button/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/UI/exitButton/button";
-> 5 | import "@/app/(auth)/UI/Exit-button/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:02:12.270] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/Exit-button/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/UI/exitButton/button";
-> 5 | import "@/app/(auth)/UI/Exit-button/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:02:12.270] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/Exit-button/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/UI/exitButton/button";
-> 5 | import "@/app/(auth)/UI/Exit-button/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:02:12.506] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/Exit-button/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/UI/exitButton/button";
-> 5 | import "@/app/(auth)/UI/Exit-button/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:02:12.966] Server  ERROR    ⨯ ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/Exit-button/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/UI/exitButton/button";
-> 5 | import "@/app/(auth)/UI/Exit-button/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:02:13.344] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/Exit-button/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/UI/exitButton/button";
-> 5 | import "@/app/(auth)/UI/Exit-button/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:02:42.994] Browser ERROR   uncaughtError: Error: Module not found: Can't resolve '@/app/(auth)/UI/Exit-button/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/UI/exitButton/button";
-> 5 | import "@/app/(auth)/UI/Exit-button/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-
-[00:02:43.188] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/Exit-button/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/UI/exitButton/button";
-> 5 | import "@/app/(auth)/UI/Exit-button/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:02:58.944] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/Exit-button/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/UI/exitButton/button";
-> 5 | import "@/app/(auth)/UI/Exit-button/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:03:00.242] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/Exit-button/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/UI/exitButton/button";
-> 5 | import "@/app/(auth)/UI/Exit-button/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:03:01.157] Server  ERROR    ⨯ ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/Exit-button/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/UI/exitButton/button";
-> 5 | import "@/app/(auth)/UI/Exit-button/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:03:02.482] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/Exit-button/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/UI/exitButton/button";
-> 5 | import "@/app/(auth)/UI/Exit-button/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:03:02.482] Browser ERROR   uncaughtError: Error: Module not found: Can't resolve '@/app/(auth)/UI/Exit-button/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/UI/exitButton/button";
-> 5 | import "@/app/(auth)/UI/Exit-button/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-
-[00:03:32.721] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/Exit-button/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/UI/exitButton/button";
-> 5 | import "@/app/(auth)/UI/Exit-button/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:03:35.932] Server  ERROR    ⨯ ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/Exitbutton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/UI/exitButton/button";
-> 5 | import "@/app/(auth)/UI/Exitbutton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:03:36.180] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/Exitbutton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/UI/exitButton/button";
-> 5 | import "@/app/(auth)/UI/Exitbutton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:03:44.555] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:03:48.632] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:14.734] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:47.462] Browser LOG     {"options":["нет","точно нет!","нестор красава","он лудик"],"question":"нестор фембой или нет?"}
-[00:10:17.745] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:10:28.450] Browser ERROR   Ошибка в логине: {}
-[00:10:58.123] Server  WARN    Error: Route "/account/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:11:01.286] Server  LOG      ○ Compiling /_not-found ...
-[00:11:02.451] Server  ERROR    ⨯ SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-[00:11:04.892] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:04.892] Browser ERROR   uncaughtError: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-[00:11:12.765] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <RootLayout>
-                        <html
-                          lang="en"
--                         style={{--vsc-domain:"\"localhost\""}}
-                        >
-                  ...
-
-[00:11:14.832] Server  WARN    Error: Route "/account/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:11:15.091] Server  ERROR    ⨯ SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-[00:11:17.194] Browser ERROR   uncaughtError: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-[00:11:26.881] Server  WARN    Error: Route "/account/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:11:27.214] Server  ERROR    ⨯ SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-[00:11:28.765] Browser ERROR   uncaughtError: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-[00:12:39.304] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:12:39.392] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:12:40.359] Server  WARN    Error: Route "/account/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:12:41.786] Server  WARN    Error: Route "/account/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:12:43.987] Server  LOG      ○ Compiling /_not-found ...
-[00:12:46.634] Server  ERROR    ⨯ SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-[00:12:46.645] Server  ERROR    ⨯ SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-[00:12:49.532] Browser ERROR   uncaughtError: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-[00:12:50.573] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:50.573] Browser ERROR   uncaughtError: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-[00:13:05.278] Server  WARN    Error: Route "/account/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:13:05.610] Server  WARN    Error: Route "/account/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:13:06.173] Server  ERROR    ⨯ SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-[00:13:06.357] Server  ERROR    ⨯ SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-[00:13:10.785] Browser ERROR   uncaughtError: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-[00:13:12.977] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:13:12.977] Browser ERROR   uncaughtError: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-[00:13:27.272] Server  WARN    Error: Route "/account/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:13:27.890] Server  WARN    Error: Route "/account/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:13:34.170] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/account/4" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <RootLayout>
-                        <html
-                          lang="en"
--                         style={{--vsc-domain:"\"localhost\""}}
-                        >
-                  ...
-
-[00:13:34.249] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:13:38.010] Server  WARN    Error: Route "/account/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:13:38.054] Server  WARN    Error: Route "/account/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:13:41.743] Server  WARN    Error: Route "/account/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:13:45.096] Server  WARN    Error: Route "/account/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:13:45.308] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/account/4" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <RootLayout>
-                        <html
-                          lang="en"
--                         style={{--vsc-domain:"\"localhost\""}}
-                        >
-                  ...
-
-[00:13:47.675] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/account/1" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <RootLayout>
-                        <html
-                          lang="en"
--                         style={{--vsc-domain:"\"localhost\""}}
-                        >
-                  ...
-
-[00:13:53.381] Server  WARN    Error: Route "/account/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:13:55.788] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/account/1" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <RootLayout>
-                        <html
-                          lang="en"
--                         style={{--vsc-domain:"\"localhost\""}}
-                        >
-                  ...
-
-[00:13:58.269] Server  WARN    Error: Route "/account/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:14:00.415] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/account/2" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <RootLayout>
-                        <html
-                          lang="en"
--                         style={{--vsc-domain:"\"localhost\""}}
-                        >
-                  ...
-
-[00:16:16.091] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:16:16.147] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:16:17.395] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:16:17.569] Server  ERROR    ⨯ ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:16:18.132] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:18:05.356] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:18:06.185] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/components/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:18:07.094] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/components/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:18:07.136] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/(auth)/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:18:07.136] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/components/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:18:07.136] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/components/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:18:07.203] Server  ERROR    ⨯ ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/components/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:18:28.535] Browser ERROR   uncaughtError: Error: Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/components/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-
-[00:18:28.722] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/components/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:18:51.948] Server  ERROR    ⨯ ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/components/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:18:52.131] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/components/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:18:52.131] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/components/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:19:02.222] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/components/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:19:02.790] Server  ERROR    ⨯ ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/components/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:19:03.132] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/components/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:19:11.106] Server  ERROR    ⨯ ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/components/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:19:11.133] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/components/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:19:11.133] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/components/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:19:11.133] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/components/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:19:29.960] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:19:29.960] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/(auth)/UI/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/app/components/ui/exitButton/button";
-> 5 | import "@/app/(auth)/UI/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:19:31.207] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:19:32.447] Server  WARN    Error: Route "/account/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:19:32.677] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:19:34.463] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/account/2" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <RootLayout>
-                        <html
-                          lang="en"
--                         style={{--vsc-domain:"\"localhost\""}}
-                        >
-                  ...
-
-[00:20:28.278] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/components/ui/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/components/ui/exitButton/button";
-> 5 | import "@/app/components/ui/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:20:29.147] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/components/ui/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/components/ui/exitButton/button";
-> 5 | import "@/app/components/ui/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:20:29.147] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/components/ui/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/components/ui/exitButton/button";
-> 5 | import "@/app/components/ui/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:20:29.147] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/components/ui/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/components/ui/exitButton/button";
-> 5 | import "@/app/components/ui/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:20:29.668] Server  ERROR    ⨯ ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/components/ui/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/components/ui/exitButton/button";
-> 5 | import "@/app/components/ui/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:20:30.133] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/components/ui/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/components/ui/exitButton/button";
-> 5 | import "@/app/components/ui/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:20:51.261] Server  ERROR    ⨯ ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/components/ui/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/components/ui/exitButton/button";
-> 5 | import "@/app/components/ui/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:20:52.132] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/components/ui/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/components/ui/exitButton/button";
-> 5 | import "@/app/components/ui/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:20:52.132] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/components/ui/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/components/ui/exitButton/button";
-> 5 | import "@/app/components/ui/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:20:52.132] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/components/ui/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/components/ui/exitButton/button";
-> 5 | import "@/app/components/ui/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:21:00.133] Browser ERROR   ./src/app/survey/create/page.tsx:5:1
-Module not found: Can't resolve '@/app/components/ui/exitButton/button.css'
-  3 | import { useState } from "react";
-  4 | import ExitButton from "@/components/ui/exitButton/button";
-> 5 | import "@/app/components/ui/exitButton/button.css";
-    | ^
-  6 |
-  7 | export default function Page() {
-  8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
-
-https://nextjs.org/docs/messages/module-not-found
-[00:22:23.602] Server  WARN    Error: Route "/account/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-[00:22:25.150] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/account/1" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <RootLayout>
-                        <html
-                          lang="en"
--                         style={{--vsc-domain:"\"localhost\""}}
-                        >
-                  ...
-
-[00:22:29.458] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/login" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <RootLayout>
-                        <html
-                          lang="en"
--                         style={{--vsc-domain:"\"localhost\""}}
-                        >
-                  ...
-
-[00:26:30.782] Server  ERROR    ⨯ ./src/app/(auth)/login/page.tsx
-Error:   × Unterminated string constant
-    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:49:1]
- 46 │       }
- 47 │     } catch (error: unknown) {
- 48 │       console.error("Ошибка в логине:", error instanceof Error);
- 49 │       toast.error("Ошибка при входе);
-    ·                   ───────────────────
- 50 │     }
- 51 │   }
-    ╰────
-  × Expected ',', got '}'
-    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:50:1]
- 47 │     } catch (error: unknown) {
- 48 │       console.error("Ошибка в логине:", error instanceof Error);
- 49 │       toast.error("Ошибка при входе);
- 50 │     }
-    ·     ─
- 51 │   }
- 52 │ 
- 53 │   function handleOpenPassword() {
-    ╰────
-
-Caused by:
-    Syntax Error
-
-Import trace for requested module:
-./src/app/(auth)/login/page.tsx
-[00:26:31.135] Browser ERROR   ./src/app/(auth)/login/page.tsx
-Error:   × Unterminated string constant
-    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:49:1]
- 46 │       }
- 47 │     } catch (error: unknown) {
- 48 │       console.error("Ошибка в логине:", error instanceof Error);
- 49 │       toast.error("Ошибка при входе);
-    ·                   ───────────────────
- 50 │     }
- 51 │   }
-    ╰────
-  × Expected ',', got '}'
-    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:50:1]
- 47 │     } catch (error: unknown) {
- 48 │       console.error("Ошибка в логине:", error instanceof Error);
- 49 │       toast.error("Ошибка при входе);
- 50 │     }
-    ·     ─
- 51 │   }
- 52 │ 
- 53 │   function handleOpenPassword() {
-    ╰────
-
-Caused by:
-    Syntax Error
-
-Import trace for requested module:
-./src/app/(auth)/login/page.tsx
-[00:29:52.760] Browser ERROR   Ошибка регистрации: true
-[00:30:26.612] Server  ERROR    ⨯ ./src/app/(auth)/registration/page.tsx
-Error:   × Expression expected
-    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/page.tsx:22:1]
- 19 │     const password = inputPasswordRef.current?.value || "";
- 20 │     const passwordConfirm = inputConfirmPasswordRef.current?.value || "";
- 21 │ 
- 22 │     if()
-    ·     ─┬ ─
-    ·      ╰── Tried to parse the condition for an if statement
- 23 │ 
- 24 │     register(name, email, password);
- 25 │   }
-    ╰────
-
-Caused by:
-    Syntax Error
-
-Import trace for requested module:
-./src/app/(auth)/registration/page.tsx
-[00:30:27.132] Browser ERROR   ./src/app/(auth)/registration/page.tsx
-Error:   × Expression expected
-    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/page.tsx:22:1]
- 19 │     const password = inputPasswordRef.current?.value || "";
- 20 │     const passwordConfirm = inputConfirmPasswordRef.current?.value || "";
- 21 │ 
- 22 │     if()
-    ·     ─┬ ─
-    ·      ╰── Tried to parse the condition for an if statement
- 23 │ 
- 24 │     register(name, email, password);
- 25 │   }
-    ╰────
-
-Caused by:
-    Syntax Error
-
-Import trace for requested module:
-./src/app/(auth)/registration/page.tsx
-[00:31:22.999] Server  WARN     ⚠ ./src/app/(auth)/registration/page.tsx
-Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
-
-Import trace for requested module:
-./src/app/(auth)/registration/page.tsx
-
-./src/app/(auth)/registration/page.tsx
-Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
-
-Import trace for requested module:
-./src/app/(auth)/registration/page.tsx
-[00:31:23.155] Browser WARN    ./src/app/(auth)/registration/page.tsx
-Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
-
-Import trace for requested module:
-./src/app/(auth)/registration/page.tsx
-[00:31:31.417] Server  WARN     ⚠ ./src/app/(auth)/registration/page.tsx
-Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
-
-Import trace for requested module:
-./src/app/(auth)/registration/page.tsx
-
-./src/app/(auth)/registration/page.tsx
-Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
-
-Import trace for requested module:
-./src/app/(auth)/registration/page.tsx
-[00:31:32.132] Browser WARN    ./src/app/(auth)/registration/page.tsx
-Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
-
-Import trace for requested module:
-./src/app/(auth)/registration/page.tsx
-[00:31:32.625] Server  WARN     ⚠ ./src/app/(auth)/registration/page.tsx
-Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
-
-Import trace for requested module:
-./src/app/(auth)/registration/page.tsx
-
-./src/app/(auth)/registration/page.tsx
-Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
-
-Import trace for requested module:
-./src/app/(auth)/registration/page.tsx
-[00:31:33.131] Browser WARN    ./src/app/(auth)/registration/page.tsx
-Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
-
-Import trace for requested module:
-./src/app/(auth)/registration/page.tsx
-[00:31:36.521] Server  WARN     ⚠ ./src/app/(auth)/registration/page.tsx
-Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
-
-Import trace for requested module:
-./src/app/(auth)/registration/page.tsx
-
-./src/app/(auth)/registration/page.tsx
-Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
-
-Import trace for requested module:
-./src/app/(auth)/registration/page.tsx
-[00:31:36.625] Browser WARN    ./src/app/(auth)/registration/page.tsx
-Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
-
-Import trace for requested module:
-./src/app/(auth)/registration/page.tsx
-[00:31:37.896] Browser ERROR   Ошибка регистрации: true
-[00:31:40.956] Browser ERROR   Ошибка регистрации: true
-[00:31:43.592] Server  WARN     ⚠ ./src/app/(auth)/registration/page.tsx
-Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
-
-Import trace for requested module:
-./src/app/(auth)/registration/page.tsx
-
-./src/app/(auth)/registration/page.tsx
-Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
-
-Import trace for requested module:
-./src/app/(auth)/registration/page.tsx
-[00:31:44.132] Browser WARN    ./src/app/(auth)/registration/page.tsx
-Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
-
-Import trace for requested module:
-./src/app/(auth)/registration/page.tsx
-[00:31:56.032] Browser ERROR   Ошибка регистрации: true
-[00:32:12.074] Server  WARN     ⚠ ./src/app/(auth)/registration/page.tsx
-Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
-
-Import trace for requested module:
-./src/app/(auth)/registration/page.tsx
-
-./src/app/(auth)/registration/page.tsx
-Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
-
-Import trace for requested module:
-./src/app/(auth)/registration/page.tsx
-[00:32:13.136] Browser WARN    ./src/app/(auth)/registration/page.tsx
-Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
-
-Import trace for requested module:
-./src/app/(auth)/registration/page.tsx
-[00:32:50.227] Browser ERROR   Ошибка регистрации: true
-[00:33:00.341] Browser ERROR   Ошибка регистрации: true
-[00:33:04.468] Browser ERROR   Ошибка регистрации: true
-[00:33:27.663] Browser ERROR   Ошибка регистрации: true
-[00:33:42.348] Browser ERROR   Ошибка регистрации: true
-[00:34:24.848] Browser ERROR   Ошибка регистрации: true
-[00:35:01.044] Browser ERROR   Ошибка регистрации: true
-[00:35:10.130] Browser ERROR   Ошибка регистрации: true
-[00:35:12.437] Browser ERROR   Ошибка регистрации: true
-[00:40:12.132] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:03.226] Server  LOG      ✓ Ready in 2.8s
+[00:00:06.321] Server  LOG      ○ Compiling /registration ...
+[00:00:10.194] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -1232,118 +33,775 @@ It can also happen if the client has a browser extension installed which messes 
                         >
                   ...
 
-[00:40:58.188] Browser ERROR   ./src/components/ui/exitButton/button.css:8:19
-Syntax error: /home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css Missed semicolon
-
-   6 |   cursor: pointer;
-   7 |   font-size: 20px;
->  8 |   background: none
-     |                   ^
-   9 |   display: flex;
-  10 |   align-items: center;
-[00:40:58.188] Browser ERROR   ./src/components/ui/exitButton/button.css
-Syntax error: /home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css Missed semicolon (8:19)
-
-   6 |   cursor: pointer;
-   7 |   font-size: 20px;
->  8 |   background: none
-     |                   ^
-   9 |   display: flex;
-  10 |   align-items: center;
--- inner error --
-Syntax error: /home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css Missed semicolon (8:19)
-
-   6 |   cursor: pointer;
-   7 |   font-size: 20px;
->  8 |   background: none
-     |                   ^
-   9 |   display: flex;
-  10 |   align-items: center;
-Generated code for /home/pasha/coding/live-poll/client/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[10].use[2]!/home/pasha/coding/live-poll/client/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[10].use[3]!/home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css
+[00:01:06.409] Browser ERROR   ./src/app/(auth)/registration/page.tsx
+Module parse failed: Identifier 'handleRegistration' has already been declared (14:13)
+|     const inputPasswordRef = useRef(null);
+|     const inputConfirmPasswordRef = useRef(null);
+>     function handleRegistration(event) {
+|         event.preventDefault();
+|         const name = inputNameRef.current?.value || "";
 
 Import trace for requested module:
-./src/components/ui/exitButton/button.css
-./src/app/survey/create/page.tsx
-[00:40:59.544] Server  ERROR    ⨯ ./src/components/ui/exitButton/button.css:8:19
-Syntax error: /home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css Missed semicolon
+./src/app/(auth)/registration/page.tsx
+[00:01:06.673] Server  ERROR    ⨯ ./src/app/(auth)/registration/page.tsx:16:11
+Syntax error: Identifier 'handleRegistration' has already been declared.
 
-   6 |   cursor: pointer;
-   7 |   font-size: 20px;
->  8 |   background: none
-     |                   ^
-   9 |   display: flex;
-  10 |   align-items: center;
-[00:40:59.707] Browser ERROR   ./src/components/ui/exitButton/button.css:8:19
-Syntax error: /home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css Missed semicolon
+  14 |   const inputConfirmPasswordRef = useRef<HTMLInputElement>(null);
+  15 |
+> 16 |   function handleRegistration(event: React.FormEvent<HTMLFormElement>) {
+     |            ^
+  17 |     event.preventDefault();
+  18 |     const name = inputNameRef.current?.value || "";
+  19 |     const email = inputEmailRef.current?.value || "";
+[00:01:37.283] Browser ERROR   ./src/app/(auth)/registration/page.tsx:16:11
+Syntax error: Identifier 'handleRegistration' has already been declared.
 
-   6 |   cursor: pointer;
-   7 |   font-size: 20px;
->  8 |   background: none
-     |                   ^
-   9 |   display: flex;
-  10 |   align-items: center;
-[00:40:59.707] Browser ERROR   ./src/components/ui/exitButton/button.css
-Syntax error: /home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css Missed semicolon (8:19)
+  14 |   const inputConfirmPasswordRef = useRef<HTMLInputElement>(null);
+  15 |
+> 16 |   function handleRegistration(event: React.FormEvent<HTMLFormElement>) {
+     |            ^
+  17 |     event.preventDefault();
+  18 |     const name = inputNameRef.current?.value || "";
+  19 |     const email = inputEmailRef.current?.value || "";
+[00:01:37.399] Server  ERROR    ⨯ ./src/app/(auth)/registration/page.tsx:12:11
+Syntax error: Identifier 'handleRegistration' has already been declared.
 
-   6 |   cursor: pointer;
-   7 |   font-size: 20px;
->  8 |   background: none
-     |                   ^
-   9 |   display: flex;
-  10 |   align-items: center;
--- inner error --
-Syntax error: /home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css Missed semicolon (8:19)
-
-   6 |   cursor: pointer;
-   7 |   font-size: 20px;
->  8 |   background: none
-     |                   ^
-   9 |   display: flex;
-  10 |   align-items: center;
-Generated code for /home/pasha/coding/live-poll/client/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[10].use[2]!/home/pasha/coding/live-poll/client/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[10].use[3]!/home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css
+  10 |   const { register, handleRegistration } = useAuthStore();
+  11 |
+> 12 |   function handleRegistration(event: React.FormEvent<HTMLFormElement>) {
+     |            ^
+  13 |     event.preventDefault();
+  14 |   }
+  15 |
+[00:01:38.190] Browser ERROR   ./src/app/(auth)/registration/page.tsx
+Module parse failed: Identifier 'handleRegistration' has already been declared (9:13)
+| export default function Page() {
+|     const { register, handleRegistration } = useAuthStore();
+>     function handleRegistration(event) {
+|         event.preventDefault();
+|     }
 
 Import trace for requested module:
-./src/components/ui/exitButton/button.css
-./src/app/survey/create/page.tsx
-[00:41:01.658] Browser ERROR   uncaughtError: Error: Syntax error: /home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css Missed semicolon
+./src/app/(auth)/registration/page.tsx
+[00:01:51.234] Server  ERROR    ⨯ ./src/app/(auth)/registration/page.tsx:12:11
+Syntax error: Identifier 'handleRegistration' has already been declared.
 
-   6 |   cursor: pointer;
-   7 |   font-size: 20px;
->  8 |   background: none
-     |                   ^
-   9 |   display: flex;
-  10 |   align-items: center;
+  10 |   const { register, handleRegistration } = useAuthStore();
+  11 |
+> 12 |   function handleRegistration(event: React.FormEvent<HTMLFormElement>) {
+     |            ^
+  13 |     event.preventDefault();
+  14 |   }
+  15 |
+[00:01:52.190] Browser ERROR   ./src/app/(auth)/registration/page.tsx:12:11
+Syntax error: Identifier 'handleRegistration' has already been declared.
 
-[00:41:02.019] Browser ERROR   ./src/components/ui/exitButton/button.css:8:19
-Syntax error: /home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css Missed semicolon
+  10 |   const { register, handleRegistration } = useAuthStore();
+  11 |
+> 12 |   function handleRegistration(event: React.FormEvent<HTMLFormElement>) {
+     |            ^
+  13 |     event.preventDefault();
+  14 |   }
+  15 |
+[00:01:52.190] Browser ERROR   ./src/app/(auth)/registration/page.tsx
+Module parse failed: Identifier 'handleRegistration' has already been declared (8:13)
+| export default function Page() {
+|     const { register, handleRegistration } = useAuthStore();
+>     function handleRegistration(event) {
+|         event.preventDefault();
+|     }
 
-   6 |   cursor: pointer;
-   7 |   font-size: 20px;
->  8 |   background: none
-     |                   ^
-   9 |   display: flex;
-  10 |   align-items: center;
-[00:41:02.019] Browser ERROR   ./src/components/ui/exitButton/button.css
-Syntax error: /home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css Missed semicolon (8:19)
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:01:57.256] Server  ERROR    ⨯ ./src/app/(auth)/registration/page.tsx:12:11
+Syntax error: Identifier 'handleRegistration' has already been declared.
 
-   6 |   cursor: pointer;
-   7 |   font-size: 20px;
->  8 |   background: none
-     |                   ^
-   9 |   display: flex;
-  10 |   align-items: center;
--- inner error --
-Syntax error: /home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css Missed semicolon (8:19)
+  10 |   const { register, handleRegistration } = useAuthStore();
+  11 |
+> 12 |   function handleRegistration(event: React.FormEvent<HTMLFormElement>) {
+     |            ^
+  13 |     event.preventDefault();
+  14 |   }
+  15 |
+[00:01:58.190] Browser ERROR   ./src/app/(auth)/registration/page.tsx:12:11
+Syntax error: Identifier 'handleRegistration' has already been declared.
 
-   6 |   cursor: pointer;
-   7 |   font-size: 20px;
->  8 |   background: none
-     |                   ^
-   9 |   display: flex;
-  10 |   align-items: center;
-Generated code for /home/pasha/coding/live-poll/client/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[10].use[2]!/home/pasha/coding/live-poll/client/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[10].use[3]!/home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css
-[00:41:02.315] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:41:04.603] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+  10 |   const { register, handleRegistration } = useAuthStore();
+  11 |
+> 12 |   function handleRegistration(event: React.FormEvent<HTMLFormElement>) {
+     |            ^
+  13 |     event.preventDefault();
+  14 |   }
+  15 |
+[00:01:58.190] Browser ERROR   ./src/app/(auth)/registration/page.tsx
+Module parse failed: Identifier 'handleRegistration' has already been declared (8:13)
+| export default function Page() {
+|     const { register, handleRegistration } = useAuthStore();
+>     function handleRegistration(event) {
+|         event.preventDefault();
+|     }
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:02:59.239] Server  ERROR    ⨯ ./src/app/(auth)/registration/page.tsx:12:11
+Syntax error: Identifier 'handleRegistration' has already been declared.
+
+  10 |   const { register, handleRegistration } = useAuthStore();
+  11 |
+> 12 |   function handleRegistration(event: React.FormEvent<HTMLFormElement>) {
+     |            ^
+  13 |     event.preventDefault();
+  14 |   }
+  15 |
+[00:02:59.243] Browser ERROR   ./src/app/(auth)/registration/page.tsx:12:11
+Syntax error: Identifier 'handleRegistration' has already been declared.
+
+  10 |   const { register, handleRegistration } = useAuthStore();
+  11 |
+> 12 |   function handleRegistration(event: React.FormEvent<HTMLFormElement>) {
+     |            ^
+  13 |     event.preventDefault();
+  14 |   }
+  15 |
+[00:02:59.244] Browser ERROR   ./src/app/(auth)/registration/page.tsx
+Module parse failed: Identifier 'handleRegistration' has already been declared (8:13)
+| export default function Page() {
+|     const { register, handleRegistration } = useAuthStore();
+>     function handleRegistration(event) {
+|         event.preventDefault();
+|     }
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:04:08.022] Server  ERROR    ⨯ ./src/app/(auth)/registration/page.tsx:12:11
+Syntax error: Identifier 'handleRegistration' has already been declared.
+
+  10 |   const { register, handleRegistration } = useAuthStore();
+  11 |
+> 12 |   function handleRegistration(event: React.FormEvent<HTMLFormElement>) {
+     |            ^
+  13 |     event.preventDefault();
+  14 |   }
+  15 |
+[00:04:08.190] Browser ERROR   ./src/app/(auth)/registration/page.tsx:12:11
+Syntax error: Identifier 'handleRegistration' has already been declared.
+
+  10 |   const { register, handleRegistration } = useAuthStore();
+  11 |
+> 12 |   function handleRegistration(event: React.FormEvent<HTMLFormElement>) {
+     |            ^
+  13 |     event.preventDefault();
+  14 |   }
+  15 |
+[00:04:08.191] Browser ERROR   ./src/app/(auth)/registration/page.tsx
+Module parse failed: Identifier 'handleRegistration' has already been declared (9:13)
+| export default function Page() {
+|     const { register, handleRegistration } = useAuthStore();
+>     function handleRegistration(event) {
+|         event.preventDefault();
+|     }
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:04:11.027] Server  ERROR    ⨯ ./src/app/(auth)/registration/page.tsx:12:11
+Syntax error: Identifier 'handleRegistration' has already been declared.
+
+  10 |   const { register, handleRegistration } = useAuthStore();
+  11 |
+> 12 |   function handleRegistration(event: React.FormEvent<HTMLFormElement>) {
+     |            ^
+  13 |     event.preventDefault();
+  14 |   }
+  15 |
+[00:04:11.193] Browser ERROR   ./src/app/(auth)/registration/page.tsx:12:11
+Syntax error: Identifier 'handleRegistration' has already been declared.
+
+  10 |   const { register, handleRegistration } = useAuthStore();
+  11 |
+> 12 |   function handleRegistration(event: React.FormEvent<HTMLFormElement>) {
+     |            ^
+  13 |     event.preventDefault();
+  14 |   }
+  15 |
+[00:04:11.193] Browser ERROR   ./src/app/(auth)/registration/page.tsx
+Module parse failed: Identifier 'handleRegistration' has already been declared (8:13)
+| export default function Page() {
+|     const { register, handleRegistration } = useAuthStore();
+>     function handleRegistration(event) {
+|         event.preventDefault();
+|     }
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:04:25.112] Server  ERROR    ⨯ ./src/app/(auth)/registration/page.tsx:13:11
+Syntax error: Identifier 'handleRegistration' has already been declared.
+
+  11 |   const { register, handleRegistration } = useForm();
+  12 |
+> 13 |   function handleRegistration(event: React.FormEvent<HTMLFormElement>) {
+     |            ^
+  14 |     event.preventDefault();
+  15 |   }
+  16 |
+[00:04:25.193] Browser ERROR   ./src/app/(auth)/registration/page.tsx:12:11
+Syntax error: Identifier 'handleRegistration' has already been declared.
+
+  10 |   const { register, handleRegistration } = useAuthStore();
+  11 |
+> 12 |   function handleRegistration(event: React.FormEvent<HTMLFormElement>) {
+     |            ^
+  13 |     event.preventDefault();
+  14 |   }
+  15 |
+[00:04:25.193] Browser ERROR   ./src/app/(auth)/registration/page.tsx
+Module parse failed: Identifier 'handleRegistration' has already been declared (8:13)
+| export default function Page() {
+|     const { register, handleRegistration } = useForm();
+>     function handleRegistration(event) {
+|         event.preventDefault();
+|     }
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:04:44.303] Browser ERROR   ./src/app/(auth)/registration/page.tsx:13:11
+Syntax error: Identifier 'handleRegistration' has already been declared.
+
+  11 |   const { register, handleRegistration } = useForm();
+  12 |
+> 13 |   function handleRegistration(event: React.FormEvent<HTMLFormElement>) {
+     |            ^
+  14 |     event.preventDefault();
+  15 |   }
+  16 |
+[00:04:45.769] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/FormRegister.tsx:7:1
+Module not found: Can't resolve 'module'
+   5 | import ExitButton from "../../../../components/ui/exitButton/button";
+   6 | import "../../../../components/ui/exitButton/button.css";
+>  7 | import { register } from "module";
+     | ^
+   8 |
+   9 | interface IFormRegisterProps {
+  10 |   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:04:46.190] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx:7:1
+Module not found: Can't resolve 'module'
+   5 | import ExitButton from "../../../../components/ui/exitButton/button";
+   6 | import "../../../../components/ui/exitButton/button.css";
+>  7 | import { register } from "module";
+     | ^
+   8 |
+   9 | interface IFormRegisterProps {
+  10 |   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:05:17.497] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/FormRegister.tsx:7:1
+Module not found: Can't resolve 'module'
+   5 | import ExitButton from "../../../../components/ui/exitButton/button";
+   6 | import "../../../../components/ui/exitButton/button.css";
+>  7 | import { register } from "module";
+     | ^
+   8 |
+   9 | interface IFormRegisterProps {
+  10 |   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:05:18.190] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx:7:1
+Module not found: Can't resolve 'module'
+   5 | import ExitButton from "../../../../components/ui/exitButton/button";
+   6 | import "../../../../components/ui/exitButton/button.css";
+>  7 | import { register } from "module";
+     | ^
+   8 |
+   9 | interface IFormRegisterProps {
+  10 |   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:05:49.873] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/FormRegister.tsx:7:1
+Module not found: Can't resolve 'module'
+   5 | import ExitButton from "../../../../components/ui/exitButton/button";
+   6 | import "../../../../components/ui/exitButton/button.css";
+>  7 | import { register } from "module";
+     | ^
+   8 |
+   9 | interface IFormRegisterProps {
+  10 |   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:05:50.190] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx:7:1
+Module not found: Can't resolve 'module'
+   5 | import ExitButton from "../../../../components/ui/exitButton/button";
+   6 | import "../../../../components/ui/exitButton/button.css";
+>  7 | import { register } from "module";
+     | ^
+   8 |
+   9 | interface IFormRegisterProps {
+  10 |   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:15:04.339] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/FormRegister.tsx:7:1
+Module not found: Can't resolve 'module'
+   5 | import ExitButton from "../../../../components/ui/exitButton/button";
+   6 | import "../../../../components/ui/exitButton/button.css";
+>  7 | import { register } from "module";
+     | ^
+   8 |
+   9 | interface IFormRegisterProps {
+  10 |   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:15:05.190] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx:7:1
+Module not found: Can't resolve 'module'
+   5 | import ExitButton from "../../../../components/ui/exitButton/button";
+   6 | import "../../../../components/ui/exitButton/button.css";
+>  7 | import { register } from "module";
+     | ^
+   8 |
+   9 | interface IFormRegisterProps {
+  10 |   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:15:11.000] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/FormRegister.tsx:7:1
+Module not found: Can't resolve 'module'
+   5 | import ExitButton from "../../../../components/ui/exitButton/button";
+   6 | import "../../../../components/ui/exitButton/button.css";
+>  7 | import { register } from "module";
+     | ^
+   8 |
+   9 | interface IFormRegisterProps {
+  10 |   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:15:11.190] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx:7:1
+Module not found: Can't resolve 'module'
+   5 | import ExitButton from "../../../../components/ui/exitButton/button";
+   6 | import "../../../../components/ui/exitButton/button.css";
+>  7 | import { register } from "module";
+     | ^
+   8 |
+   9 | interface IFormRegisterProps {
+  10 |   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:15:23.134] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/FormRegister.tsx:7:1
+Module not found: Can't resolve 'module'
+   5 | import ExitButton from "../../../../components/ui/exitButton/button";
+   6 | import "../../../../components/ui/exitButton/button.css";
+>  7 | import { register } from "module";
+     | ^
+   8 |
+   9 | interface IFormRegisterProps {
+  10 |   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:15:24.191] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx:7:1
+Module not found: Can't resolve 'module'
+   5 | import ExitButton from "../../../../components/ui/exitButton/button";
+   6 | import "../../../../components/ui/exitButton/button.css";
+>  7 | import { register } from "module";
+     | ^
+   8 |
+   9 | interface IFormRegisterProps {
+  10 |   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:16:13.706] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/FormRegister.tsx:7:1
+Module not found: Can't resolve 'module'
+   5 | import ExitButton from "../../../../components/ui/exitButton/button";
+   6 | import "../../../../components/ui/exitButton/button.css";
+>  7 | import { register } from "module";
+     | ^
+   8 |
+   9 | interface IFormRegisterProps {
+  10 |   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:16:14.191] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx:7:1
+Module not found: Can't resolve 'module'
+   5 | import ExitButton from "../../../../components/ui/exitButton/button";
+   6 | import "../../../../components/ui/exitButton/button.css";
+>  7 | import { register } from "module";
+     | ^
+   8 |
+   9 | interface IFormRegisterProps {
+  10 |   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:16:33.161] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/FormRegister.tsx:7:1
+Module not found: Can't resolve 'module'
+   5 | import ExitButton from "../../../../components/ui/exitButton/button";
+   6 | import "../../../../components/ui/exitButton/button.css";
+>  7 | import { register } from "module";
+     | ^
+   8 |
+   9 | interface IFormRegisterProps {
+  10 |   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:16:34.192] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx:7:1
+Module not found: Can't resolve 'module'
+   5 | import ExitButton from "../../../../components/ui/exitButton/button";
+   6 | import "../../../../components/ui/exitButton/button.css";
+>  7 | import { register } from "module";
+     | ^
+   8 |
+   9 | interface IFormRegisterProps {
+  10 |   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:16:34.192] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx:7:1
+Module not found: Can't resolve 'module'
+   5 | import ExitButton from "../../../../components/ui/exitButton/button";
+   6 | import "../../../../components/ui/exitButton/button.css";
+>  7 | import { register } from "module";
+     | ^
+   8 |
+   9 | interface IFormRegisterProps {
+  10 |   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:16:54.234] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/FormRegister.tsx:7:1
+Module not found: Can't resolve 'module'
+   5 | import ExitButton from "../../../../components/ui/exitButton/button";
+   6 | import "../../../../components/ui/exitButton/button.css";
+>  7 | import { register } from "module";
+     | ^
+   8 |
+   9 | interface IFormRegisterProps {
+  10 |   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:16:55.190] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx:7:1
+Module not found: Can't resolve 'module'
+   5 | import ExitButton from "../../../../components/ui/exitButton/button";
+   6 | import "../../../../components/ui/exitButton/button.css";
+>  7 | import { register } from "module";
+     | ^
+   8 |
+   9 | interface IFormRegisterProps {
+  10 |   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:17:02.870] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/registration" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:18:39.963] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got '<'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:17:1]
+ 14 │ export default function FormRegister({
+ 15 │   handleRegistration,
+ 16 │   handleLogin,
+ 17 │   register: UseFormRegister<any>,
+    ·                            ─
+ 18 │ }: IFormRegisterProps) {
+ 19 │   const router = useRouter();
+ 20 │   return (
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:18:40.190] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got '<'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:17:1]
+ 14 │ export default function FormRegister({
+ 15 │   handleRegistration,
+ 16 │   handleLogin,
+ 17 │   register: UseFormRegister<any>,
+    ·                            ─
+ 18 │ }: IFormRegisterProps) {
+ 19 │   const router = useRouter();
+ 20 │   return (
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:18:49.108] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got '<'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:18:1]
+ 15 │ export default function FormRegister({
+ 16 │   handleRegistration,
+ 17 │   handleLogin,
+ 18 │   register: UseFormRegister<any>,
+    ·                            ─
+ 19 │ }: IFormRegisterProps) {
+ 20 │   const router = useRouter();
+ 21 │   return (
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:18:49.192] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got '<'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:17:1]
+ 14 │ export default function FormRegister({
+ 15 │   handleRegistration,
+ 16 │   handleLogin,
+ 17 │   register: UseFormRegister<any>,
+    ·                            ─
+ 18 │ }: IFormRegisterProps) {
+ 19 │   const router = useRouter();
+ 20 │   return (
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:18:49.192] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got '<'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:18:1]
+ 15 │ export default function FormRegister({
+ 16 │   handleRegistration,
+ 17 │   handleLogin,
+ 18 │   register: UseFormRegister<any>,
+    ·                            ─
+ 19 │ }: IFormRegisterProps) {
+ 20 │   const router = useRouter();
+ 21 │   return (
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:19:07.502] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got ';'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:13:1]
+ 10 │ interface IFormRegisterProps {
+ 11 │   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+ 12 │   handleLogin: () => void;
+ 13 │   register: UseFormRegister<any;
+    ·                                ─
+ 14 │ }
+ 15 │ 
+ 16 │ export default function FormRegister({
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:19:08.191] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got '<'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:18:1]
+ 15 │ export default function FormRegister({
+ 16 │   handleRegistration,
+ 17 │   handleLogin,
+ 18 │   register: UseFormRegister<any>,
+    ·                            ─
+ 19 │ }: IFormRegisterProps) {
+ 20 │   const router = useRouter();
+ 21 │   return (
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:19:08.191] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got ';'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:13:1]
+ 10 │ interface IFormRegisterProps {
+ 11 │   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+ 12 │   handleLogin: () => void;
+ 13 │   register: UseFormRegister<any;
+    ·                                ─
+ 14 │ }
+ 15 │ 
+ 16 │ export default function FormRegister({
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:19:10.573] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got ';'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:13:1]
+ 10 │ interface IFormRegisterProps {
+ 11 │   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+ 12 │   handleLogin: () => void;
+ 13 │   register: UseFormRegister<any;
+    ·                                ─
+ 14 │ }
+ 15 │ 
+ 16 │ export default function FormRegister({
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:19:11.190] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got ';'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:13:1]
+ 10 │ interface IFormRegisterProps {
+ 11 │   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+ 12 │   handleLogin: () => void;
+ 13 │   register: UseFormRegister<any;
+    ·                                ─
+ 14 │ }
+ 15 │ 
+ 16 │ export default function FormRegister({
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:19:11.190] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got ';'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:13:1]
+ 10 │ interface IFormRegisterProps {
+ 11 │   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+ 12 │   handleLogin: () => void;
+ 13 │   register: UseFormRegister<any;
+    ·                                ─
+ 14 │ }
+ 15 │ 
+ 16 │ export default function FormRegister({
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:19:15.196] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got ';'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:13:1]
+ 10 │ interface IFormRegisterProps {
+ 11 │   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
+ 12 │   handleLogin: () => void;
+ 13 │   register: UseFormRegister<any;
+    ·                                ─
+ 14 │ }
+ 15 │ 
+ 16 │ export default function FormRegister({
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:19:39.612] Browser LOG     {"name":"123"}
+[00:39:12.071] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
