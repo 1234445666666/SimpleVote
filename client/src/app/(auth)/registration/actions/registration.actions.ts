@@ -1,26 +1,9 @@
-interface RequiredPassword {
-  isValid: boolean;
-  required: {
-    minLength: boolean;
-    atLeastOneUpperCase: boolean;
-    atLeastOneDigit: boolean;
-    atLeastOneSpecialCharacter: boolean;
-  };
-  password: string;
-}
-export function checkingPasswords(passOne: string, passTwo: string): boolean {
-  const requiredPassword = {
-    minLength: passOne.length >= 8,
-    atLeastOneUpperCase: /[A-Z]/.test(passOne),
-    atLeastOneDigit: /\d/.test(passOne),
-    atLeastOneSpecialCharacter: /[^a-zA-Z0-9]/.test(passOne),
-  };
+import { toast } from "react-toastify";
 
-  return (
-    requiredPassword.minLength &&
-    requiredPassword.atLeastOneUpperCase &&
-    requiredPassword.atLeastOneDigit &&
-    requiredPassword.atLeastOneSpecialCharacter &&
-    passOne === passTwo
-  );
+export function chekingPasswords(passOne: string, passTwo: string): boolean {
+  if (passOne !== passTwo) {
+    toast.error("Пароли не совпадают");
+    return false;
+  }
+  return true;
 }

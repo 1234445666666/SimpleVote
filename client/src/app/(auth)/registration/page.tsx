@@ -3,7 +3,7 @@ import "./style.css";
 import React, { useRef } from "react";
 import { useAuthStore } from "@/lib/store";
 import FormRegister from "./components/FormRegister";
-import { checkingPasswords } from "./actions/registration.actions";
+import { chekingPasswords } from "./actions/registration.actions";
 import { toast } from "react-toastify";
 
 export default function Page() {
@@ -19,10 +19,18 @@ export default function Page() {
     const password = inputPasswordRef.current?.value || "";
     const passwordConfirm = inputConfirmPasswordRef.current?.value || "";
 
+    if (chekingPasswords(password, passwordConfirm)) {
+      return;
+    }
+
     register(name, email, password);
   }
 
-  async function register(name: string, email: string, password: string) {
+  async function register(
+    name: string,
+    email: string,
+    password: string
+  ): Promise<void> {
     try {
       const response = await fetch("http://localhost:6700/api/auth/register", {
         method: "POST",
@@ -47,10 +55,9 @@ export default function Page() {
         localStorage.setItem("token", data.token);
         localStorage.setItem("user", JSON.stringify(data.user));
       }
-
-      // Переходим на главную страницу
-    } catch (error) {
-      console.error("Ошибка регистрации:", error);
+    } catch (error: unknown) {
+      console.error("Ошибка регистрации:", error instanceof Error);
+      toast.error("Ошибка при регистрации");
     }
   }
   function handleLogin() {

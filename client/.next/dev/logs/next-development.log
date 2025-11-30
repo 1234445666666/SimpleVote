@@ -929,3 +929,450 @@ Module not found: Can't resolve '@/app/components/ui/exitButton/button.css'
   8 |   const [options, setOptions] = useState<string[]>(["", "", ""]); // Начинаем с 3 вариантов
 
 https://nextjs.org/docs/messages/module-not-found
+[00:22:23.602] Server  WARN    Error: Route "/account/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:22:25.150] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/account/1" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:22:29.458] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/login" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:26:30.782] Server  ERROR    ⨯ ./src/app/(auth)/login/page.tsx
+Error:   × Unterminated string constant
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:49:1]
+ 46 │       }
+ 47 │     } catch (error: unknown) {
+ 48 │       console.error("Ошибка в логине:", error instanceof Error);
+ 49 │       toast.error("Ошибка при входе);
+    ·                   ───────────────────
+ 50 │     }
+ 51 │   }
+    ╰────
+  × Expected ',', got '}'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:50:1]
+ 47 │     } catch (error: unknown) {
+ 48 │       console.error("Ошибка в логине:", error instanceof Error);
+ 49 │       toast.error("Ошибка при входе);
+ 50 │     }
+    ·     ─
+ 51 │   }
+ 52 │ 
+ 53 │   function handleOpenPassword() {
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:26:31.135] Browser ERROR   ./src/app/(auth)/login/page.tsx
+Error:   × Unterminated string constant
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:49:1]
+ 46 │       }
+ 47 │     } catch (error: unknown) {
+ 48 │       console.error("Ошибка в логине:", error instanceof Error);
+ 49 │       toast.error("Ошибка при входе);
+    ·                   ───────────────────
+ 50 │     }
+ 51 │   }
+    ╰────
+  × Expected ',', got '}'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/login/page.tsx:50:1]
+ 47 │     } catch (error: unknown) {
+ 48 │       console.error("Ошибка в логине:", error instanceof Error);
+ 49 │       toast.error("Ошибка при входе);
+ 50 │     }
+    ·     ─
+ 51 │   }
+ 52 │ 
+ 53 │   function handleOpenPassword() {
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/login/page.tsx
+[00:29:52.760] Browser ERROR   Ошибка регистрации: true
+[00:30:26.612] Server  ERROR    ⨯ ./src/app/(auth)/registration/page.tsx
+Error:   × Expression expected
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/page.tsx:22:1]
+ 19 │     const password = inputPasswordRef.current?.value || "";
+ 20 │     const passwordConfirm = inputConfirmPasswordRef.current?.value || "";
+ 21 │ 
+ 22 │     if()
+    ·     ─┬ ─
+    ·      ╰── Tried to parse the condition for an if statement
+ 23 │ 
+ 24 │     register(name, email, password);
+ 25 │   }
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:30:27.132] Browser ERROR   ./src/app/(auth)/registration/page.tsx
+Error:   × Expression expected
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/page.tsx:22:1]
+ 19 │     const password = inputPasswordRef.current?.value || "";
+ 20 │     const passwordConfirm = inputConfirmPasswordRef.current?.value || "";
+ 21 │ 
+ 22 │     if()
+    ·     ─┬ ─
+    ·      ╰── Tried to parse the condition for an if statement
+ 23 │ 
+ 24 │     register(name, email, password);
+ 25 │   }
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:31:22.999] Server  WARN     ⚠ ./src/app/(auth)/registration/page.tsx
+Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+
+./src/app/(auth)/registration/page.tsx
+Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:31:23.155] Browser WARN    ./src/app/(auth)/registration/page.tsx
+Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:31:31.417] Server  WARN     ⚠ ./src/app/(auth)/registration/page.tsx
+Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+
+./src/app/(auth)/registration/page.tsx
+Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:31:32.132] Browser WARN    ./src/app/(auth)/registration/page.tsx
+Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:31:32.625] Server  WARN     ⚠ ./src/app/(auth)/registration/page.tsx
+Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+
+./src/app/(auth)/registration/page.tsx
+Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:31:33.131] Browser WARN    ./src/app/(auth)/registration/page.tsx
+Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:31:36.521] Server  WARN     ⚠ ./src/app/(auth)/registration/page.tsx
+Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+
+./src/app/(auth)/registration/page.tsx
+Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:31:36.625] Browser WARN    ./src/app/(auth)/registration/page.tsx
+Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:31:37.896] Browser ERROR   Ошибка регистрации: true
+[00:31:40.956] Browser ERROR   Ошибка регистрации: true
+[00:31:43.592] Server  WARN     ⚠ ./src/app/(auth)/registration/page.tsx
+Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+
+./src/app/(auth)/registration/page.tsx
+Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:31:44.132] Browser WARN    ./src/app/(auth)/registration/page.tsx
+Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:31:56.032] Browser ERROR   Ошибка регистрации: true
+[00:32:12.074] Server  WARN     ⚠ ./src/app/(auth)/registration/page.tsx
+Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+
+./src/app/(auth)/registration/page.tsx
+Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:32:13.136] Browser WARN    ./src/app/(auth)/registration/page.tsx
+Attempted import error: 'checkingPasswords' is not exported from './actions/registration.actions' (imported as 'checkingPasswords').
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:32:50.227] Browser ERROR   Ошибка регистрации: true
+[00:33:00.341] Browser ERROR   Ошибка регистрации: true
+[00:33:04.468] Browser ERROR   Ошибка регистрации: true
+[00:33:27.663] Browser ERROR   Ошибка регистрации: true
+[00:33:42.348] Browser ERROR   Ошибка регистрации: true
+[00:34:24.848] Browser ERROR   Ошибка регистрации: true
+[00:35:01.044] Browser ERROR   Ошибка регистрации: true
+[00:35:10.130] Browser ERROR   Ошибка регистрации: true
+[00:35:12.437] Browser ERROR   Ошибка регистрации: true
+[00:40:12.132] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/registration" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:40:58.188] Browser ERROR   ./src/components/ui/exitButton/button.css:8:19
+Syntax error: /home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css Missed semicolon
+
+   6 |   cursor: pointer;
+   7 |   font-size: 20px;
+>  8 |   background: none
+     |                   ^
+   9 |   display: flex;
+  10 |   align-items: center;
+[00:40:58.188] Browser ERROR   ./src/components/ui/exitButton/button.css
+Syntax error: /home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css Missed semicolon (8:19)
+
+   6 |   cursor: pointer;
+   7 |   font-size: 20px;
+>  8 |   background: none
+     |                   ^
+   9 |   display: flex;
+  10 |   align-items: center;
+-- inner error --
+Syntax error: /home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css Missed semicolon (8:19)
+
+   6 |   cursor: pointer;
+   7 |   font-size: 20px;
+>  8 |   background: none
+     |                   ^
+   9 |   display: flex;
+  10 |   align-items: center;
+Generated code for /home/pasha/coding/live-poll/client/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[10].use[2]!/home/pasha/coding/live-poll/client/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[10].use[3]!/home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css
+
+Import trace for requested module:
+./src/components/ui/exitButton/button.css
+./src/app/survey/create/page.tsx
+[00:40:59.544] Server  ERROR    ⨯ ./src/components/ui/exitButton/button.css:8:19
+Syntax error: /home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css Missed semicolon
+
+   6 |   cursor: pointer;
+   7 |   font-size: 20px;
+>  8 |   background: none
+     |                   ^
+   9 |   display: flex;
+  10 |   align-items: center;
+[00:40:59.707] Browser ERROR   ./src/components/ui/exitButton/button.css:8:19
+Syntax error: /home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css Missed semicolon
+
+   6 |   cursor: pointer;
+   7 |   font-size: 20px;
+>  8 |   background: none
+     |                   ^
+   9 |   display: flex;
+  10 |   align-items: center;
+[00:40:59.707] Browser ERROR   ./src/components/ui/exitButton/button.css
+Syntax error: /home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css Missed semicolon (8:19)
+
+   6 |   cursor: pointer;
+   7 |   font-size: 20px;
+>  8 |   background: none
+     |                   ^
+   9 |   display: flex;
+  10 |   align-items: center;
+-- inner error --
+Syntax error: /home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css Missed semicolon (8:19)
+
+   6 |   cursor: pointer;
+   7 |   font-size: 20px;
+>  8 |   background: none
+     |                   ^
+   9 |   display: flex;
+  10 |   align-items: center;
+Generated code for /home/pasha/coding/live-poll/client/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[10].use[2]!/home/pasha/coding/live-poll/client/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[10].use[3]!/home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css
+
+Import trace for requested module:
+./src/components/ui/exitButton/button.css
+./src/app/survey/create/page.tsx
+[00:41:01.658] Browser ERROR   uncaughtError: Error: Syntax error: /home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css Missed semicolon
+
+   6 |   cursor: pointer;
+   7 |   font-size: 20px;
+>  8 |   background: none
+     |                   ^
+   9 |   display: flex;
+  10 |   align-items: center;
+
+[00:41:02.019] Browser ERROR   ./src/components/ui/exitButton/button.css:8:19
+Syntax error: /home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css Missed semicolon
+
+   6 |   cursor: pointer;
+   7 |   font-size: 20px;
+>  8 |   background: none
+     |                   ^
+   9 |   display: flex;
+  10 |   align-items: center;
+[00:41:02.019] Browser ERROR   ./src/components/ui/exitButton/button.css
+Syntax error: /home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css Missed semicolon (8:19)
+
+   6 |   cursor: pointer;
+   7 |   font-size: 20px;
+>  8 |   background: none
+     |                   ^
+   9 |   display: flex;
+  10 |   align-items: center;
+-- inner error --
+Syntax error: /home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css Missed semicolon (8:19)
+
+   6 |   cursor: pointer;
+   7 |   font-size: 20px;
+>  8 |   background: none
+     |                   ^
+   9 |   display: flex;
+  10 |   align-items: center;
+Generated code for /home/pasha/coding/live-poll/client/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[10].use[2]!/home/pasha/coding/live-poll/client/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[10].use[3]!/home/pasha/coding/live-poll/client/src/components/ui/exitButton/button.css
+[00:41:02.315] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:41:04.603] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/registration" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+

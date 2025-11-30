@@ -1,7 +1,7 @@
 "use client";
 import "./style.css";
 import React, { useRef } from "react";
-import LoginForm from "./components/LoginForm.tsx";
+import LoginForm from "./components/LoginForm";
 import { toast } from "react-toastify";
 
 export default function Page() {
@@ -18,9 +18,12 @@ export default function Page() {
     await login(loginValue, password, isEmail);
   }
 
-  async function login(loginValue: string, password: string, isEmail: boolean) {
+  async function login(
+    loginValue: string,
+    password: string,
+    isEmail: boolean
+  ): Promise<void> {
     try {
-      // Создаем правильное тело запроса
       const requestBody = isEmail
         ? { email: loginValue, password }
         : { name: loginValue, password };
@@ -44,8 +47,8 @@ export default function Page() {
         localStorage.setItem("token", data.token);
         localStorage.setItem("user", JSON.stringify(data.user));
       }
-    } catch (error) {
-      console.error("Ошибка в логине:", error);
+    } catch (error: unknown) {
+      console.error("Ошибка в логине:", error instanceof Error);
       toast.error("Ошибка при входе");
     }
   }
