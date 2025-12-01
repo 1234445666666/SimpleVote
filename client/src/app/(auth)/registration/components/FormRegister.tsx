@@ -1,24 +1,37 @@
 "use client";
-import Image from "next/image";
 import { ToastContainer } from "react-toastify";
-import { useRouter } from "next/navigation";
 import ExitButton from "../../../../components/ui/exitButton/button";
 import "../../../../components/ui/exitButton/button.css";
-import { register } from "module";
 import { UseFormRegister } from "react-hook-form";
+import NameField from "./NameField";
+import EmailField from "./EmailField";
+import PasswordField from "./PasswordField";
+import PasswordRequirements from "./PasswordRequirements";
+import CheckboxGroup from "./CheckboxGroup";
+import FormActions from "./FormActions";
+import { IForm } from "@/types/auth";
 
 interface IFormRegisterProps {
   handleRegistration: (event: React.FormEvent<HTMLFormElement>) => void;
   handleLogin: () => void;
-  register: UseFormRegister<any>;
+  register: UseFormRegister<IForm>;
+  errorEmail: string | undefined;
+  errorName: string | undefined;
+  errorPassword: string | undefined;
+  password: string;
+  confirmPassword: string;
 }
 
 export default function FormRegister({
   handleRegistration,
   handleLogin,
   register,
+  errorName,
+  errorEmail,
+  errorPassword,
+  password,
+  confirmPassword,
 }: IFormRegisterProps) {
-  const router = useRouter();
   return (
     <div className="registration-page">
       <div className="container">
@@ -30,110 +43,24 @@ export default function FormRegister({
           <form onSubmit={handleRegistration} className="registration-form">
             <div className="form-section">
               <h3 className="section-title">Данные для входа</h3>
+              <NameField register={register} />
+              {errorName && <p className="error-message">{errorName}</p>}
 
-              <div className="form-group">
-                <label className="form-label">Имя пользователя </label>
-                <input
-                  {...(register("name"),
-                  {
-                    required: "Необходимо заполнить поле",
-                  })}
-                  type="text"
-                  placeholder="Придумайте логин"
-                  className="form-input"
-                  required
-                />
-              </div>
+              <EmailField register={register} />
+              {errorEmail && <p className="error-message">{errorEmail}</p>}
 
-              <div className="form-group">
-                <label className="form-label" htmlFor="">
-                  Электронная почта
-                </label>
-                <input
-                  {...(register("email"),
-                  {
-                    required: "Необходимо заполнить поле",
-                    pattern: {
-                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                      message: "Некорректный адрес электронной почты",
-                    },
-                  })}
-                  type="email"
-                  placeholder="Введите электронную почту"
-                  className="form-input"
-                  required
-                />
-              </div>
-
-              <div className="form-row">
-                <div className="form-group">
-                  <label className="form-label">Пароль </label>
-                  <input
-                    type="password"
-                    placeholder="Минимум 8 символов"
-                    className="form-input"
-                    required
-                  />
-                </div>
-
-                <div className="form-group">
-                  <label className="form-label">Подтвердите пароль </label>
-                  <input
-                    type="password"
-                    placeholder="Повторите пароль"
-                    className="form-input"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div className="password-requirements">
-                <p className="requirements-title">Требования к паролю:</p>
-                <ul className="requirements-list">
-                  <li>Минимум 8 символов</li>
-                  <li>Хотя бы одна заглавная буква</li>
-                  <li>Хотя бы одна цифра</li>
-                  <li>Хотя бы один специальный символ</li>
-                </ul>
-              </div>
+              <PasswordField
+                register={register}
+                password={password}
+                confirmPassword={confirmPassword}
+              />
+              {errorPassword && (
+                <p className="error-message">{errorPassword}</p>
+              )}
+              <PasswordRequirements />
             </div>
-
-            <div className="form-section">
-              <div className="checkbox-group">
-                <label className="checkbox-label">
-                  <input type="checkbox" className="checkbox-input" required />
-                  <span className="checkbox-custom"></span>
-                  <span className="checkbox-text">
-                    Я принимаю{" "}
-                    <a href="#" className="link-inline">
-                      условия использования
-                    </a>{" "}
-                    и{" "}
-                    <a href="#" className="link-inline">
-                      политику конфиденциальности
-                    </a>{" "}
-                    *
-                  </span>
-                </label>
-
-                <label className="checkbox-label">
-                  <input type="checkbox" className="checkbox-input" />
-                </label>
-              </div>
-            </div>
-
-            <div className="form-actions">
-              <button type="submit" className="btn btn-primary">
-                Создать аккаунт
-              </button>
-              <button
-                onClick={handleLogin}
-                type="button"
-                className="btn btn-outline"
-              >
-                Уже есть аккаунт? Войти
-              </button>
-            </div>
+            <CheckboxGroup />
+            <FormActions />
           </form>
         </div>
       </div>

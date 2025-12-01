@@ -223,7 +223,12 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Адаптивность */
+.error-message {
+  color: tomato;
+  font-size: 1rem;
+  margin-top: 0.1rem;
+}
+
 @media (max-width: 768px) {
   .registration-page {
     padding: 100px 0 60px;

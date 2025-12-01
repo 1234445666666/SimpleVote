@@ -1,23 +1,26 @@
 "use client";
 import "./style.css";
-import React, { useRef } from "react";
+import React, { useEffect } from "react";
+import { useRouter } from "next/navigation";
 import FormRegister from "./components/FormRegister";
 import { chekingPasswords } from "./actions/registration.actions";
 import { toast } from "react-toastify";
 import { SubmitHandler, useForm } from "react-hook-form";
+import { IForm } from "@/types/auth";
 
 export default function Page() {
-  interface IForm {
-    name: string;
-    email: string;
-    password: string;
-    confirmPassword: string;
-  }
-  const { register, handleSubmit, formState } = useForm<IForm>({
-    mode: "onChange",
+  const router = useRouter();
+
+  const { register, handleSubmit, formState, watch } = useForm<IForm>({
+    mode: "onBlur",
   });
 
+  const errorName = formState.errors["name"]?.message;
   const errorEmail = formState.errors["email"]?.message;
+  const errorPassword = formState.errors["password"]?.message;
+
+  const password = watch("password");
+  const confirmPassword = watch("confirmPassword");
 
   const onSubmit: SubmitHandler<IForm> = (data) => {
     console.log(data);
@@ -32,6 +35,11 @@ export default function Page() {
       handleRegistration={handleSubmit(onSubmit)}
       handleLogin={handleLogin}
       register={register}
+      errorName={errorName}
+      errorEmail={errorEmail}
+      errorPassword={errorPassword}
+      password={password}
+      confirmPassword={confirmPassword}
     />
   );
 }
