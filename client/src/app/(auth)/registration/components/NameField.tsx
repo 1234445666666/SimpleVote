@@ -3,8 +3,9 @@ import { UseFormRegister } from "react-hook-form";
 
 interface INameFieldProps {
   register: UseFormRegister<IForm>;
+  errorName: string | undefined;
 }
-export default function NameField({ register }: INameFieldProps) {
+export default function NameField({ register, errorName }: INameFieldProps) {
   return (
     <div className="form-group">
       <label className="form-label">Имя пользователя</label>
@@ -21,6 +22,7 @@ export default function NameField({ register }: INameFieldProps) {
           },
         })}
       />
+      {errorName && <p className="error-message">{errorName}</p>}
     </div>
   );
 }

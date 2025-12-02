@@ -1,4 +1,14 @@
-export default function CheckboxGroup() {
+import { IForm } from "@/types/auth";
+import { UseFormRegister } from "react-hook-form";
+
+interface ICheckboxGroupProps {
+  register: UseFormRegister<IForm>;
+  errorTerms: string | undefined;
+}
+export default function CheckboxGroup({
+  register,
+  errorTerms,
+}: ICheckboxGroupProps) {
   return (
     <div className="form-section">
       <div className="checkbox-group">
@@ -6,10 +16,9 @@ export default function CheckboxGroup() {
           <input
             type="checkbox"
             className="checkbox-input"
-            required
-            // {...register("terms", {
-            //   required: "Необходимо принять условия",
-            // })}
+            {...register("terms", {
+              required: "Необходимо принять условия",
+            })}
           />
           <span className="checkbox-custom"></span>
           <span className="checkbox-text">
@@ -25,6 +34,7 @@ export default function CheckboxGroup() {
           </span>
         </label>
       </div>
+      {errorTerms && <p className="error-message">{errorTerms}</p>}
     </div>
   );
 }

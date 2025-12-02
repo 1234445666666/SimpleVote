@@ -8,7 +8,7 @@ export function chekingPasswords(passOne: string, passTwo: string): boolean {
   return true;
 }
 
-export async function register(
+export async function registerFn(
   name: string,
   email: string,
   password: string
