@@ -10,7 +10,7 @@ import { env } from "./config/env";
 
 // === Маршруты ===
 import authRoutes from "./routes/auth";
-import pollRoutes from "./routes/poll";
+import surveyRoutes from "./routes/survey";
 
 // === Middleware ===
 import { notFound } from "./middleware/notFound";
@@ -35,7 +35,7 @@ app.use(
 
 // === Маршруты ===
 app.use("/api/auth", authRoutes);
-app.use("/api/polls", pollRoutes);
+app.use("/api/surveys", surveyRoutes);
 
 // === 404 обработка ===
 app.use(notFound);
@@ -46,7 +46,7 @@ app.use(errorHandler);
 // === Запуск сервера ===
 app.listen(env.Port, () => {
   console.log(`Сервер запущен на порту ${env.Port}`);
-  console.log(`API: http://localhost:${env.Port}/poll`);
+  console.log(`API: http://localhost:${env.Port}/survey`);
 });
 // const wss = new WebSocket.Server({ port: 8080 });
 

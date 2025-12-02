@@ -10,7 +10,7 @@ interface IEnv {
 
 export const env: IEnv = {
   Port: process.env.PORT || 6700,
-  DB_PATH: process.env.DB_PATH || "./database/poll.db",
+  DB_PATH: process.env.DB_PATH || "./database/survey.db",
   JWT_SECRET: process.env.JWT_SECRET || "supersecretkey123",
   JWT_EXPIRES_IN: process.env.JWT_EXPIRES_IN || "7d",
 };
