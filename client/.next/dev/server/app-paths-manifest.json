@@ -1,6 +1,3 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/(auth)/registration/page": "app/(auth)/registration/page.js",
-  "/(home)/page": "app/(home)/page.js",
-  "/survey/create/page": "app/survey/create/page.js"
+  "/(auth)/registration/page": "app/(auth)/registration/page.js"
 }

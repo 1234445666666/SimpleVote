@@ -1,90 +1,1493 @@
-[00:00:02.234] Server  LOG      ✓ Ready in 1856ms
-[00:00:02.279] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:00:06.160] Server  LOG      ○ Compiling /registration ...
-[00:00:06.801] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:00:07.770] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:21.898] Browser LOG     {"confirmPassword":"12345Aa@","email":"sdfosdfm@afsjsf.com","name":"123","password":"12345Aa@"}
-[00:01:25.294] Browser LOG     {"confirmPassword":"12345Aa@","email":"sdfosdfm@afsjsf.com","name":"123","password":"12345Aa@"}
-[00:01:43.934] Browser LOG     {"confirmPassword":"12345Aa@","email":"sdfosdfm@afsjsf.com","name":"123","password":"12345Aa@"}
-[00:01:44.453] Browser LOG     {"confirmPassword":"12345Aa@","email":"sdfosdfm@afsjsf.com","name":"123","password":"12345Aa@"}
-[00:01:44.636] Browser LOG     {"confirmPassword":"12345Aa@","email":"sdfosdfm@afsjsf.com","name":"123","password":"12345Aa@"}
-[00:01:44.885] Browser LOG     {"confirmPassword":"12345Aa@","email":"sdfosdfm@afsjsf.com","name":"123","password":"12345Aa@"}
-[00:02:26.238] Browser LOG     {"confirmPassword":"12345Aa@","email":"sdfosdfm@afsjsf.com","name":"123","password":"12345Aa@"}
-[00:04:06.773] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:04:07.340] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:11.108] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:16:38.616] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:16:41.736] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:28:02.263] Browser LOG     {"options":["asdasd","asdasd","asd"],"question":"123"}
-[00:28:02.263] Browser ERROR   unhandledRejection: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
-1. You might have mismatching versions of React and the renderer (such as React DOM)
-2. You might be breaking the Rules of Hooks
-3. You might have more than one copy of React in the same app
-See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
-[00:28:44.730] Browser LOG     {"options":["asdasd","asdasd","asd"],"question":"123"}
-[00:28:44.731] Browser ERROR   unhandledRejection: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
-1. You might have mismatching versions of React and the renderer (such as React DOM)
-2. You might be breaking the Rules of Hooks
-3. You might have more than one copy of React in the same app
-See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
-[00:29:24.188] Server  WARN     ⚠ ./src/app/survey/create/components/FormActions.tsx
-Attempted import error: '../actions/survey.actions' does not contain a default export (imported as 'createPoll').
+[00:00:02.540] Server  LOG      ✓ Ready in 2.1s
+[00:00:07.941] Server  LOG      ○ Compiling /registration ...
+[00:00:15.315] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/registration" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:01:51.050] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/NameField.tsx
+Error:   × Expected ',', got '{'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/NameField.tsx:26:1]
+ 23 │         })}
+ 24 │       />
+ 25 │     </div>
+ 26 │       {errorName && <p className="error-message">{errorName}</p>}
+    ·       ─
+ 27 │   );
+ 28 │ }
+    ╰────
+
+Caused by:
+    Syntax Error
 
 Import trace for requested module:
-./src/app/survey/create/components/FormActions.tsx
-./src/app/survey/create/components/SurveyForm.tsx
+./src/app/(auth)/registration/components/NameField.tsx
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:01:51.054] Browser ERROR   ./src/app/(auth)/registration/components/NameField.tsx
+Error:   × Expected ',', got '{'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/NameField.tsx:26:1]
+ 23 │         })}
+ 24 │       />
+ 25 │     </div>
+ 26 │       {errorName && <p className="error-message">{errorName}</p>}
+    ·       ─
+ 27 │   );
+ 28 │ }
+    ╰────
 
-./src/app/survey/create/components/FormActions.tsx
-Attempted import error: '../actions/survey.actions' does not contain a default export (imported as 'createPoll').
+Caused by:
+    Syntax Error
 
 Import trace for requested module:
-./src/app/survey/create/components/FormActions.tsx
-./src/app/survey/create/components/SurveyForm.tsx
-[00:29:24.343] Browser WARN    ./src/app/survey/create/components/FormActions.tsx
-Attempted import error: '../actions/survey.actions' does not contain a default export (imported as 'createPoll').
+./src/app/(auth)/registration/components/NameField.tsx
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:02:03.996] Browser ERROR   ./src/app/(auth)/registration/components/NameField.tsx
+Error:   × Expected ',', got '{'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/NameField.tsx:26:1]
+ 23 │         })}
+ 24 │       />
+ 25 │     </div>
+ 26 │       {errorName && <p className="error-message">{errorName}</p>}
+    ·       ─
+ 27 │   );
+ 28 │ }
+    ╰────
+
+Caused by:
+    Syntax Error
 
 Import trace for requested module:
-./src/app/survey/create/components/FormActions.tsx
-./src/app/survey/create/components/SurveyForm.tsx
-[00:29:24.343] Browser WARN    ./src/app/survey/create/components/FormActions.tsx
-Attempted import error: '../actions/survey.actions' does not contain a default export (imported as 'createPoll').
+./src/app/(auth)/registration/components/NameField.tsx
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:06:00.988] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/registration" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:06:21.626] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/registration" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:10:14.308] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/registration" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:10:51.987] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/registration" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:11:29.885] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/registration" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:11:41.994] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/registration" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:12:16.005] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/registration" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:12:40.402] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/registration" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:22:11.228] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:22:11.228] Browser ERROR   uncaughtError: ReferenceError: errorEmail is not defined
+[00:22:11.885] Server  ERROR    ⨯ ReferenceError: errorEmail is not defined
+[00:22:15.028] Browser ERROR   uncaughtError: ReferenceError: errorEmail is not defined
+[00:22:15.360] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:22:15.882] Server  ERROR    ⨯ ReferenceError: errorEmail is not defined
+[00:22:18.992] Browser ERROR   uncaughtError: ReferenceError: errorEmail is not defined
+[00:22:20.761] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:22:21.066] Server  ERROR    ⨯ ReferenceError: errorEmail is not defined
+[00:22:23.989] Browser ERROR   uncaughtError: ReferenceError: errorEmail is not defined
+[00:22:34.567] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:22:37.987] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/registration" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:23:00.122] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:23:00.123] Browser ERROR   uncaughtError: ReferenceError: errorPassword is not defined
+[00:23:00.587] Server  ERROR    ⨯ ReferenceError: errorPassword is not defined
+[00:23:03.047] Browser ERROR   uncaughtError: ReferenceError: errorPassword is not defined
+[00:23:06.098] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:23:09.989] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/registration" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:26:18.905] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/PasswordField.tsx
+Error:   × Expected ',', got '{'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/PasswordField.tsx:54:1]
+ 51 │         />
+ 52 │       </div>
+ 53 │     </div>
+ 54 │         {errorPassword && <p className="error-message">{errorPassword}</p>}
+    ·         ─
+ 55 │   );
+ 56 │ }
+    ╰────
+
+Caused by:
+    Syntax Error
 
 Import trace for requested module:
-./src/app/survey/create/components/FormActions.tsx
-./src/app/survey/create/components/SurveyForm.tsx
-[00:29:56.480] Browser ERROR   unhandledRejection: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
-1. You might have mismatching versions of React and the renderer (such as React DOM)
-2. You might be breaking the Rules of Hooks
-3. You might have more than one copy of React in the same app
-See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
-[00:31:33.536] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
-1. You might have mismatching versions of React and the renderer (such as React DOM)
-2. You might be breaking the Rules of Hooks
-3. You might have more than one copy of React in the same app
-See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
-[00:31:33.536] Browser LOG     {"options":["123","123","123"],"question":"123"}
-[00:32:15.242] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
-1. You might have mismatching versions of React and the renderer (such as React DOM)
-2. You might be breaking the Rules of Hooks
-3. You might have more than one copy of React in the same app
-See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
-[00:32:15.242] Browser LOG     {"options":["123","123","123"],"question":"123"}
-[00:32:17.605] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:32:18.669] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:33:12.193] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:33:12.195] Browser ERROR   uncaughtError: Error: NextRouter was not mounted. https://nextjs.org/docs/messages/next-router-not-mounted
-[00:33:12.452] Server  ERROR    ⨯ Error: NextRouter was not mounted. https://nextjs.org/docs/messages/next-router-not-mounted
-[00:33:13.358] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:33:13.801] Browser ERROR   uncaughtError: Error: NextRouter was not mounted. https://nextjs.org/docs/messages/next-router-not-mounted
-[00:33:28.200] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:33:29.308] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:33:35.057] Browser LOG     {"options":["фывфы","фывфф","ывфыв"],"question":"фывфыв"}
-[00:33:35.869] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:34:17.950] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:36:10.319] Browser LOG     {"options":["фывфыв","фывфыв","фывафыв"],"question":"ыфвфывфы"}
-[00:36:11.149] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:36:14.025] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:36:14.961] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:36:17.224] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:36:34.398] Browser LOG     {"options":["asdas","asdasd","asdasd"],"question":"asdasd"}
-[00:36:35.329] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+./src/app/(auth)/registration/components/PasswordField.tsx
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:26:18.946] Browser ERROR   ./src/app/(auth)/registration/components/PasswordField.tsx
+Error:   × Expected ',', got '{'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/PasswordField.tsx:54:1]
+ 51 │         />
+ 52 │       </div>
+ 53 │     </div>
+ 54 │         {errorPassword && <p className="error-message">{errorPassword}</p>}
+    ·         ─
+ 55 │   );
+ 56 │ }
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/PasswordField.tsx
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:26:31.189] Browser ERROR   ./src/app/(auth)/registration/components/PasswordField.tsx
+Error:   × Expected ',', got '{'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/PasswordField.tsx:54:1]
+ 51 │         />
+ 52 │       </div>
+ 53 │     </div>
+ 54 │         {errorPassword && <p className="error-message">{errorPassword}</p>}
+    ·         ─
+ 55 │   );
+ 56 │ }
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/PasswordField.tsx
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:32:41.349] Browser LOG     {"confirmPassword":"123456!A","email":"123@123.ru","name":"1233","password":"123456!A"}
+[00:33:47.778] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:33:47.778] Browser ERROR   uncaughtError: ReferenceError: password is not defined
+[00:33:48.362] Server  ERROR    ⨯ ReferenceError: password is not defined
+[00:33:50.994] Browser ERROR   uncaughtError: ReferenceError: password is not defined
+[00:35:29.042] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:35:29.618] Server  ERROR    ⨯ ReferenceError: password is not defined
+[00:35:31.682] Browser ERROR   uncaughtError: ReferenceError: password is not defined
+[00:35:53.376] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:35:55.821] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/registration" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:37:01.904] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/registration" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:37:59.586] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:37:59.587] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'password')
+[00:37:59.926] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'password')
+[00:38:01.951] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'password')
+[00:38:28.724] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:38:29.142] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'password')
+[00:38:31.286] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'password')
+[00:38:55.808] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:38:56.163] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'password')
+[00:38:58.402] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'password')
+[00:39:19.138] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:39:19.501] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'password')
+[00:39:22.061] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'password')
+[00:39:27.681] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:39:30.986] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/registration" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:40:51.522] Server  ERROR    ⨯ ./src/app/(auth)/registration/page.tsx
+Error:   × Expression expected
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/page.tsx:22:1]
+ 19 │   const errorEmail = formState.errors["email"]?.message;
+ 20 │   const errorPassword = formState.errors["password"]?.message;
+ 21 │   const errorConfirmPassword =
+ 22 │     formState.errors["confirmPassword"]?.message?;
+    ·                                                  ─
+ 23 │ 
+ 24 │   // const password = watch("password");
+ 25 │   // const confirmPassword = watch("confirmPassword");
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:40:51.986] Browser ERROR   ./src/app/(auth)/registration/page.tsx
+Error:   × Expression expected
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/page.tsx:22:1]
+ 19 │   const errorEmail = formState.errors["email"]?.message;
+ 20 │   const errorPassword = formState.errors["password"]?.message;
+ 21 │   const errorConfirmPassword =
+ 22 │     formState.errors["confirmPassword"]?.message?;
+    ·                                                  ─
+ 23 │ 
+ 24 │   // const password = watch("password");
+ 25 │   // const confirmPassword = watch("confirmPassword");
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:40:52.547] Server  ERROR    ⨯ ./src/app/(auth)/registration/page.tsx
+Error:   × Expression expected
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/page.tsx:22:1]
+ 19 │   const errorEmail = formState.errors["email"]?.message;
+ 20 │   const errorPassword = formState.errors["password"]?.message;
+ 21 │   const errorConfirmPassword =
+ 22 │     formState.errors["confirmPassword"]?.message?;
+    ·                                                  ─
+ 23 │ 
+ 24 │   // const password = watch("password");
+ 25 │   // const confirmPassword = watch("confirmPassword");
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:40:52.988] Browser ERROR   ./src/app/(auth)/registration/page.tsx
+Error:   × Expression expected
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/page.tsx:22:1]
+ 19 │   const errorEmail = formState.errors["email"]?.message;
+ 20 │   const errorPassword = formState.errors["password"]?.message;
+ 21 │   const errorConfirmPassword =
+ 22 │     formState.errors["confirmPassword"]?.message?;
+    ·                                                  ─
+ 23 │ 
+ 24 │   // const password = watch("password");
+ 25 │   // const confirmPassword = watch("confirmPassword");
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:40:56.101] Server  ERROR    ⨯ ./src/app/(auth)/registration/page.tsx
+Error:   × Expression expected
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/page.tsx:21:1]
+ 18 │   const errorName = formState.errors["name"]?.message;
+ 19 │   const errorEmail = formState.errors["email"]?.message;
+ 20 │   const errorPassword = formState.errors["password"]?.message;
+ 21 │   const errorConfirmPassword =formState.errors["confirmPassword"]?.message?;
+    ·                                                                            ─
+ 22 │ 
+ 23 │   // const password = watch("password");
+ 24 │   // const confirmPassword = watch("confirmPassword");
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:40:56.985] Browser ERROR   ./src/app/(auth)/registration/page.tsx
+Error:   × Expression expected
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/page.tsx:21:1]
+ 18 │   const errorName = formState.errors["name"]?.message;
+ 19 │   const errorEmail = formState.errors["email"]?.message;
+ 20 │   const errorPassword = formState.errors["password"]?.message;
+ 21 │   const errorConfirmPassword =formState.errors["confirmPassword"]?.message?;
+    ·                                                                            ─
+ 22 │ 
+ 23 │   // const password = watch("password");
+ 24 │   // const confirmPassword = watch("confirmPassword");
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:40:57.889] Server  ERROR    ⨯ ./src/app/(auth)/registration/page.tsx
+Error:   × Expression expected
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/page.tsx:21:1]
+ 18 │   const errorName = formState.errors["name"]?.message;
+ 19 │   const errorEmail = formState.errors["email"]?.message;
+ 20 │   const errorPassword = formState.errors["password"]?.message;
+ 21 │   const errorConfirmPassword = formState.errors["confirmPassword"]?.message?;
+    ·                                                                             ─
+ 22 │ 
+ 23 │   // const password = watch("password");
+ 24 │   // const confirmPassword = watch("confirmPassword");
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:40:57.987] Browser ERROR   ./src/app/(auth)/registration/page.tsx
+Error:   × Expression expected
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/page.tsx:21:1]
+ 18 │   const errorName = formState.errors["name"]?.message;
+ 19 │   const errorEmail = formState.errors["email"]?.message;
+ 20 │   const errorPassword = formState.errors["password"]?.message;
+ 21 │   const errorConfirmPassword = formState.errors["confirmPassword"]?.message?;
+    ·                                                                             ─
+ 22 │ 
+ 23 │   // const password = watch("password");
+ 24 │   // const confirmPassword = watch("confirmPassword");
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:41:00.869] Server  ERROR    ⨯ ./src/app/(auth)/registration/page.tsx
+Error:   × Expression expected
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/page.tsx:21:1]
+ 18 │   const errorName = formState.errors["name"]?.message;
+ 19 │   const errorEmail = formState.errors["email"]?.message;
+ 20 │   const errorPassword = formState.errors["password"]?.message;
+ 21 │   const errorConfirmPassword = formState.errors["confirmPassword"]?.message?;
+    ·                                                                             ─
+ 22 │ 
+ 23 │   const onSubmit: SubmitHandler<IForm> = (data) => {
+ 24 │     console.log(data);
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:41:00.989] Browser ERROR   ./src/app/(auth)/registration/page.tsx
+Error:   × Expression expected
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/page.tsx:21:1]
+ 18 │   const errorName = formState.errors["name"]?.message;
+ 19 │   const errorEmail = formState.errors["email"]?.message;
+ 20 │   const errorPassword = formState.errors["password"]?.message;
+ 21 │   const errorConfirmPassword = formState.errors["confirmPassword"]?.message?;
+    ·                                                                             ─
+ 22 │ 
+ 23 │   const onSubmit: SubmitHandler<IForm> = (data) => {
+ 24 │     console.log(data);
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/page.tsx
+[00:42:03.001] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got 'password'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:34:1]
+ 31 │   errorEmail,
+ 32 │   errorPassword,
+ 33 │   errorConfirmPassword
+ 34 │   password,
+    ·   ────────
+ 35 │   confirmPassword,
+ 36 │ }: IFormRegisterProps) {
+ 37 │   return (
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:42:03.986] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got 'password'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:34:1]
+ 31 │   errorEmail,
+ 32 │   errorPassword,
+ 33 │   errorConfirmPassword
+ 34 │   password,
+    ·   ────────
+ 35 │   confirmPassword,
+ 36 │ }: IFormRegisterProps) {
+ 37 │   return (
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:42:08.987] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got 'password'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:34:1]
+ 31 │   errorEmail,
+ 32 │   errorPassword,
+ 33 │   errorConfirmPassword
+ 34 │   password,
+    ·   ────────
+ 35 │   confirmPassword,
+ 36 │ }: IFormRegisterProps) {
+ 37 │   return (
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:42:09.184] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got 'password'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:34:1]
+ 31 │   errorEmail,
+ 32 │   errorPassword,
+ 33 │   errorConfirmPassword
+ 34 │   password,
+    ·   ────────
+ 35 │   confirmPassword,
+ 36 │ }: IFormRegisterProps) {
+ 37 │   return (
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:42:09.987] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got 'password'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:34:1]
+ 31 │   errorEmail,
+ 32 │   errorPassword,
+ 33 │   errorConfirmPassword
+ 34 │   password,
+    ·   ────────
+ 35 │   confirmPassword,
+ 36 │ }: IFormRegisterProps) {
+ 37 │   return (
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:42:36.341] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got 'password'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:34:1]
+ 31 │   errorEmail,
+ 32 │   errorPassword,
+ 33 │   errorConfirmPassword
+ 34 │   password,
+    ·   ────────
+ 35 │   confirmPassword,
+ 36 │ }: IFormRegisterProps) {
+ 37 │   return (
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:42:38.219] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got 'password'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:34:1]
+ 31 │   errorEmail,
+ 32 │   errorPassword,
+ 33 │   errorConfirmPassword
+ 34 │   password,
+    ·   ────────
+ 35 │   confirmPassword,
+ 36 │ }: IFormRegisterProps) {
+ 37 │   return (
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:42:39.039] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got 'password'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:34:1]
+ 31 │   errorEmail,
+ 32 │   errorPassword,
+ 33 │   errorConfirmPassword
+ 34 │   password,
+    ·   ────────
+ 35 │   confirmPassword,
+ 36 │ }: IFormRegisterProps) {
+ 37 │   return (
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:42:39.039] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got 'password'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:34:1]
+ 31 │   errorEmail,
+ 32 │   errorPassword,
+ 33 │   errorConfirmPassword
+ 34 │   password,
+    ·   ────────
+ 35 │   confirmPassword,
+ 36 │ }: IFormRegisterProps) {
+ 37 │   return (
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:42:39.196] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got 'password'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:34:1]
+ 31 │   errorEmail,
+ 32 │   errorPassword,
+ 33 │   errorConfirmPassword
+ 34 │   password,
+    ·   ────────
+ 35 │   confirmPassword,
+ 36 │ }: IFormRegisterProps) {
+ 37 │   return (
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:42:39.237] Server  LOG      ○ Compiling /_error ...
+[00:42:39.280] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got 'password'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:34:1]
+ 31 │   errorEmail,
+ 32 │   errorPassword,
+ 33 │   errorConfirmPassword
+ 34 │   password,
+    ·   ────────
+ 35 │   confirmPassword,
+ 36 │ }: IFormRegisterProps) {
+ 37 │   return (
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:42:39.408] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got 'password'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:34:1]
+ 31 │   errorEmail,
+ 32 │   errorPassword,
+ 33 │   errorConfirmPassword
+ 34 │   password,
+    ·   ────────
+ 35 │   confirmPassword,
+ 36 │ }: IFormRegisterProps) {
+ 37 │   return (
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:42:40.682] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × Expected ',', got 'password'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:34:1]
+ 31 │   errorEmail,
+ 32 │   errorPassword,
+ 33 │   errorConfirmPassword
+ 34 │   password,
+    ·   ────────
+ 35 │   confirmPassword,
+ 36 │ }: IFormRegisterProps) {
+ 37 │   return (
+    ╰────
+
+
+Caused by:
+    Syntax Error
+[00:42:40.895] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got 'password'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:34:1]
+ 31 │   errorEmail,
+ 32 │   errorPassword,
+ 33 │   errorConfirmPassword
+ 34 │   password,
+    ·   ────────
+ 35 │   confirmPassword,
+ 36 │ }: IFormRegisterProps) {
+ 37 │   return (
+    ╰────
+
+Caused by:
+    Syntax Error
+[00:42:47.754] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got 'password'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:34:1]
+ 31 │   errorEmail,
+ 32 │   errorPassword,
+ 33 │   errorConfirmPassword
+ 34 │   password,
+    ·   ────────
+ 35 │   confirmPassword,
+ 36 │ }: IFormRegisterProps) {
+ 37 │   return (
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:42:47.890] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got 'password'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:34:1]
+ 31 │   errorEmail,
+ 32 │   errorPassword,
+ 33 │   errorConfirmPassword
+ 34 │   password,
+    ·   ────────
+ 35 │   confirmPassword,
+ 36 │ }: IFormRegisterProps) {
+ 37 │   return (
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:42:47.890] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got 'password'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:34:1]
+ 31 │   errorEmail,
+ 32 │   errorPassword,
+ 33 │   errorConfirmPassword
+ 34 │   password,
+    ·   ────────
+ 35 │   confirmPassword,
+ 36 │ }: IFormRegisterProps) {
+ 37 │   return (
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:42:55.922] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got 'confirmPassword'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:34:1]
+ 31 │   errorEmail,
+ 32 │   errorPassword,
+ 33 │   errorConfirmPassword
+ 34 │   confirmPassword,
+    ·   ───────────────
+ 35 │ }: IFormRegisterProps) {
+ 36 │   return (
+ 37 │     <div className="registration-page">
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:42:55.989] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got 'password'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:34:1]
+ 31 │   errorEmail,
+ 32 │   errorPassword,
+ 33 │   errorConfirmPassword
+ 34 │   password,
+    ·   ────────
+ 35 │   confirmPassword,
+ 36 │ }: IFormRegisterProps) {
+ 37 │   return (
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:42:55.989] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got 'confirmPassword'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:34:1]
+ 31 │   errorEmail,
+ 32 │   errorPassword,
+ 33 │   errorConfirmPassword
+ 34 │   confirmPassword,
+    ·   ───────────────
+ 35 │ }: IFormRegisterProps) {
+ 36 │   return (
+ 37 │     <div className="registration-page">
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:42:58.118] Browser ERROR   ./src/app/(auth)/registration/components/FormRegister.tsx
+Error:   × Expected ',', got 'confirmPassword'
+    ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/FormRegister.tsx:34:1]
+ 31 │   errorEmail,
+ 32 │   errorPassword,
+ 33 │   errorConfirmPassword
+ 34 │   confirmPassword,
+    ·   ───────────────
+ 35 │ }: IFormRegisterProps) {
+ 36 │   return (
+ 37 │     <div className="registration-page">
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:42:58.589] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:42:59.141] Server  ERROR    ⨯ ReferenceError: password is not defined
+[00:43:01.239] Browser ERROR   uncaughtError: ReferenceError: password is not defined
+[00:43:07.039] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:43:09.394] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/registration" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:48:12.352] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:48:14.289] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/login" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:48:16.857] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/registration" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:49:53.043] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/CheckboxGroup.tsx
+Error:   × Expected ident
+   ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/CheckboxGroup.tsx:2:1]
+ 1 │ interface ICheckboxGroupProps {
+ 2 │   register:  UseFormRegister<IForm>;;
+   ·                                     ─
+ 3 │ }
+ 4 │ export default function CheckboxGroup() {
+ 5 │   return (
+   ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/CheckboxGroup.tsx
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:49:53.985] Browser ERROR   ./src/app/(auth)/registration/components/CheckboxGroup.tsx
+Error:   × Expected ident
+   ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/CheckboxGroup.tsx:2:1]
+ 1 │ interface ICheckboxGroupProps {
+ 2 │   register:  UseFormRegister<IForm>;;
+   ·                                     ─
+ 3 │ }
+ 4 │ export default function CheckboxGroup() {
+ 5 │   return (
+   ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/CheckboxGroup.tsx
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:49:58.953] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/CheckboxGroup.tsx
+Error:   × Expected ident
+   ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/CheckboxGroup.tsx:4:1]
+ 1 │ import { IForm } from "@/types/auth";
+ 2 │ import { UseFormRegister } from "react-hook-form";
+ 3 │ interface ICheckboxGroupProps {
+ 4 │   register:  UseFormRegister<IForm>;;
+   ·                                     ─
+ 5 │ }
+ 6 │ export default function CheckboxGroup() {
+ 7 │   return (
+   ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/CheckboxGroup.tsx
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:49:58.986] Browser ERROR   ./src/app/(auth)/registration/components/CheckboxGroup.tsx
+Error:   × Expected ident
+   ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/CheckboxGroup.tsx:2:1]
+ 1 │ interface ICheckboxGroupProps {
+ 2 │   register:  UseFormRegister<IForm>;;
+   ·                                     ─
+ 3 │ }
+ 4 │ export default function CheckboxGroup() {
+ 5 │   return (
+   ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/CheckboxGroup.tsx
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:49:58.986] Browser ERROR   ./src/app/(auth)/registration/components/CheckboxGroup.tsx
+Error:   × Expected ident
+   ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/CheckboxGroup.tsx:4:1]
+ 1 │ import { IForm } from "@/types/auth";
+ 2 │ import { UseFormRegister } from "react-hook-form";
+ 3 │ interface ICheckboxGroupProps {
+ 4 │   register:  UseFormRegister<IForm>;;
+   ·                                     ─
+ 5 │ }
+ 6 │ export default function CheckboxGroup() {
+ 7 │   return (
+   ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/CheckboxGroup.tsx
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:50:00.322] Server  ERROR    ⨯ ./src/app/(auth)/registration/components/CheckboxGroup.tsx
+Error:   × Expected ident
+   ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/CheckboxGroup.tsx:5:1]
+ 2 │ import { UseFormRegister } from "react-hook-form";
+ 3 │ 
+ 4 │ interface ICheckboxGroupProps {
+ 5 │   register:  UseFormRegister<IForm>;;
+   ·                                     ─
+ 6 │ }
+ 7 │ export default function CheckboxGroup() {
+ 8 │   return (
+   ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/CheckboxGroup.tsx
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:50:00.987] Browser ERROR   ./src/app/(auth)/registration/components/CheckboxGroup.tsx
+Error:   × Expected ident
+   ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/CheckboxGroup.tsx:4:1]
+ 1 │ import { IForm } from "@/types/auth";
+ 2 │ import { UseFormRegister } from "react-hook-form";
+ 3 │ interface ICheckboxGroupProps {
+ 4 │   register:  UseFormRegister<IForm>;;
+   ·                                     ─
+ 5 │ }
+ 6 │ export default function CheckboxGroup() {
+ 7 │   return (
+   ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/CheckboxGroup.tsx
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:50:00.987] Browser ERROR   ./src/app/(auth)/registration/components/CheckboxGroup.tsx
+Error:   × Expected ident
+   ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/CheckboxGroup.tsx:5:1]
+ 2 │ import { UseFormRegister } from "react-hook-form";
+ 3 │ 
+ 4 │ interface ICheckboxGroupProps {
+ 5 │   register:  UseFormRegister<IForm>;;
+   ·                                     ─
+ 6 │ }
+ 7 │ export default function CheckboxGroup() {
+ 8 │   return (
+   ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/CheckboxGroup.tsx
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:50:01.990] Browser ERROR   ./src/app/(auth)/registration/components/CheckboxGroup.tsx
+Error:   × Expected ident
+   ╭─[/home/pasha/coding/live-poll/client/src/app/(auth)/registration/components/CheckboxGroup.tsx:5:1]
+ 2 │ import { UseFormRegister } from "react-hook-form";
+ 3 │ 
+ 4 │ interface ICheckboxGroupProps {
+ 5 │   register:  UseFormRegister<IForm>;;
+   ·                                     ─
+ 6 │ }
+ 7 │ export default function CheckboxGroup() {
+ 8 │   return (
+   ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(auth)/registration/components/CheckboxGroup.tsx
+./src/app/(auth)/registration/components/FormRegister.tsx
+./src/app/(auth)/registration/page.tsx
+[00:53:20.188] Browser LOG     {"confirmPassword":"123456!A","email":"123@123.ru","name":"123456!A","password":"123456!A","terms":true}
+[00:54:47.719] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:54:47.721] Browser ERROR   uncaughtError: ReferenceError: errorTerms is not defined
+[00:54:48.246] Server  ERROR    ⨯ ReferenceError: errorTerms is not defined
+[00:54:51.030] Browser ERROR   uncaughtError: ReferenceError: errorTerms is not defined
+[00:54:51.714] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:54:51.999] Server  ERROR    ⨯ ReferenceError: errorTerms is not defined
+[00:54:55.057] Browser ERROR   uncaughtError: ReferenceError: errorTerms is not defined
+[00:54:55.237] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:54:55.574] Server  ERROR    ⨯ ReferenceError: errorTerms is not defined
+[00:54:58.986] Browser ERROR   uncaughtError: ReferenceError: errorTerms is not defined
+[00:55:13.630] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:55:13.874] Server  ERROR    ⨯ ReferenceError: errorTerms is not defined
+[00:55:16.990] Browser ERROR   uncaughtError: ReferenceError: errorTerms is not defined
+[00:55:20.375] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:55:20.628] Server  ERROR    ⨯ ReferenceError: errorTerms is not defined
+[00:55:23.999] Browser ERROR   uncaughtError: ReferenceError: errorTerms is not defined
+[00:55:24.399] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:55:24.626] Server  ERROR    ⨯ ReferenceError: errorTerms is not defined
+[00:55:26.946] Browser ERROR   uncaughtError: ReferenceError: errorTerms is not defined
+[00:55:46.016] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:56:05.708] Browser LOG     {"confirmPassword":"123456!A","email":"123@123.ru","name":"123456!A","password":"123456!A","terms":true}
+[01:06:23.753] Browser LOG     {"confirmPassword":"123456!A","email":"123@123.ru","name":"123456!A","password":"123456!A","terms":true}
+[01:06:23.753] Browser ERROR   Ошибка регистрации: true
+[01:07:35.708] Browser LOG     {"confirmPassword":"123456!A","email":"123@123.ru","name":"123456!A","password":"123456!A","terms":true}

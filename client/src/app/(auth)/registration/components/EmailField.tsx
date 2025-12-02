@@ -3,8 +3,9 @@ import { UseFormRegister } from "react-hook-form";
 
 interface IEmailFieldProps {
   register: UseFormRegister<IForm>;
+  errorEmail: string | undefined;
 }
-export default function EmailField({ register }: IEmailFieldProps) {
+export default function EmailField({ register, errorEmail }: IEmailFieldProps) {
   return (
     <div className="form-group">
       <label className="form-label">Электронная почта</label>
@@ -21,6 +22,7 @@ export default function EmailField({ register }: IEmailFieldProps) {
           },
         })}
       />
+      {errorEmail && <p className="error-message">{errorEmail}</p>}
     </div>
   );
 }

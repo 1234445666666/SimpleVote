@@ -18,8 +18,8 @@ interface IFormRegisterProps {
   errorEmail: string | undefined;
   errorName: string | undefined;
   errorPassword: string | undefined;
-  password: string;
-  confirmPassword: string;
+  errorConfirmPassword: string | undefined;
+  errorTerms: string | undefined;
 }
 
 export default function FormRegister({
@@ -29,8 +29,8 @@ export default function FormRegister({
   errorName,
   errorEmail,
   errorPassword,
-  password,
-  confirmPassword,
+  errorConfirmPassword,
+  errorTerms,
 }: IFormRegisterProps) {
   return (
     <div className="registration-page">
@@ -43,24 +43,20 @@ export default function FormRegister({
           <form onSubmit={handleRegistration} className="registration-form">
             <div className="form-section">
               <h3 className="section-title">Данные для входа</h3>
-              <NameField register={register} />
-              {errorName && <p className="error-message">{errorName}</p>}
+              <NameField register={register} errorName={errorName} />
 
-              <EmailField register={register} />
-              {errorEmail && <p className="error-message">{errorEmail}</p>}
+              <EmailField register={register} errorEmail={errorEmail} />
 
               <PasswordField
                 register={register}
-                password={password}
-                confirmPassword={confirmPassword}
+                errorPassword={errorPassword}
+                errorConfirmPassword={errorConfirmPassword}
               />
-              {errorPassword && (
-                <p className="error-message">{errorPassword}</p>
-              )}
+
               <PasswordRequirements />
             </div>
-            <CheckboxGroup />
-            <FormActions />
+            <CheckboxGroup register={register} errorTerms={errorTerms} />
+            <FormActions handleLogin={handleLogin} />
           </form>
         </div>
       </div>

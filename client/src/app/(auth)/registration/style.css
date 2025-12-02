@@ -60,6 +60,8 @@
   flex-direction: column;
   flex: 1;
   margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.4rem;
 }
 
 .form-label {
@@ -224,9 +226,10 @@
 }
 
 .error-message {
-  color: tomato;
-  font-size: 1rem;
-  margin-top: 0.1rem;
+  color: #e74c3c;
+  font-size: 0.9rem;
+  font-size: medium;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
@@ -249,7 +252,7 @@
   }
 
   .form-group {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 }
 
