@@ -1,0 +1,335 @@
+/* style.css */
+
+/* Общие стили для аккаунта */
+.account-container {
+  min-height: 100vh;
+  background: var(--background-color, #f5f5f7);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.account-card {
+  background: var(--card-bg, #ffffff);
+  border-radius: var(--border-radius-lg, 16px);
+  box-shadow: var(--shadow-lg, 0 10px 40px rgba(0, 0, 0, 0.08));
+  padding: var(--spacing-3xl, 3rem);
+  max-width: 600px;
+  width: 100%;
+  transition: all var(--transition-normal, 0.3s ease);
+  border: 1px solid var(--border-color, #e5e7eb);
+}
+
+.back-button {
+  top: var(--spacing-md, 1rem);
+  left: var(--spacing-md, 1rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 48px;
+  border-radius: var(--border-radius-full, 20%);
+  background: var(--card-bg, #ffffff);
+  box-shadow: var(--shadow-md, 0 4px 12px rgba(0, 0, 0, 0.1));
+  border: 1px solid var(--border-color, #e5e7eb);
+  cursor: pointer;
+  transition: all var(--transition-fast, 0.2s ease);
+  z-index: 1000;
+  padding: 0;
+  text-decoration: none;
+  color: var(--text-primary, #111827);
+}
+
+.back-button:hover {
+  transform: translateX(-2px);
+  background: var(--card-secondary-bg, #f9fafb);
+  box-shadow: var(--shadow-lg, 0 6px 20px rgba(0, 0, 0, 0.15));
+  border-color: var(--primary-color-light, #93c5fd);
+}
+
+.back-button:active {
+  transform: translateX(0);
+  box-shadow: var(--shadow-sm, 0 2px 8px rgba(0, 0, 0, 0.08));
+}
+
+.page-title {
+  font-size: var(--font-size-3xl, 2.5rem);
+  font-weight: var(--font-weight-bold, 700);
+  color: var(--text-primary, #111827);
+  text-align: center;
+  margin-bottom: var(--spacing-lg, 1.5rem);
+  line-height: 1.2;
+}
+
+.page-description {
+  text-align: center;
+  color: var(--text-secondary, #6b7280);
+  font-size: var(--font-size-lg, 1.125rem);
+  margin-bottom: var(--spacing-3xl, 3rem);
+  line-height: 1.6;
+}
+
+/* Стили для загрузки */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: var(--spacing-3xl, 3rem);
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--border-color, #e5e7eb);
+  border-top: 3px solid var(--primary-color, #2563eb);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: var(--spacing-xl, 2rem);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Стили для информации пользователя */
+.user-info-section {
+  margin-top: var(--spacing-xl, 2rem);
+}
+
+.user-info-item {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-lg, 1.5rem);
+  margin-bottom: var(--spacing-md, 1rem);
+  background: var(--card-secondary-bg, #f9fafb);
+  border-radius: var(--border-radius-md, 12px);
+  transition: all var(--transition-fast, 0.2s ease);
+  border: 1px solid var(--border-color, #e5e7eb);
+}
+
+.user-info-item:hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-md, 0 4px 12px rgba(0, 0, 0, 0.05));
+  border-color: var(--primary-color-light, #93c5fd);
+}
+
+.user-info-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--primary-color, #2563eb);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: var(--spacing-lg, 1.5rem);
+  font-weight: var(--font-weight-semibold, 600);
+  font-size: var(--font-size-lg, 1.125rem);
+  flex-shrink: 0;
+}
+
+.user-info-content h3 {
+  margin: 0;
+  font-size: var(--font-size-sm, 0.875rem);
+  color: var(--text-tertiary, #9ca3af);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: var(--font-weight-medium, 500);
+}
+
+.user-info-content p {
+  margin: 0.25rem 0 0 0;
+  font-size: var(--font-size-xl, 1.25rem);
+  font-weight: var(--font-weight-semibold, 600);
+  color: var(--text-primary, #111827);
+  line-height: 1.4;
+}
+
+/* Стили для кнопки */
+.edit-profile-btn {
+  padding: 0.875rem 2.5rem;
+  background: var(--primary-color, #2563eb);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius-full, 9999px);
+  font-weight: var(--font-weight-semibold, 600);
+  font-size: var(--font-size-base, 1rem);
+  cursor: pointer;
+  transition: all var(--transition-fast, 0.2s ease);
+  box-shadow: var(--shadow-md, 0 4px 12px rgba(37, 99, 235, 0.2));
+  position: relative;
+  overflow: hidden;
+}
+
+.edit-profile-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg, 0 6px 20px rgba(37, 99, 235, 0.3));
+  background: var(--primary-color-dark, #1d4ed8);
+}
+
+.edit-profile-btn:active {
+  transform: translateY(0);
+}
+
+.edit-profile-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s;
+}
+
+.edit-profile-btn:active::after {
+  width: 200px;
+  height: 200px;
+}
+
+/* Стили для ошибки */
+.error-message {
+  background: var(--error-bg, #fef2f2);
+  color: var(--error-color, #dc2626);
+  padding: var(--spacing-xl, 2rem);
+  border-radius: var(--border-radius-md, 12px);
+  text-align: center;
+  font-weight: var(--font-weight-medium, 500);
+  margin-top: var(--spacing-xl, 2rem);
+  border: 1px solid var(--error-border, #fecaca);
+}
+
+.error-message p {
+  margin: 0;
+  font-size: var(--font-size-lg, 1.125rem);
+}
+
+/* Дополнительные элементы */
+.user-avatar-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-2xl, 2.5rem);
+  padding-bottom: var(--spacing-2xl, 2.5rem);
+  border-bottom: 2px solid var(--border-color, #e5e7eb);
+}
+
+.user-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color, #2563eb),
+    var(--secondary-color, #7c3aed)
+  );
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: var(--spacing-xl, 2rem);
+  font-size: var(--font-size-2xl, 2rem);
+  font-weight: var(--font-weight-bold, 700);
+  flex-shrink: 0;
+}
+
+.user-header-info h2 {
+  margin: 0;
+  font-size: var(--font-size-2xl, 2rem);
+  font-weight: var(--font-weight-bold, 700);
+  color: var(--text-primary, #111827);
+}
+
+.user-header-info .user-email {
+  margin: 0.25rem 0 0 0;
+  color: var(--text-secondary, #6b7280);
+  font-size: var(--font-size-base, 1rem);
+}
+
+/* Секции с действиями */
+.actions-section {
+  display: flex;
+  gap: var(--spacing-md, 1rem);
+  margin-top: var(--spacing-3xl, 3rem);
+  justify-content: center;
+}
+
+.secondary-btn {
+  padding: 0.875rem 2.5rem;
+  background: transparent;
+  color: var(--text-secondary, #6b7280);
+  border: 2px solid var(--border-color, #e5e7eb);
+  border-radius: var(--border-radius-full, 9999px);
+  font-weight: var(--font-weight-semibold, 600);
+  font-size: var(--font-size-base, 1rem);
+  cursor: pointer;
+  transition: all var(--transition-fast, 0.2s ease);
+}
+
+.secondary-btn:hover {
+  background: var(--card-secondary-bg, #f9fafb);
+  border-color: var(--text-tertiary, #9ca3af);
+  color: var(--text-primary, #111827);
+}
+
+.account-container-loading {
+  display: block;
+  min-height: 100vh;
+  font-size: var(--font-size-2xl, 2rem);
+  font-weight: var(--font-weight-bold, 700);
+  color: var(--text-primary, #111827);
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+  .account-container {
+    padding: var(--spacing-md, 1rem);
+  }
+
+  .account-card {
+    padding: var(--spacing-xl, 2rem);
+    margin: var(--spacing-md, 1rem);
+  }
+
+  .page-title {
+    font-size: var(--font-size-2xl, 2rem);
+  }
+
+  .user-info-item {
+    padding: var(--spacing-md, 1rem);
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-info-icon {
+    margin-right: 0;
+    margin-bottom: var(--spacing-md, 1rem);
+  }
+
+  .user-info-content p {
+    font-size: var(--font-size-lg, 1.125rem);
+  }
+
+  .actions-section {
+    flex-direction: column;
+  }
+
+  .user-avatar-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .user-avatar {
+    margin-right: 0;
+    margin-bottom: var(--spacing-lg, 1.5rem);
+  }
+}

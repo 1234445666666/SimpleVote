@@ -215,6 +215,7 @@ nav {
 
 .mobile-menu {
   display: none;
+  align-items: center;
   position: absolute;
   top: 100%;
   left: 0;

@@ -1,6 +1,7 @@
 "use client";
 import { getCurrentUser } from "./actions/account.actions";
 import React, { useState, useEffect } from "react";
+import "./style.css";
 
 interface User {
   id: number;
@@ -23,28 +24,81 @@ export default function AccountPage() {
     fetchUser();
   }, []);
 
+  function changingUserData() {
+    console.log("changingUserData");
+  }
+
   if (loading) {
     return (
-      <div>
-        <h1>Аккаунт</h1>
-        <p>Загрузка данных...</p>
+      <div className="account-container-loading">
+        <h1 className="page-title">Аккаунт</h1>
+        <p className="page-description">Загрузка данных...</p>
       </div>
     );
   }
 
   return (
-    <div>
-      <h1>Аккаунт</h1>
-      <p>Здесь вы можете управлять своим аккаунтом.</p>
-      {user ? (
-        <>
-          <h2>ID пользователя {user.id}</h2>
-          <h2>Имя пользователя {user.name}</h2>
-          <h2>Почта {user.email}</h2>
-        </>
-      ) : (
-        <p>Пользователь не найден</p>
-      )}
+    <div className="account-container">
+      <div className="account-card">
+        <button className="back-button" onClick={() => window.history.back()}>
+          Назад
+        </button>
+        <h1 className="page-title">Аккаунт</h1>
+        <p className="page-description">
+          Здесь вы можете управлять своим аккаунтом
+        </p>
+
+        {user ? (
+          <div className="user-info-section">
+            <div className="user-info-item">
+              <div className="user-info-icon">#</div>
+              <div className="user-info-content">
+                <h3>ID пользователя</h3>
+                <p>{user.id}</p>
+              </div>
+            </div>
+
+            <div className="user-info-item">
+              <div className="user-info-icon">👤</div>
+              <div className="user-info-content">
+                <h3>Имя пользователя</h3>
+                <p>{user.name}</p>
+              </div>
+            </div>
+
+            <div className="user-info-item">
+              <div className="user-info-icon">@</div>
+              <div className="user-info-content">
+                <h3>Почта</h3>
+                <p>{user.email}</p>
+              </div>
+            </div>
+
+            <div style={{ marginTop: "3rem", textAlign: "center" }}>
+              <button
+                onClick={changingUserData}
+                className="edit-profile-btn"
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-2px)";
+                  e.currentTarget.style.boxShadow =
+                    "0 6px 20px rgba(102, 126, 234, 0.6)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow =
+                    "0 4px 15px rgba(102, 126, 234, 0.4)";
+                }}
+              >
+                Редактировать профиль
+              </button>
+            </div>
+          </div>
+        ) : (
+          <div className="error-message">
+            <p>Пользователь не найден</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

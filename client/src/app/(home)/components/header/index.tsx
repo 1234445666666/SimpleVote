@@ -1,7 +1,7 @@
 import { useRouter } from "next/navigation";
 import "./header.css";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 import { useAuthStore } from "@/lib/store";
 
 export default function Header() {
@@ -11,7 +11,7 @@ export default function Header() {
   const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
   const checkAuth = useAuthStore((state) => state.checkAuth);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     checkAuth();
   }, [checkAuth]);
 
@@ -21,6 +21,10 @@ export default function Header() {
 
   function register() {
     router.push("/registration");
+  }
+
+  function goToProfile() {
+    router.push("/profile");
   }
 
   function toggleMenu() {
@@ -37,25 +41,23 @@ export default function Header() {
             <Link href="#how-it-works">Как это работает</Link>
             <Link href="#use-cases">Примеры использования</Link>
           </div>
-          {isAuthenticated ? (
-            <div>
-              <button
-                className="btn btn-login"
-                onClick={() => router.push("/profile")}
-              >
+
+          <div className="auth-buttons">
+            {isAuthenticated ? (
+              <button onClick={goToProfile} className="btn btn-profile">
                 Мой аккаунт
               </button>
-            </div>
-          ) : (
-            <div className="auth-buttons">
-              <button onClick={login} className="btn btn-login">
-                Войти
-              </button>
-              <button onClick={register} className="btn btn-register">
-                Регистрация
-              </button>
-            </div>
-          )}
+            ) : (
+              <>
+                <button onClick={login} className="btn btn-login">
+                  Войти
+                </button>
+                <button onClick={register} className="btn btn-register">
+                  Регистрация
+                </button>
+              </>
+            )}
+          </div>
 
           <div
             className={`burger-menu ${isMenuOpen ? "active" : ""}`}
@@ -86,13 +88,13 @@ export default function Header() {
 
         <div className={`mobile-menu ${isMenuOpen ? "active" : ""}`}>
           <div className="nav-links">
-            <Link href="#features" onClick={toggleMenu}>
+            <Link href="#features" onClick={() => setIsMenuOpen(false)}>
               Возможности
             </Link>
-            <Link href="#how-it-works" onClick={toggleMenu}>
+            <Link href="#how-it-works" onClick={() => setIsMenuOpen(false)}>
               Как это работает
             </Link>
-            <Link href="#use-cases" onClick={toggleMenu}>
+            <Link href="#use-cases" onClick={() => setIsMenuOpen(false)}>
               Примеры использования
             </Link>
           </div>
@@ -100,7 +102,10 @@ export default function Header() {
             <div>
               <button
                 className="btn btn-login"
-                onClick={() => router.push("/profile")}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  router.push("/profile");
+                }}
               >
                 Мой аккаунт
               </button>
