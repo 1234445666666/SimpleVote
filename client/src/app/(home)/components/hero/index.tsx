@@ -1,16 +1,15 @@
 "use client";
+import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import "./hero.css";
 import { useAuthStore } from "@/lib/store";
 export default function Hero() {
   const router = useRouter();
-  function createPoll() {
-    router.push("/survey/create");
-  }
+  const { isAuthenticated, checkAuth } = useAuthStore();
 
-  const authUser = useAuthStore(
-    (state: { currentUser: any }) => state.currentUser
-  );
+  useEffect(() => {
+    checkAuth();
+  }, [checkAuth]);
 
   return (
     <section className="hero">
@@ -21,7 +20,7 @@ export default function Hero() {
           мнения коллег, друзей или клиентов в приватных или публичных опросах.
         </p>
         <div className="hero-buttons">
-          {authUser ? (
+          {isAuthenticated ? (
             <button
               onClick={() => router.push("/survey/create")}
               className="btn btn-light"

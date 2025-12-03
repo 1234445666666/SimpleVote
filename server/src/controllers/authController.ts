@@ -14,7 +14,6 @@ interface User {
 export const register = (req: Request, res: Response) => {
   const { email, password, name } = req.body;
 
-  // Хешируем пароль
   const hashedPassword = bcrypt.hashSync(password, 10);
 
   db.run(
@@ -29,7 +28,7 @@ export const register = (req: Request, res: Response) => {
       }
 
       const token = signToken({
-        id: this.lastID, // ← теперь id: number
+        id: this.lastID,
         email,
         name,
       });
@@ -49,7 +48,6 @@ export const login = (req: Request, res: Response) => {
     "SELECT * FROM users WHERE email = ?",
     [email],
     (err, user: User | undefined) => {
-      // ← добавил типизацию
       if (err) return res.status(500).json({ error: "Ошибка базы данных" });
 
       if (!user || !bcrypt.compareSync(password, user.password)) {
@@ -71,6 +69,30 @@ export const login = (req: Request, res: Response) => {
 };
 
 export const getMe = (req: Request, res: Response) => {
-  // Добавь типизацию для req.user в middleware auth.ts
-  res.json({ user: (req as any).user }); // ← временное решение
+  if (!req.user) {
+    return res.status(401).json({ error: "Не авторизован" });
+  }
+
+  db.get(
+    "SELECT id, email, name  FROM users WHERE id = ?",
+    [req.user.id],
+    (err, user: any) => {
+      if (err) {
+        console.error("Database error in getMe:", err);
+        return res.status(500).json({ error: "Ошибка базы данных" });
+      }
+
+      if (!user) {
+        return res.status(404).json({ error: "Пользователь не найден" });
+      }
+
+      res.json({
+        user: {
+          id: user.id,
+          email: user.email,
+          name: user.name,
+        },
+      });
+    }
+  );
 };

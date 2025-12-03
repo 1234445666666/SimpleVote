@@ -2,13 +2,15 @@
 import { useAuthStore } from "@/lib/store";
 import "./cta.css";
 import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 export default function Cta() {
-  const authUser = useAuthStore((state) => state.isAuthenticated);
-
   const router = useRouter();
-  function createPoll() {
-    router.push("/survey/create");
-  }
+  const { isAuthenticated, checkAuth } = useAuthStore();
+
+  useEffect(() => {
+    checkAuth();
+  }, [checkAuth]);
+
   return (
     <section className="cta">
       <div className="container">
@@ -17,7 +19,7 @@ export default function Cta() {
           Присоединяйтесь к тысячам организаций, которые уже упростили процесс
           сбора мнений с помощью нашей платформы
         </p>
-        {authUser ? (
+        {isAuthenticated ? (
           <button
             onClick={() => router.push("/survey/create")}
             className="btn btn-light"

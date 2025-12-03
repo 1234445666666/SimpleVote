@@ -1,11 +1,19 @@
 import { useRouter } from "next/navigation";
 import "./header.css";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useAuthStore } from "@/lib/store";
 
 export default function Header() {
   const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
+  const checkAuth = useAuthStore((state) => state.checkAuth);
+
+  useEffect(() => {
+    checkAuth();
+  }, [checkAuth]);
 
   function login() {
     router.push("/login");
@@ -77,14 +85,25 @@ export default function Header() {
               Примеры использования
             </Link>
           </div>
-          <div className="auth-buttons">
-            <button onClick={login} className="btn btn-login">
-              Войти
-            </button>
-            <button onClick={register} className="btn btn-register">
-              Регистрация
-            </button>
-          </div>
+          {isAuthenticated ? (
+            <div>
+              <button
+                className="btn btn-login"
+                onClick={() => router.push("/profile")}
+              >
+                Мой аккаунт
+              </button>
+            </div>
+          ) : (
+            <div className="auth-buttons">
+              <button onClick={login} className="btn btn-login">
+                Войти
+              </button>
+              <button onClick={register} className="btn btn-register">
+                Регистрация
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </header>

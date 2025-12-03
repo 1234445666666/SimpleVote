@@ -1,7 +1,6 @@
 import jwt from "jsonwebtoken";
 import { env } from "../config/env";
 
-// Экспортируй интерфейс
 export interface IJWTPayload {
   id: number;
   email: string;

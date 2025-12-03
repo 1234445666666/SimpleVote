@@ -1,10 +1,17 @@
 import { create } from "zustand";
-import { toast } from "react-toastify";
 
 interface AuthState {
   isAuthenticated: boolean;
+  checkAuth: () => void;
 }
 
 export const useAuthStore = create<AuthState>((set) => ({
-  isAuthenticated: true,
+  isAuthenticated: false,
+  checkAuth: () => {
+    if (typeof window !== "undefined") {
+      const token = localStorage.getItem("token");
+      const hasToken = !!token;
+      set({ isAuthenticated: hasToken });
+    }
+  },
 }));
