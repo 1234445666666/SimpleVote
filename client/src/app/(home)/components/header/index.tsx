@@ -37,14 +37,25 @@ export default function Header() {
             <Link href="#how-it-works">Как это работает</Link>
             <Link href="#use-cases">Примеры использования</Link>
           </div>
-          <div className="auth-buttons">
-            <button onClick={login} className="btn btn-login">
-              Войти
-            </button>
-            <button onClick={register} className="btn btn-register">
-              Регистрация
-            </button>
-          </div>
+          {isAuthenticated ? (
+            <div>
+              <button
+                className="btn btn-login"
+                onClick={() => router.push("/profile")}
+              >
+                Мой аккаунт
+              </button>
+            </div>
+          ) : (
+            <div className="auth-buttons">
+              <button onClick={login} className="btn btn-login">
+                Войти
+              </button>
+              <button onClick={register} className="btn btn-register">
+                Регистрация
+              </button>
+            </div>
+          )}
 
           <div
             className={`burger-menu ${isMenuOpen ? "active" : ""}`}
