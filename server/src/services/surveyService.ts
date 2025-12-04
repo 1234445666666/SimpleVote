@@ -10,11 +10,10 @@ export const surveyService = {
     );
   },
 
-  create: (task, userId, callback) => {
+  create: (id, question_text, is_public) => {
     db.run(
-      "INSERT INTO todos (task, user_id) VALUES (?, ?)",
-      [task, userId],
-      callback
+      "INSERT INTO surveys (id, question_text, is_public,) VALUES (?, ?, ?)",
+      [id, question_text, is_public]
     );
   },
 

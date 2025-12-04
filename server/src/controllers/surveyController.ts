@@ -1,5 +1,6 @@
 // src/controllers/todoController.js
 import { surveyService } from "../services/surveyService";
+import db from "../config/db";
 
 // getPolls нужен для получения всех опросов пользователей
 export const getSurveys = (req, res) => {
@@ -20,10 +21,10 @@ export const createSurvey = (req, res) => {
     if (err) return res.status(500).json({ error: "DB Error" });
 
     // Возвращаем новую задачу с ID
-    surveyService.getAll(userId, (err, todos) => {
-      const newTodo = todos.find((t) => t.task === task);
-      res.status(201).json(newTodo);
-    });
+    // surveyService.getAll(userId, (err, todos) => {
+    //   const newTodo = todos.find((t) => t.task === task);
+    //   res.status(201).json(newTodo);
+    // });
   });
 };
 
