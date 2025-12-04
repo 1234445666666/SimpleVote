@@ -10,7 +10,7 @@ import { env } from "./config/env";
 
 // === Маршруты ===
 import authRoutes from "./routes/auth";
-import pollRoutes from "./routes/survey";
+import pollRoutes from "./routes/poll";
 
 // === Middleware ===
 import { notFound } from "./middleware/notFound";
@@ -35,7 +35,7 @@ app.use(
 
 // === Маршруты ===
 app.use("/api/auth", authRoutes);
-app.use("/api/surveys", pollRoutes);
+app.use("/api/polls", pollRoutes);
 
 // === 404 обработка ===
 app.use(notFound);

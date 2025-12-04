@@ -2,9 +2,11 @@
 import { useState } from "react";
 import QuestionInput from "./QuestionInput";
 import OptionsList from "./OptionList";
-import PrivacySettings from "./SurveyPrivacy";
+import PrivacySettings from "./PollPrivacy";
 import FormActions from "./FormActions";
 import { useRouter } from "next/navigation";
+import { createPoll } from "../actions/poll.actions";
+import { ISurvey } from "@/types/poll";
 
 export default function SurveyForm() {
   const [options, setOptions] = useState<string[]>(["", "", ""]);
@@ -29,32 +31,17 @@ export default function SurveyForm() {
     }
   };
 
-  // const handleSubmit = (e: React.FormEvent) => {
-  //   e.preventDefault();
-  //   console.log({ question, options });
-  // };
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    try {
-      const response = await fetch("http://localhost:6700/api/surveys", {
-        method: "POST",
-        credentials: "include",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-        },
-        body: JSON.stringify({ nameSurvey }),
-      });
-      if (response.ok) {
-        router.push("/surveys");
-      } else {
-        const errorData = await response.json();
-        console.error("Failed to create survey:", errorData.message);
-      }
-    } catch (error) {
-      console.error("Error:", error);
-    }
+    const surveyData: ISurvey = {
+      name_poll: question,
+      question_text: question,
+      is_public: true,
+      options: options
+        .filter((opt) => opt.trim() !== "")
+        .map((option_text) => ({ option_text })),
+    };
+    createPoll(surveyData);
   };
 
   return (

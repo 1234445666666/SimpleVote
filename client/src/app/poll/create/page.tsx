@@ -1,5 +1,5 @@
 import "./style.css";
-import SurveyForm from "@/app/survey/create/components/SurveyForm";
+import PollForm from "@/app/poll/create/components/PollForm";
 import ExitButton from "@/components/ui/exitButton/button";
 import "@/components/ui/exitButton/button.css";
 
@@ -10,7 +10,7 @@ export default function Page() {
         <div className="survey-form-container">
           <ExitButton />
           <h1 className="survey-title">Создание опроса</h1>
-          <SurveyForm />
+          <PollForm />
         </div>
       </div>
     </div>

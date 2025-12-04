@@ -22,7 +22,7 @@ export default function Hero() {
         <div className="hero-buttons">
           {isAuthenticated ? (
             <button
-              onClick={() => router.push("/survey/create")}
+              onClick={() => router.push("/poll/create")}
               className="btn btn-light"
             >
               Создать опрос

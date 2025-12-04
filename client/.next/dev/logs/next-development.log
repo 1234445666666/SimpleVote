@@ -1,29 +1,6 @@
-[00:00:02.644] Server  LOG      ✓ Ready in 2.2s
-[00:01:03.374] Server  LOG      ○ Compiling / ...
-[00:01:17.480] Server  WARN     ⚠ ./src/app/survey/create/components/FormActions.tsx
-Attempted import error: '../actions/survey.actions' does not contain a default export (imported as 'createSurvey').
-
-Import trace for requested module:
-./src/app/survey/create/components/FormActions.tsx
-./src/app/survey/create/components/SurveyForm.tsx
-
-./src/app/survey/create/components/FormActions.tsx
-Attempted import error: '../actions/survey.actions' does not contain a default export (imported as 'createSurvey').
-
-Import trace for requested module:
-./src/app/survey/create/components/FormActions.tsx
-./src/app/survey/create/components/SurveyForm.tsx
-[00:01:17.796] Browser WARN    ./src/app/survey/create/components/FormActions.tsx
-Attempted import error: '../actions/survey.actions' does not contain a default export (imported as 'createSurvey').
-
-Import trace for requested module:
-./src/app/survey/create/components/FormActions.tsx
-./src/app/survey/create/components/SurveyForm.tsx
-[00:01:19.008] Server  LOG      ○ Compiling /survey/create ...
-[00:01:24.978] Browser ERROR   Error: {}
-[00:41:08.717] Browser WARN    ./src/app/survey/create/components/FormActions.tsx
-Attempted import error: '../actions/survey.actions' does not contain a default export (imported as 'createSurvey').
-[00:41:08.717] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:02.790] Server  LOG      ✓ Ready in 2.3s
+[00:00:05.937] Server  LOG      ○ Compiling /poll/create ...
+[00:00:09.372] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -41,7 +18,7 @@ It can also happen if the client has a browser extension installed which messes 
         <ReplaySsrOnlyErrors>
         <DevRootHTTPAccessFallbackBoundary>
           <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/survey/cr..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <HTTPAccessFallbackErrorBoundary pathname="/poll/create" notFound={<NotAllowedRootHTTPFallbackError>} ...>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
                   <Head>
@@ -56,3 +33,81 @@ It can also happen if the client has a browser extension installed which messes 
                         >
                   ...
 
+[00:00:14.363] Browser LOG     Создание опроса с данными: {"is_public":true,"name_poll":"123","options":[{"option_text":"1"},{"option_text":"2"},{"option_text":"3"}],"question_text":"123"}
+[00:00:14.363] Browser ERROR   Ошибка сети: true
+[00:00:25.602] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/poll/create" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:35:59.227] Browser LOG     Создание опроса с данными: {"is_public":true,"name_poll":"123","options":[{"option_text":"1"},{"option_text":"2"},{"option_text":"3"}],"question_text":"123"}
+[00:35:59.227] Browser ERROR   Ошибка сети: true
+[00:36:55.111] Browser LOG     Создание опроса с данными: {"is_public":true,"name_poll":"123","options":[{"option_text":"1"},{"option_text":"2"},{"option_text":"3"}],"question_text":"123"}
+[00:36:55.112] Browser ERROR   Ошибка сети: true
+[00:38:19.168] Browser LOG     Создание опроса с данными: {"is_public":true,"name_poll":"123","options":[{"option_text":"1"},{"option_text":"2"},{"option_text":"3"}],"question_text":"123"}
+[00:38:19.270] Browser ERROR   Ошибка сети: true
+[00:39:42.396] Browser LOG     Создание опроса с данными: {"is_public":true,"name_poll":"123","options":[{"option_text":"1"},{"option_text":"2"},{"option_text":"3"}],"question_text":"123"}
+[00:39:52.923] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:39:55.033] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/registration" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         style={{--vsc-domain:"\"localhost\""}}
+                        >
+                  ...
+
+[00:40:21.973] Browser LOG     Создание опроса с данными: {"is_public":true,"name_poll":"123","options":[{"option_text":"1"},{"option_text":"2"},{"option_text":"3"}],"question_text":"123"}
+[00:40:21.973] Browser ERROR   Ошибка сети: true

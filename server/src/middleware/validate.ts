@@ -30,27 +30,17 @@ export const schemas = {
     password: Joi.string().required(),
   }).xor("email", "name"), // Должен быть указан email ИЛИ name
 
-  // Создание опроса (теперь без таблицы questions)
+  // Создание опроса
   poll: Joi.object({
-    title: Joi.string().min(3).max(200).required(),
-    description: Joi.string().max(1000).optional().allow(""),
-    question_text: Joi.string().min(3).max(500).required(),
+    name_poll: Joi.string().min(1).required(),
+    question_text: Joi.string().min(1).required(),
     is_public: Joi.boolean().default(true),
-    // Теперь options идут сразу в опросе
-    options: Joi.array()
-      .items(
-        Joi.object({
-          option_text: Joi.string().min(1).max(200).required(),
-        })
-      )
-      .min(2) // Минимум 2 варианта ответа
-      .max(20) // Максимум 20 вариантов
-      .required(),
+    options: Joi.array().items(Joi.object()).min(1), // упростили
   }),
 
   // Обновление опроса
   pollUpdate: Joi.object({
-    title: Joi.string().min(3).max(200),
+    name_poll: Joi.string().min(3).max(200),
     description: Joi.string().max(1000).allow(""),
     question_text: Joi.string().min(3).max(500),
     is_public: Joi.boolean(),
@@ -75,7 +65,7 @@ export const schemas = {
 
   // Создание опроса (упрощенная версия для быстрого тестирования)
   quickSurvey: Joi.object({
-    title: Joi.string().min(3).max(200).required(),
+    name_poll: Joi.string().min(3).max(200).required(),
     question_text: Joi.string().min(3).max(500).required(),
     // Массив строк для вариантов ответа
     options: Joi.array()

@@ -24,7 +24,7 @@ router.get("/", getPolls);
 // POST /api/polls
 // → Создаёт опрос
 router.post(
-  "/polls",
+  "/",
   validate(schemas.poll), // ← name_poll: min 3 символа
   createPoll
 );

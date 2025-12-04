@@ -1,4 +1,4 @@
 {
-  "/(home)/page": "app/(home)/page.js",
-  "/survey/create/page": "app/survey/create/page.js"
+  "/poll/create/page": "app/poll/create/page.js",
+  "/(auth)/registration/page": "app/(auth)/registration/page.js"
 }

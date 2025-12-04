@@ -22,8 +22,7 @@ export default function Page() {
   const errorTerms = formState.errors["terms"]?.message;
 
   const onSubmit: SubmitHandler<IForm> = (data) => {
-    const { name, email, password, confirmPassword, terms } = data;
-    console.log(data);
+    const { name, email, password } = data;
     registerFn(name, email, password);
   };
 

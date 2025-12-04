@@ -1,7 +1,7 @@
 // src/services/todoService.ts
 import db from "../config/db";
 
-export const surveyService = {
+export const pollService = {
   getAll: (userId, callback) => {
     db.all(
       "SELECT * FROM todos WHERE user_id = ? ORDER BY created_at DESC",
@@ -12,7 +12,7 @@ export const surveyService = {
 
   create: (id, question_text, is_public) => {
     db.run(
-      "INSERT INTO surveys (id, question_text, is_public,) VALUES (?, ?, ?)",
+      "INSERT INTO surveys (id, question_text, is_public) VALUES (?, ?, ?)",
       [id, question_text, is_public]
     );
   },
