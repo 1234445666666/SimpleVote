@@ -2,6 +2,11 @@
 
 # dependencies
 /node_modules
+.env
+*.db
+*.sqlite
+*.sqlite3
+.DS_Store
 /.pnp
 .pnp.*
 .yarn/*

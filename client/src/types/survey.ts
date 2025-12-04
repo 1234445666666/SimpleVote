@@ -3,6 +3,5 @@ export interface ISurvey {
   question: string;
   options: string[];
   isPublic: boolean;
-  surveyId: number;
-  authorId: number;
+  userId: number;
 }

@@ -1,175 +1,338 @@
-[00:00:03.077] Server  LOG      ✓ Ready in 2.6s
-[00:00:09.362] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:02.926] Server  LOG      ✓ Ready in 2.5s
+[00:00:12.847] Server  LOG      ○ Compiling / ...
+[00:00:15.339] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:36:27.426] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:36:27.932] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:51:07.304] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:51:08.745] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:55:38.983] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:55:45.289] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:00:01.597] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:00:03.029] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:05:43.429] Server  ERROR    ⨯ ./src/app/survey/create/components/FormActions.tsx
+Error:   × Expression expected
+    ╭─[E:\proekt\online-survey\client\src\app\survey\create\components\FormActions.tsx:17:1]
+ 14 │ 
+ 15 │   return (
+ 16 │     <div className="form-actions">
+ 17 │       <button type="submit" className="btn btn-primary" onClick={}>
+    ·                                                                   ─
+ 18 │         Создать опрос
+ 19 │       </button>
+ 19 │       <button type="button" className="btn btn-outline">
+    ╰────
+  × Expected ',', got 'опрос'
+    ╭─[E:\proekt\online-survey\client\src\app\survey\create\components\FormActions.tsx:18:1]
+ 15 │   return (
+ 16 │     <div className="form-actions">
+ 17 │       <button type="submit" className="btn btn-primary" onClick={}>
+ 18 │         Создать опрос
+    ·                 ─────
+ 19 │       </button>
+ 20 │       <button type="button" className="btn btn-outline">
+ 20 │         Отмена
+    ╰────
 
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
+Caused by:
+    Syntax Error
 
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+Import trace for requested module:
+./src/app/survey/create/components/FormActions.tsx
+./src/app/survey/create/components/SurveyForm.tsx
+[01:05:43.566] Browser ERROR   ./src/app/survey/create/components/FormActions.tsx
+Error:   × Expression expected
+    ╭─[E:\proekt\online-survey\client\src\app\survey\create\components\FormActions.tsx:17:1]
+ 14 │ 
+ 15 │   return (
+ 16 │     <div className="form-actions">
+ 17 │       <button type="submit" className="btn btn-primary" onClick={}>
+    ·                                                                   ─
+ 18 │         Создать опрос
+ 19 │       </button>
+ 19 │       <button type="button" className="btn btn-outline">
+    ╰────
+  × Expected ',', got 'опрос'
+    ╭─[E:\proekt\online-survey\client\src\app\survey\create\components\FormActions.tsx:18:1]
+ 15 │   return (
+ 16 │     <div className="form-actions">
+ 17 │       <button type="submit" className="btn btn-primary" onClick={}>
+ 18 │         Создать опрос
+    ·                 ─────
+ 19 │       </button>
+ 20 │       <button type="button" className="btn btn-outline">
+ 20 │         Отмена
+    ╰────
 
-%s%s https://react.dev/link/hydration-mismatch 
+Caused by:
+    Syntax Error
 
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <RootLayout>
-                        <html
-                          lang="en"
--                         style={{--vsc-domain:"\"localhost\""}}
-                        >
-                  ...
+Import trace for requested module:
+./src/app/survey/create/components/FormActions.tsx
+./src/app/survey/create/components/SurveyForm.tsx
+[01:05:47.588] Browser ERROR   ./src/app/survey/create/components/FormActions.tsx
+Error:   × Expression expected
+    ╭─[E:\proekt\online-survey\client\src\app\survey\create\components\FormActions.tsx:17:1]
+ 14 │ 
+ 15 │   return (
+ 16 │     <div className="form-actions">
+ 17 │       <button type="submit" className="btn btn-primary" onClick={}>
+    ·                                                                   ─
+ 18 │         Создать опрос
+ 19 │       </button>
+ 19 │       <button type="button" className="btn btn-outline">
+    ╰────
+  × Expected ',', got 'опрос'
+    ╭─[E:\proekt\online-survey\client\src\app\survey\create\components\FormActions.tsx:18:1]
+ 15 │   return (
+ 16 │     <div className="form-actions">
+ 17 │       <button type="submit" className="btn btn-primary" onClick={}>
+ 18 │         Создать опрос
+    ·                 ─────
+ 19 │       </button>
+ 20 │       <button type="button" className="btn btn-outline">
+ 20 │         Отмена
+    ╰────
 
-[00:09:55.091] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:09:58.367] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:10:40.889] Browser ERROR   Ошибка в логине: true
-[00:10:45.566] Browser ERROR   Ошибка в логине: true
-[00:11:21.478] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+Caused by:
+    Syntax Error
 
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
+Import trace for requested module:
+./src/app/survey/create/components/FormActions.tsx
+./src/app/survey/create/components/SurveyForm.tsx
+[01:05:53.028] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:05:54.681] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[01:06:04.540] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[01:06:04.540] Browser ERROR   Error: {}
+[01:06:06.547] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[01:06:06.547] Browser ERROR   Error: {}
+[01:06:06.678] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[01:06:06.678] Browser ERROR   Error: {}
+[01:06:06.826] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[01:06:06.826] Browser ERROR   Error: {}
+[01:06:06.945] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[01:06:06.945] Browser ERROR   Error: {}
+[01:06:07.560] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[01:06:07.560] Browser ERROR   Error: {}
+[01:06:30.300] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[01:06:30.300] Browser ERROR   Error: {}
+[01:06:38.999] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[01:06:38.999] Browser ERROR   Error: {}
+[01:07:22.399] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[01:07:22.399] Browser ERROR   Error: {}
+[01:08:19.537] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[01:08:19.537] Browser ERROR   Error: {}
+[01:09:14.713] Server  ERROR    ⨯ ./src/app/survey/create/components/FormActions.tsx:27:24
+Syntax error: Identifier 'createSurvey' has already been declared.
 
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+  25 | // }
+  26 |
+> 27 | export default function createSurvey(e: React.FormEvent) {
+     |                         ^
+  28 |   const [options, setOptions] = useState<string[]>(["", "", ""]);
+  29 |   const [question, setQuestion] = useState<string>("");
+  30 |   const [nameSurvey, setNameSurvey] = useState<string>("");
+[01:09:15.559] Browser ERROR   ./src/app/survey/create/components/FormActions.tsx:27:24
+Syntax error: Identifier 'createSurvey' has already been declared.
 
-%s%s https://react.dev/link/hydration-mismatch 
+  25 | // }
+  26 |
+> 27 | export default function createSurvey(e: React.FormEvent) {
+     |                         ^
+  28 |   const [options, setOptions] = useState<string[]>(["", "", ""]);
+  29 |   const [question, setQuestion] = useState<string>("");
+  30 |   const [nameSurvey, setNameSurvey] = useState<string>("");
+[01:09:37.446] Server  ERROR    ⨯ ./src/app/survey/create/components/FormActions.tsx
+Error:   × Expected ',', got '}'
+    ╭─[E:\proekt\online-survey\client\src\app\survey\create\components\FormActions.tsx:79:1]
+ 76 │         Отмена
+ 77 │       </button>
+ 78 │     </div>
+ 79 │ }
+    · ─
+    ╰────
 
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <RootLayout>
-                        <html
-                          lang="en"
--                         style={{--vsc-domain:"\"localhost\""}}
-                        >
-                  ...
+Caused by:
+    Syntax Error
 
-[00:17:02.750] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+Import trace for requested module:
+./src/app/survey/create/components/FormActions.tsx
+./src/app/survey/create/components/SurveyForm.tsx
+[01:09:37.561] Browser ERROR   ./src/app/survey/create/components/FormActions.tsx
+Error:   × Expected ',', got '}'
+    ╭─[E:\proekt\online-survey\client\src\app\survey\create\components\FormActions.tsx:79:1]
+ 76 │         Отмена
+ 77 │       </button>
+ 78 │     </div>
+ 79 │ }
+    · ─
+    ╰────
 
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
+Caused by:
+    Syntax Error
 
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+Import trace for requested module:
+./src/app/survey/create/components/FormActions.tsx
+./src/app/survey/create/components/SurveyForm.tsx
+[01:09:37.561] Browser ERROR   ./src/app/survey/create/components/FormActions.tsx
+Error:   × Expected ',', got '}'
+    ╭─[E:\proekt\online-survey\client\src\app\survey\create\components\FormActions.tsx:79:1]
+ 76 │         Отмена
+ 77 │       </button>
+ 78 │     </div>
+ 79 │ }
+    · ─
+    ╰────
 
-%s%s https://react.dev/link/hydration-mismatch 
+Caused by:
+    Syntax Error
 
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/profile" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <RootLayout>
-                        <html
-                          lang="en"
--                         style={{--vsc-domain:"\"localhost\""}}
-                        >
-                  ...
+Import trace for requested module:
+./src/app/survey/create/components/FormActions.tsx
+./src/app/survey/create/components/SurveyForm.tsx
+[01:09:44.568] Browser ERROR   ./src/app/survey/create/components/FormActions.tsx
+Error:   × Expected ',', got '}'
+    ╭─[E:\proekt\online-survey\client\src\app\survey\create\components\FormActions.tsx:79:1]
+ 76 │         Отмена
+ 77 │       </button>
+ 78 │     </div>
+ 79 │ }
+    · ─
+    ╰────
 
-[00:17:03.818] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:17:33.248] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+Caused by:
+    Syntax Error
 
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
+Import trace for requested module:
+./src/app/survey/create/components/FormActions.tsx
+./src/app/survey/create/components/SurveyForm.tsx
+[01:09:49.803] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:09:55.957] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[01:09:55.957] Browser ERROR   Error: {}
+[01:10:47.155] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[01:10:47.155] Browser ERROR   Error: {}
+[01:21:37.703] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:21:40.322] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:21:46.969] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:22:19.793] Browser LOG     {"confirmPassword":"Skebob1!","email":"supor@gmail.com","name":"asdasd","password":"Skebob1!","terms":true}
+[01:29:57.619] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[01:29:58.354] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:29:59.800] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:32:52.326] Server  WARN     ⚠ ./src/app/survey/create/components/FormActions.tsx
+Attempted import error: '../actions/survey.actions' does not contain a default export (imported as 'createSurvey').
 
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+Import trace for requested module:
+./src/app/survey/create/components/FormActions.tsx
+./src/app/survey/create/components/SurveyForm.tsx
 
-%s%s https://react.dev/link/hydration-mismatch 
+./src/app/survey/create/components/FormActions.tsx
+Attempted import error: '../actions/survey.actions' does not contain a default export (imported as 'createSurvey').
 
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/profile" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <RootLayout>
-                        <html
-                          lang="en"
--                         style={{--vsc-domain:"\"localhost\""}}
-                        >
-                  ...
+Import trace for requested module:
+./src/app/survey/create/components/FormActions.tsx
+./src/app/survey/create/components/SurveyForm.tsx
+[01:32:52.571] Browser WARN    ./src/app/survey/create/components/FormActions.tsx
+Attempted import error: '../actions/survey.actions' does not contain a default export (imported as 'createSurvey').
 
-[00:17:34.809] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:17:44.810] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:22:34.419] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:22:34.619] Browser LOG     No token found
-[00:22:37.054] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+Import trace for requested module:
+./src/app/survey/create/components/FormActions.tsx
+./src/app/survey/create/components/SurveyForm.tsx
+[01:33:08.570] Browser WARN    ./src/app/survey/create/components/FormActions.tsx
+Attempted import error: '../actions/survey.actions' does not contain a default export (imported as 'createSurvey').
 
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
+Import trace for requested module:
+./src/app/survey/create/components/FormActions.tsx
+./src/app/survey/create/components/SurveyForm.tsx
+[01:33:08.678] Server  WARN     ⚠ ./src/app/survey/create/components/FormActions.tsx
+Attempted import error: '../actions/survey.actions' does not contain a default export (imported as 'createSurvey').
 
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+Import trace for requested module:
+./src/app/survey/create/components/FormActions.tsx
+./src/app/survey/create/components/SurveyForm.tsx
 
-%s%s https://react.dev/link/hydration-mismatch 
+./src/app/survey/create/components/FormActions.tsx
+Attempted import error: '../actions/survey.actions' does not contain a default export (imported as 'createSurvey').
 
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <RootLayout>
-                        <html
-                          lang="en"
--                         style={{--vsc-domain:"\"localhost\""}}
-                        >
-                  ...
+Import trace for requested module:
+./src/app/survey/create/components/FormActions.tsx
+./src/app/survey/create/components/SurveyForm.tsx
+[01:33:09.567] Browser WARN    ./src/app/survey/create/components/FormActions.tsx
+Attempted import error: '../actions/survey.actions' does not contain a default export (imported as 'createSurvey').
 
+Import trace for requested module:
+./src/app/survey/create/components/FormActions.tsx
+./src/app/survey/create/components/SurveyForm.tsx
+[01:35:22.992] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:35:23.107] Browser WARN    ./src/app/survey/create/components/FormActions.tsx
+Attempted import error: '../actions/survey.actions' does not contain a default export (imported as 'createSurvey').
+[01:35:56.948] Browser LOG     {"confirmPassword":"Skebob1!","email":"sdfosdfm@afsjsf.com","name":"asfdcvbcvb","password":"Skebob1!","terms":true}
+[01:35:59.309] Browser ERROR   Ошибка регистрации: true
+[01:36:19.705] Browser LOG     {"confirmPassword":"Skebob1!","email":"sdfosdfm@afsjsf.com","name":"asfdcvbcvb","password":"Skebob1!","terms":true}
+[01:42:41.340] Browser LOG     {"confirmPassword":"Skebob1!","email":"sdfosdfm@afsjsf.com","name":"asfdcvbcvb","password":"Skebob1!","terms":true}
+[01:42:41.340] Browser ERROR   Ошибка регистрации: true
+[01:42:51.290] Browser LOG     {"confirmPassword":"Skebob1!","email":"sdfosdfm@afsjsf.com","name":"asfdcvbcvb","password":"Skebob1!","terms":true}
+[01:42:51.677] Browser ERROR   Ошибка регистрации: true
+[01:42:52.878] Browser LOG     {"confirmPassword":"Skebob1!","email":"sdfosdfm@afsjsf.com","name":"asfdcvbcvb","password":"Skebob1!","terms":true}
+[01:42:52.878] Browser ERROR   Ошибка регистрации: true
+[01:42:58.443] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:42:58.572] Browser WARN    ./src/app/survey/create/components/FormActions.tsx
+Attempted import error: '../actions/survey.actions' does not contain a default export (imported as 'createSurvey').
+[01:43:34.505] Browser LOG     {"confirmPassword":"Popa!1","email":"supsadfor@gmail.com","name":"sdascxzxc","password":"Popa!1","terms":true}
+[01:43:35.306] Browser ERROR   Ошибка регистрации: true
+[01:43:43.150] Browser LOG     {"confirmPassword":"Popa!1","email":"supsadfor@gmail.com","name":"sdascxzxc","password":"Popa!1","terms":true}
+[01:43:45.439] Browser LOG     {"confirmPassword":"Popa!1","email":"supsadfor@gmail.com","name":"sdascxzxc","password":"Popa!1","terms":true}
+[01:43:45.439] Browser ERROR   Ошибка регистрации: true
+[02:34:02.988] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:34:03.111] Browser WARN    ./src/app/survey/create/components/FormActions.tsx
+Attempted import error: '../actions/survey.actions' does not contain a default export (imported as 'createSurvey').
