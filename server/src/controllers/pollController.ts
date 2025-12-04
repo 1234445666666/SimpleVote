@@ -1,9 +1,9 @@
 // src/controllers/todoController.js
-import { surveyService } from "../services/surveyService";
+import { surveyService } from "../services/pollService";
 import db from "../config/db";
 
 // getPolls нужен для получения всех опросов пользователей
-export const getSurveys = (req, res) => {
+export const getPolls = (req, res) => {
   const userId = req.user.id;
 
   surveyService.getAll(userId, (err, todos) => {
@@ -13,7 +13,7 @@ export const getSurveys = (req, res) => {
 };
 
 // createPoll нужен для создания нового опроса
-export const createSurvey = (req, res) => {
+export const createPoll = (req, res) => {
   const { task } = req.body;
   const userId = req.user.id;
 
@@ -29,7 +29,7 @@ export const createSurvey = (req, res) => {
 };
 
 // deletePoll нужен для удаления задачи
-export const deleteSurvey = (req, res) => {
+export const deletePoll = (req, res) => {
   const { id } = req.params;
   const userId = req.user.id;
 

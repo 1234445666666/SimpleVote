@@ -31,7 +31,7 @@ export const schemas = {
   }).xor("email", "name"), // Должен быть указан email ИЛИ name
 
   // Создание опроса (теперь без таблицы questions)
-  survey: Joi.object({
+  poll: Joi.object({
     title: Joi.string().min(3).max(200).required(),
     description: Joi.string().max(1000).optional().allow(""),
     question_text: Joi.string().min(3).max(500).required(),
@@ -49,7 +49,7 @@ export const schemas = {
   }),
 
   // Обновление опроса
-  surveyUpdate: Joi.object({
+  pollUpdate: Joi.object({
     title: Joi.string().min(3).max(200),
     description: Joi.string().max(1000).allow(""),
     question_text: Joi.string().min(3).max(500),
@@ -58,7 +58,7 @@ export const schemas = {
 
   // Добавление варианта ответа (теперь ссылается на poll_id вместо question_id)
   option: Joi.object({
-    survey_id: Joi.number().integer().min(1).required(),
+    poll_id: Joi.number().integer().min(1).required(),
     option_text: Joi.string().min(1).max(200).required(),
   }),
 
