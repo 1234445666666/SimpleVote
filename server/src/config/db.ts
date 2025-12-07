@@ -15,56 +15,53 @@ const db = new sqlite3.Database(env.DB_PATH, (err) => {
 });
 
 db.serialize(() => {
-  // Основные таблицы
+  // Таблица пользователей
   db.run(`
     CREATE TABLE IF NOT EXISTS users (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       email TEXT UNIQUE NOT NULL,
       password TEXT NOT NULL,
-      name TEXT NOT NULL
+      username TEXT NOT NULL
     )
   `);
 
+  // Таблица опросов
   db.run(`
     CREATE TABLE IF NOT EXISTS polls (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
+      title TEXT NOT NULL,
+      description TEXT,
       user_id INTEGER NOT NULL,
-      name_poll TEXT NOT NULL,          
-      question_text TEXT NOT NULL,
       created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-      is_public BOOLEAN DEFAULT 1,
       FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE
     )
   `);
 
+  // Таблица вариантов ответов
   db.run(`
-    CREATE TABLE IF NOT EXISTS options (
+    CREATE TABLE IF NOT EXISTS poll_options (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       poll_id INTEGER NOT NULL,
-      option_text TEXT NOT NULL,
-      option_order INTEGER DEFAULT 0,
-      vote_count INTEGER DEFAULT 0,
+      text TEXT NOT NULL,
+      votes INTEGER DEFAULT 0,
       FOREIGN KEY (poll_id) REFERENCES polls (id) ON DELETE CASCADE
     )
   `);
 
+  // Таблица голосов (чтобы пользователь мог голосовать только 1 раз)
   db.run(`
     CREATE TABLE IF NOT EXISTS votes (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
+      user_id INTEGER NOT NULL,
+      poll_id INTEGER NOT NULL,
       option_id INTEGER NOT NULL,
-      user_id INTEGER,
-      voted_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-      session_id TEXT,
-      FOREIGN KEY (option_id) REFERENCES options (id) ON DELETE CASCADE,
-      FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE SET NULL,
-      UNIQUE(user_id, option_id)
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+      FOREIGN KEY (user_id) REFERENCES users (id),
+      FOREIGN KEY (poll_id) REFERENCES polls (id),
+      FOREIGN KEY (option_id) REFERENCES poll_options (id),
+      UNIQUE(user_id, poll_id)
     )
   `);
-
-  db.run(`CREATE INDEX IF NOT EXISTS idx_polls_user_id ON polls(user_id)`);
-  db.run(`CREATE INDEX IF NOT EXISTS idx_options_poll_id ON options(poll_id)`);
-  db.run(`CREATE INDEX IF NOT EXISTS idx_votes_option_id ON votes(option_id)`);
-  db.run(`CREATE INDEX IF NOT EXISTS idx_votes_user_id ON votes(user_id)`);
 });
 
 export default db;

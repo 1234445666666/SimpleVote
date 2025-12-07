@@ -2,35 +2,26 @@ import express from "express";
 import { protect } from "../middleware/auth";
 import { validate, schemas } from "../middleware/validate";
 import {
-  getPolls,
   createPoll,
+  getAllPolls,
+  getPoll,
+  vote,
   deletePoll,
+  getUserPolls,
 } from "../controllers/pollController";
 
-/**
- * Маршруты опросов
- * Все защищены JWT
- * /api/polls
- */
 const router = express.Router();
 
-// === ЗАЩИТА ВСЕХ МАРШРУТОВ ===
-router.use(protect); // ← Проверяет токен
+// Публичные маршруты
+router.get("/", getAllPolls);
+router.get("/:id", getPoll);
 
-// GET /api/polls
-// → Возвращает опросы пользователя
-router.get("/", getPolls);
+// Защищенные маршруты
+router.use(protect);
 
-// POST /api/polls
-// → Создаёт опрос
-router.post(
-  "/",
-  validate(schemas.poll), // ← name_poll: min 3 символа
-  createPoll
-);
-
-// DELETE /api/polls/:id
-// → Удаляет опрос
+router.post("/", createPoll);
+router.post("/:id/vote", validate(schemas.vote), vote);
 router.delete("/:id", deletePoll);
+router.get("/user/my", getUserPolls);
 
 export default router;

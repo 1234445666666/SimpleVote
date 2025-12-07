@@ -1,4 +1,10 @@
-export default function PrivacySettings() {
+import { ISurvey } from "@/types/poll";
+import { UseFormRegister } from "react-hook-form";
+
+interface IPrivacyProps {
+  register: UseFormRegister<ISurvey>;
+}
+export default function PrivacySettings({ register }: IPrivacyProps) {
   return (
     <div className="form-group">
       <label className="form-label">Настройки доступа</label>
@@ -6,10 +12,10 @@ export default function PrivacySettings() {
         <label className="checkbox-label">
           <input
             type="radio"
-            name="privacy"
             value="public"
             className="checkbox-input"
             defaultChecked
+            {...register("is_public")}
           />
           <span className="checkbox-custom"></span>
           <span className="checkbox-text">Публичный опрос</span>
@@ -17,9 +23,9 @@ export default function PrivacySettings() {
         <label className="checkbox-label">
           <input
             type="radio"
-            name="privacy"
             value="private"
             className="checkbox-input"
+            {...register("is_public")}
           />
           <span className="checkbox-custom"></span>
           <span className="checkbox-text">Приватный опрос</span>

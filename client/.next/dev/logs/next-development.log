@@ -111,3 +111,571 @@ It can also happen if the client has a browser extension installed which messes 
 
 [00:40:21.973] Browser LOG     Создание опроса с данными: {"is_public":true,"name_poll":"123","options":[{"option_text":"1"},{"option_text":"2"},{"option_text":"3"}],"question_text":"123"}
 [00:40:21.973] Browser ERROR   Ошибка сети: true
+[05:48:07.693] Browser ERROR   Ошибка получения данных пользователя: {}
+[05:48:07.693] Browser ERROR   Ошибка получения данных пользователя: {}
+[06:20:19.772] Browser LOG     Создание опроса с данными: {"is_public":true,"name_poll":"123","options":[{"option_text":"1"},{"option_text":"2"},{"option_text":"3"}],"question_text":"123"}
+[06:20:19.772] Browser ERROR   Ошибка сети: true
+[06:21:48.785] Browser ERROR   Ошибка получения данных пользователя: {}
+[06:21:48.785] Browser ERROR   Ошибка получения данных пользователя: {}
+[06:23:20.317] Browser LOG     Создание опроса с данными: {"is_public":true,"name_poll":"123","options":[{"option_text":"1"},{"option_text":"2"},{"option_text":"3"}],"question_text":"123"}
+[06:23:20.317] Browser ERROR   Ошибка сети: true
+[06:24:43.466] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[06:27:05.600] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
+
+If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true t t true t
+[06:27:49.998] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[06:27:49.999] Browser ERROR   uncaughtError: ReferenceError: namePoll is not defined
+[06:27:50.634] Server  ERROR    ⨯ ReferenceError: namePoll is not defined
+[06:27:53.599] Browser ERROR   uncaughtError: ReferenceError: namePoll is not defined
+[06:28:16.785] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[06:28:17.288] Server  ERROR    ⨯ ReferenceError: namePoll is not defined
+[06:28:21.421] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[06:28:21.423] Browser ERROR   uncaughtError: ReferenceError: namePoll is not defined
+[06:28:21.775] Server  ERROR    ⨯ ReferenceError: namePoll is not defined
+[06:28:25.605] Browser ERROR   uncaughtError: ReferenceError: namePoll is not defined
+[06:28:39.551] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[06:28:39.896] Server  ERROR    ⨯ ReferenceError: namePoll is not defined
+[06:28:41.886] Browser ERROR   uncaughtError: ReferenceError: namePoll is not defined
+[06:29:56.174] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[06:29:56.518] Server  ERROR    ⨯ ReferenceError: namePoll is not defined
+[06:30:01.061] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[06:30:01.063] Browser ERROR   uncaughtError: ReferenceError: namePoll is not defined
+[06:30:01.333] Server  ERROR    ⨯ ReferenceError: namePoll is not defined
+[06:30:03.601] Browser ERROR   uncaughtError: ReferenceError: namePoll is not defined
+[06:30:56.214] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[06:33:12.502] Server  ERROR    ⨯ ./src/app/poll/create/components/PollForm.tsx:38:8
+Syntax error: Identifier 'handleSubmit' has already been declared.
+
+  36 |   };
+  37 |
+> 38 |   const handleSubmit = async (e: React.FormEvent) => {
+     |         ^
+  39 |     e.preventDefault();
+  40 |     const pollData: ISurvey = {
+  41 |       name_poll: namePoll,
+[06:33:12.627] Browser ERROR   ./src/app/poll/create/components/PollForm.tsx
+Module parse failed: Identifier 'handleSubmit' has already been declared (40:10)
+|         }
+|     };
+>     const handleSubmit = async (e)=>{
+|         e.preventDefault();
+|         const pollData = {
+
+Import trace for requested module:
+./src/app/poll/create/components/PollForm.tsx
+[06:33:48.377] Server  ERROR    ⨯ ./src/app/poll/create/components/PollForm.tsx:40:8
+Syntax error: Identifier 'handleSubmit' has already been declared.
+
+  38 |   };
+  39 |
+> 40 |   const handleSubmit = async (e: React.FormEvent) => {
+     |         ^
+  41 |     e.preventDefault();
+  42 |     const pollData: ISurvey = {
+  43 |       name_poll: namePoll,
+[06:33:48.607] Browser ERROR   ./src/app/poll/create/components/PollForm.tsx:38:8
+Syntax error: Identifier 'handleSubmit' has already been declared.
+
+  36 |   };
+  37 |
+> 38 |   const handleSubmit = async (e: React.FormEvent) => {
+     |         ^
+  39 |     e.preventDefault();
+  40 |     const pollData: ISurvey = {
+  41 |       name_poll: namePoll,
+[06:33:48.607] Browser ERROR   ./src/app/poll/create/components/PollForm.tsx
+Module parse failed: Identifier 'handleSubmit' has already been declared (41:10)
+|         }
+|     };
+>     const handleSubmit = async (e)=>{
+|         e.preventDefault();
+|         const pollData = {
+
+Import trace for requested module:
+./src/app/poll/create/components/PollForm.tsx
+[06:34:07.654] Browser ERROR   ./src/app/poll/create/components/PollForm.tsx:40:8
+Syntax error: Identifier 'handleSubmit' has already been declared.
+
+  38 |   };
+  39 |
+> 40 |   const handleSubmit = async (e: React.FormEvent) => {
+     |         ^
+  41 |     e.preventDefault();
+  42 |     const pollData: ISurvey = {
+  43 |       name_poll: namePoll,
+[06:34:08.249] Server  ERROR    ⨯ ./src/app/poll/create/components/PollForm.tsx:45:8
+Syntax error: Identifier 'handleSubmit' has already been declared.
+
+  43 |   };
+  44 |
+> 45 |   const handleSubmit = async (e: React.FormEvent) => {
+     |         ^
+  46 |     e.preventDefault();
+  47 |     const pollData: ISurvey = {
+  48 |       name_poll: namePoll,
+[06:34:08.600] Browser ERROR   ./src/app/poll/create/components/PollForm.tsx
+Module parse failed: Identifier 'handleSubmit' has already been declared (45:10)
+|         }
+|     };
+>     const handleSubmit = async (e)=>{
+|         e.preventDefault();
+|         const pollData = {
+
+Import trace for requested module:
+./src/app/poll/create/components/PollForm.tsx
+[06:34:10.430] Server  ERROR    ⨯ ./src/app/poll/create/components/PollForm.tsx:44:8
+Syntax error: Identifier 'handleSubmit' has already been declared.
+
+  42 |   };
+  43 |
+> 44 |   const handleSubmit = async (e: React.FormEvent) => {
+     |         ^
+  45 |     e.preventDefault();
+  46 |     const pollData: ISurvey = {
+  47 |       name_poll: namePoll,
+[06:34:10.599] Browser ERROR   ./src/app/poll/create/components/PollForm.tsx:45:8
+Syntax error: Identifier 'handleSubmit' has already been declared.
+
+  43 |   };
+  44 |
+> 45 |   const handleSubmit = async (e: React.FormEvent) => {
+     |         ^
+  46 |     e.preventDefault();
+  47 |     const pollData: ISurvey = {
+  48 |       name_poll: namePoll,
+[06:34:10.599] Browser ERROR   ./src/app/poll/create/components/PollForm.tsx
+Module parse failed: Identifier 'handleSubmit' has already been declared (44:10)
+|         }
+|     };
+>     const handleSubmit = async (e)=>{
+|         e.preventDefault();
+|         const pollData = {
+
+Import trace for requested module:
+./src/app/poll/create/components/PollForm.tsx
+[06:34:16.616] Browser ERROR   ./src/app/poll/create/components/PollForm.tsx:44:8
+Syntax error: Identifier 'handleSubmit' has already been declared.
+
+  42 |   };
+  43 |
+> 44 |   const handleSubmit = async (e: React.FormEvent) => {
+     |         ^
+  45 |     e.preventDefault();
+  46 |     const pollData: ISurvey = {
+  47 |       name_poll: namePoll,
+[06:42:34.575] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[06:42:34.576] Browser ERROR   uncaughtError: ReferenceError: setQuestion is not defined
+[06:42:35.073] Server  ERROR    ⨯ ReferenceError: question is not defined
+[06:42:37.604] Browser ERROR   uncaughtError: ReferenceError: question is not defined
+[06:42:47.536] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[06:42:48.097] Server  ERROR    ⨯ ReferenceError: question is not defined
+[06:42:50.602] Browser ERROR   uncaughtError: ReferenceError: question is not defined
+[06:42:53.248] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[06:42:53.576] Server  ERROR    ⨯ ReferenceError: question is not defined
+[06:42:56.610] Browser ERROR   uncaughtError: ReferenceError: question is not defined
+[06:42:58.220] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[06:42:58.529] Server  ERROR    ⨯ ReferenceError: question is not defined
+[06:43:01.600] Browser ERROR   uncaughtError: ReferenceError: question is not defined
+[06:44:10.901] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[06:45:32.579] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[06:45:32.581] Browser ERROR   uncaughtError: ReferenceError: namePoll is not defined
+[06:45:32.947] Server  ERROR    ⨯ ReferenceError: namePoll is not defined
+[06:45:35.604] Browser ERROR   uncaughtError: ReferenceError: namePoll is not defined
+[06:46:01.185] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[06:46:01.541] Server  ERROR    ⨯ ReferenceError: question is not defined
+[06:46:04.616] Browser ERROR   uncaughtError: ReferenceError: question is not defined
+[06:46:05.313] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[06:51:01.538] Browser LOG     {"name":"","name_poll":"test","question":"","question_text":"123"}
+[06:51:24.951] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[06:51:31.001] Browser LOG     {"name_poll":"test","question_text":"123"}
+[06:52:06.716] Browser LOG     {"name_poll":"test","question_text":"123"}
+[06:52:15.180] Browser LOG     {"name_poll":"test","question_text":"123"}
+[06:53:25.502] Server  ERROR    ⨯ ./src/app/poll/create/components/PollPrivacy.tsx
+Error:   × Unexpected token `}`. Expected an identifier, void, yield, null, await, break, a string literal, a numeric literal, true, false, `, -, import, this, typeof, {, [, (
+   ╭─[/home/pasha/coding/live-poll/client/src/app/poll/create/components/PollPrivacy.tsx:3:1]
+ 1 │ interface IPrivacyProps {
+ 2 │   register: 
+ 3 │ }
+   · ─
+ 4 │ export default function PrivacySettings() {
+ 5 │   return (
+ 6 │     <div className="form-group">
+   ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/poll/create/components/PollPrivacy.tsx
+./src/app/poll/create/components/PollForm.tsx
+[06:53:25.599] Browser ERROR   ./src/app/poll/create/components/PollPrivacy.tsx
+Error:   × Unexpected token `}`. Expected an identifier, void, yield, null, await, break, a string literal, a numeric literal, true, false, `, -, import, this, typeof, {, [, (
+   ╭─[/home/pasha/coding/live-poll/client/src/app/poll/create/components/PollPrivacy.tsx:3:1]
+ 1 │ interface IPrivacyProps {
+ 2 │   register: 
+ 3 │ }
+   · ─
+ 4 │ export default function PrivacySettings() {
+ 5 │   return (
+ 6 │     <div className="form-group">
+   ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/poll/create/components/PollPrivacy.tsx
+./src/app/poll/create/components/PollForm.tsx
+[06:53:40.668] Browser ERROR   ./src/app/poll/create/components/PollPrivacy.tsx
+Error:   × Unexpected token `}`. Expected an identifier, void, yield, null, await, break, a string literal, a numeric literal, true, false, `, -, import, this, typeof, {, [, (
+   ╭─[/home/pasha/coding/live-poll/client/src/app/poll/create/components/PollPrivacy.tsx:3:1]
+ 1 │ interface IPrivacyProps {
+ 2 │   register: 
+ 3 │ }
+   · ─
+ 4 │ export default function PrivacySettings() {
+ 5 │   return (
+ 6 │     <div className="form-group">
+   ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/poll/create/components/PollPrivacy.tsx
+./src/app/poll/create/components/PollForm.tsx
+[06:54:43.494] Browser LOG     {"is_public":"private","name_poll":"test","question_text":"123"}
+[06:54:46.224] Browser LOG     {"is_public":"public","name_poll":"test","question_text":"123"}
+[06:55:47.875] Server  ERROR    ⨯ ./src/app/poll/create/components/OptionList.tsx
+Error:   × Unexpected token `}`. Expected an identifier, void, yield, null, await, break, a string literal, a numeric literal, true, false, `, -, import, this, typeof, {, [, (
+    ╭─[/home/pasha/coding/live-poll/client/src/app/poll/create/components/OptionList.tsx:12:1]
+  9 │   removeOption: (index: number) => void;
+ 10 │   addOption: () => void;
+ 11 │   register:
+ 12 │ }
+    · ─
+ 13 │ 
+ 14 │ export default function OptionsList({
+ 15 │   options,
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/poll/create/components/OptionList.tsx
+./src/app/poll/create/components/PollForm.tsx
+[06:55:48.600] Browser ERROR   ./src/app/poll/create/components/OptionList.tsx
+Error:   × Unexpected token `}`. Expected an identifier, void, yield, null, await, break, a string literal, a numeric literal, true, false, `, -, import, this, typeof, {, [, (
+    ╭─[/home/pasha/coding/live-poll/client/src/app/poll/create/components/OptionList.tsx:12:1]
+  9 │   removeOption: (index: number) => void;
+ 10 │   addOption: () => void;
+ 11 │   register:
+ 12 │ }
+    · ─
+ 13 │ 
+ 14 │ export default function OptionsList({
+ 15 │   options,
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/poll/create/components/OptionList.tsx
+./src/app/poll/create/components/PollForm.tsx
+[06:55:49.592] Server  ERROR    ⨯ ./src/app/poll/create/components/OptionList.tsx
+Error:   × Unexpected token `}`. Expected an identifier, void, yield, null, await, break, a string literal, a numeric literal, true, false, `, -, import, this, typeof, {, [, (
+    ╭─[/home/pasha/coding/live-poll/client/src/app/poll/create/components/OptionList.tsx:11:1]
+  8 │   removeOption: (index: number) => void;
+  9 │   addOption: () => void;
+ 10 │   register:
+ 11 │ }
+    · ─
+ 12 │ 
+ 13 │ export default function OptionsList({
+ 14 │   options,
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/poll/create/components/OptionList.tsx
+./src/app/poll/create/components/PollForm.tsx
+[06:55:49.600] Browser ERROR   ./src/app/poll/create/components/OptionList.tsx
+Error:   × Unexpected token `}`. Expected an identifier, void, yield, null, await, break, a string literal, a numeric literal, true, false, `, -, import, this, typeof, {, [, (
+    ╭─[/home/pasha/coding/live-poll/client/src/app/poll/create/components/OptionList.tsx:12:1]
+  9 │   removeOption: (index: number) => void;
+ 10 │   addOption: () => void;
+ 11 │   register:
+ 12 │ }
+    · ─
+ 13 │ 
+ 14 │ export default function OptionsList({
+ 15 │   options,
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/poll/create/components/OptionList.tsx
+./src/app/poll/create/components/PollForm.tsx
+[06:55:49.601] Browser ERROR   ./src/app/poll/create/components/OptionList.tsx
+Error:   × Unexpected token `}`. Expected an identifier, void, yield, null, await, break, a string literal, a numeric literal, true, false, `, -, import, this, typeof, {, [, (
+    ╭─[/home/pasha/coding/live-poll/client/src/app/poll/create/components/OptionList.tsx:11:1]
+  8 │   removeOption: (index: number) => void;
+  9 │   addOption: () => void;
+ 10 │   register:
+ 11 │ }
+    · ─
+ 12 │ 
+ 13 │ export default function OptionsList({
+ 14 │   options,
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/poll/create/components/OptionList.tsx
+./src/app/poll/create/components/PollForm.tsx
+[06:55:56.619] Browser ERROR   ./src/app/poll/create/components/OptionList.tsx
+Error:   × Unexpected token `}`. Expected an identifier, void, yield, null, await, break, a string literal, a numeric literal, true, false, `, -, import, this, typeof, {, [, (
+    ╭─[/home/pasha/coding/live-poll/client/src/app/poll/create/components/OptionList.tsx:11:1]
+  8 │   removeOption: (index: number) => void;
+  9 │   addOption: () => void;
+ 10 │   register:
+ 11 │ }
+    · ─
+ 12 │ 
+ 13 │ export default function OptionsList({
+ 14 │   options,
+    ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/poll/create/components/OptionList.tsx
+./src/app/poll/create/components/PollForm.tsx
+[06:59:50.214] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[06:59:50.215] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'length')
+[06:59:50.720] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'map')
+[06:59:53.610] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'length')
+[07:00:17.118] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[07:00:17.663] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'map')
+[07:00:20.602] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'length')
+[07:00:33.902] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[07:01:00.212] Browser ERROR   uncaughtError: TypeError: updateOption is not a function
+[07:01:00.938] Browser ERROR   uncaughtError: TypeError: updateOption is not a function
+[07:01:01.589] Browser ERROR   uncaughtError: TypeError: updateOption is not a function
+[07:01:02.783] Browser LOG     {"is_public":"public","name_poll":"test","options":[{"option_text":""},{"option_text":""},{"option_text":""}],"question_text":"123"}
+[07:01:02.783] Browser LOG     Создание опроса с данными: {"is_public":"public","name_poll":"test","options":[{"option_text":""},{"option_text":""},{"option_text":""}],"question_text":"123"}
+[07:01:02.783] Browser ERROR   Ошибка сети: true
+[07:04:31.295] Browser LOG     {"is_public":"public","name_poll":"test","options":[{"option_text":""},{"option_text":""},{"option_text":""}],"question_text":"123"}
+[07:04:31.295] Browser LOG     Создание опроса с данными: {"is_public":"public","name_poll":"test","options":[{"option_text":""},{"option_text":""},{"option_text":""}],"question_text":"123"}
+[07:04:31.295] Browser ERROR   Ошибка сети: true
+[07:06:59.888] Browser ERROR   ./src/app/poll/create/components/PollForm.tsx:50:1
+Module not found: Can't resolve './OptionsList'
+  48 | "use client";
+  49 | import { useForm, useFieldArray, SubmitHandler } from "react-hook-form";
+> 50 | import OptionsList from "./OptionsList";
+     | ^
+  51 | import { ISurvey } from "@/types/poll";
+  52 |
+  53 | export default function PollForm() {
+
+https://nextjs.org/docs/messages/module-not-found
+[07:07:00.056] Server  ERROR    ⨯ ./src/app/poll/create/components/PollForm.tsx:50:1
+Module not found: Can't resolve './OptionsList'
+  48 | "use client";
+  49 | import { useForm, useFieldArray, SubmitHandler } from "react-hook-form";
+> 50 | import OptionsList from "./OptionsList";
+     | ^
+  51 | import { ISurvey } from "@/types/poll";
+  52 |
+  53 | export default function PollForm() {
+
+https://nextjs.org/docs/messages/module-not-found
+[07:07:07.653] Browser ERROR   ./src/app/poll/create/components/PollForm.tsx:50:1
+Module not found: Can't resolve './OptionsList'
+  48 | "use client";
+  49 | import { useForm, useFieldArray, SubmitHandler } from "react-hook-form";
+> 50 | import OptionsList from "./OptionsList";
+     | ^
+  51 | import { ISurvey } from "@/types/poll";
+  52 |
+  53 | export default function PollForm() {
+
+https://nextjs.org/docs/messages/module-not-found
+[07:07:07.835] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[07:07:07.836] Browser ERROR   uncaughtError: ReferenceError: OptionsList is not defined
+[07:07:08.412] Server  ERROR    ⨯ ReferenceError: OptionsList is not defined
+[07:07:11.599] Browser ERROR   uncaughtError: ReferenceError: OptionsList is not defined
+[07:07:19.777] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[07:07:20.657] Server  ERROR    ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[07:07:24.600] Browser ERROR   uncaughtError: Error: Element type is invalid. Received a promise that resolves to: undefined. Lazy element type must resolve to a class or function.
+[07:07:33.910] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[07:07:38.042] Browser LOG     {"is_public":true,"name_poll":"","options":[{"option_text":""},{"option_text":""},{"option_text":""}],"question_text":""}
+[07:08:05.449] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[07:08:05.450] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'length')
+[07:08:05.941] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'map')
+[07:08:07.937] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'length')
+[07:08:18.333] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[07:08:18.901] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'map')
+[07:08:20.808] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'length')
+[07:11:22.443] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[07:11:31.749] Browser LOG     {"is_public":"public","name_poll":"123","question_text":"3"}
+[07:14:33.403] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[07:14:33.405] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'length')
+[07:14:33.895] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'map')
+[07:14:36.601] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'length')
+[07:14:43.059] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[07:17:31.979] Browser LOG     Form Data: {"isPublic":false,"is_public":"public","name_poll":"test","options":["1"],"question":"","question_text":"123"}
+[07:17:31.979] Browser LOG     Options: ["1"]
+[07:17:57.750] Browser LOG     Form Data: {"isPublic":false,"is_public":"public","name_poll":"test","options":["1"],"question":"","question_text":"123"}
+[07:19:05.701] Browser LOG     Form Data: {"isPublic":false,"is_public":"public","name_poll":"test","options":["1"],"question":"","question_text":"123"}
+[07:19:05.701] Browser LOG     Создание опроса с данными: {"isPublic":false,"is_public":"public","name_poll":"test","options":["1"],"question":"","question_text":"123"}
+[07:19:05.701] Browser ERROR   Ошибка сети: true
+[07:25:19.853] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[07:25:19.853] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'length')
+[07:25:20.264] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'map')
+[07:25:22.600] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'length')
+[07:25:40.913] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'map')
+[07:25:42.795] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'length')
+[07:25:53.600] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[07:26:04.046] Browser LOG     {"is_public":"public","name_poll":"test","question_text":"123"}
+[07:34:19.796] Browser LOG     Отправляемые данные: {"is_public":"public","name_poll":"test","options":["1"],"question_text":"123"}
+[07:34:19.796] Browser LOG     Создание опроса с данными: {"is_public":"public","name_poll":"test","options":["1"],"question_text":"123"}
+[07:34:19.796] Browser ERROR   Ошибка сети: true
+[07:35:46.557] Browser LOG     Отправляемые данные: {"is_public":"public","name_poll":"test","options":["1"],"question_text":"123"}
+[07:35:51.595] Browser LOG     Отправляемые данные: {"is_public":"public","name_poll":"test","options":["1"],"question_text":"123"}
+[07:38:03.482] Browser LOG     Отправляемые данные: {"is_public":"public","name_poll":"test","options":["1"],"question_text":"123"}
+[07:38:03.482] Browser LOG     === ОТПРАВКА ОПРОСА ===
+[07:38:03.482] Browser LOG     Токен есть: true
+[07:38:03.482] Browser LOG     Данные для отправки: {
+  "name_poll": "test",
+  "question_text": "123",
+  "is_public": "public",
+  "options": [
+    "1"
+  ]
+}
+[07:38:03.482] Browser ERROR   ❌ ОШИБКА: Вопрос пустой
+[07:39:09.825] Browser LOG     Отправляемые данные: {"is_public":"public","name_poll":"test","options":["1"],"question_text":"123"}
+[07:39:09.825] Browser LOG     === ОТПРАВКА ОПРОСА ===
+[07:39:09.825] Browser LOG     Токен есть: true
+[07:39:09.825] Browser LOG     Данные для отправки: {
+  "name_poll": "test",
+  "question_text": "123",
+  "is_public": "public",
+  "options": [
+    "1"
+  ]
+}
+[07:39:09.825] Browser ERROR   ❌ ОШИБКА: Мало вариантов ответа ["1"]
+[07:39:15.509] Browser LOG     Отправляемые данные: {"is_public":"public","name_poll":"test","options":["1","2"],"question_text":"123"}
+[07:39:15.509] Browser LOG     === ОТПРАВКА ОПРОСА ===
+[07:39:15.509] Browser LOG     Токен есть: true
+[07:39:15.509] Browser LOG     Данные для отправки: {
+  "name_poll": "test",
+  "question_text": "123",
+  "is_public": "public",
+  "options": [
+    "1",
+    "2"
+  ]
+}
+[07:39:15.509] Browser LOG     Статус ответа: 400
+[07:39:15.509] Browser LOG     Статус текстом: Bad Request
+[07:39:15.509] Browser LOG     Ответ сервера: {"error":["\"is_public\" must be a boolean"]}
+[07:39:15.509] Browser ERROR   ❌ Ошибка от сервера: ["\"is_public\" must be a boolean"]
+[07:39:20.612] Browser LOG     Отправляемые данные: {"is_public":"public","name_poll":"test","options":["1","2","3"],"question_text":"123"}
+[07:39:20.612] Browser LOG     === ОТПРАВКА ОПРОСА ===
+[07:39:20.612] Browser LOG     Токен есть: true
+[07:39:20.612] Browser LOG     Данные для отправки: {
+  "name_poll": "test",
+  "question_text": "123",
+  "is_public": "public",
+  "options": [
+    "1",
+    "2",
+    "3"
+  ]
+}
+[07:39:20.612] Browser LOG     Статус ответа: 400
+[07:39:20.612] Browser LOG     Статус текстом: Bad Request
+[07:39:20.612] Browser LOG     Ответ сервера: {"error":["\"is_public\" must be a boolean"]}
+[07:39:20.612] Browser ERROR   ❌ Ошибка от сервера: ["\"is_public\" must be a boolean"]
+[07:39:25.478] Browser LOG     Отправляемые данные: {"is_public":"public","name_poll":"test","options":["1","2","3"],"question_text":"123"}
+[07:39:25.478] Browser LOG     === ОТПРАВКА ОПРОСА ===
+[07:39:25.479] Browser LOG     Токен есть: true
+[07:39:25.479] Browser LOG     Данные для отправки: {
+  "name_poll": "test",
+  "question_text": "123",
+  "is_public": "public",
+  "options": [
+    "1",
+    "2",
+    "3"
+  ]
+}
+[07:39:25.479] Browser LOG     Статус ответа: 400
+[07:39:25.479] Browser LOG     Статус текстом: Bad Request
+[07:39:25.479] Browser LOG     Ответ сервера: {"error":["\"is_public\" must be a boolean"]}
+[07:39:25.479] Browser ERROR   ❌ Ошибка от сервера: ["\"is_public\" must be a boolean"]
+[07:39:26.348] Browser LOG     Отправляемые данные: {"is_public":"public","name_poll":"test","options":["1","2","3"],"question_text":"123"}
+[07:39:26.348] Browser LOG     === ОТПРАВКА ОПРОСА ===
+[07:39:26.348] Browser LOG     Токен есть: true
+[07:39:26.348] Browser LOG     Данные для отправки: {
+  "name_poll": "test",
+  "question_text": "123",
+  "is_public": "public",
+  "options": [
+    "1",
+    "2",
+    "3"
+  ]
+}
+[07:39:26.348] Browser LOG     Статус ответа: 400
+[07:39:26.348] Browser LOG     Статус текстом: Bad Request
+[07:39:26.348] Browser LOG     Ответ сервера: {"error":["\"is_public\" must be a boolean"]}
+[07:39:26.348] Browser ERROR   ❌ Ошибка от сервера: ["\"is_public\" must be a boolean"]
+[07:41:45.281] Browser LOG     Отправляемые данные: {"is_public":"public","name_poll":"test","options":["1","2","3"],"question_text":"123"}
+[07:41:45.282] Browser LOG     Создание опроса с данными: {"is_public":"public","name_poll":"test","options":["1","2","3"],"question_text":"123"}
+[07:41:55.104] Browser LOG     Отправляемые данные: {"is_public":"public","name_poll":"test","options":["1","23","3"],"question_text":"123"}
+[07:41:55.104] Browser LOG     Создание опроса с данными: {"is_public":"public","name_poll":"test","options":["1","23","3"],"question_text":"123"}
+[07:43:12.408] Browser LOG     Отправляемые данные: {"is_public":"public","name_poll":"test","options":["1","23","3"],"question_text":"123"}
+[07:43:12.408] Browser LOG     Создание опроса с данными: {"is_public":"public","name_poll":"test","options":["1","23","3"],"question_text":"123"}
+[10:07:59.564] Browser LOG     Отправляемые данные: {"is_public":"public","name_poll":"test","options":["1","23","3"],"question_text":"123"}
+[10:07:59.564] Browser LOG     Создание опроса с данными: {"is_public":"public","name_poll":"test","options":["1","23","3"],"question_text":"123"}
+[10:07:59.564] Browser ERROR   Ошибка сети: true
+[10:10:33.724] Browser LOG     Отправляемые данные: {"is_public":"public","name_poll":"test","options":["1","23","3"],"question_text":"123"}
+[10:10:33.724] Browser LOG     Создание опроса с данными: {"is_public":"public","name_poll":"test","options":["1","23","3"],"question_text":"123"}
+[10:10:33.724] Browser ERROR   Ошибка сети: true
+[10:13:29.712] Browser LOG     Отправляемые данные: {"is_public":"public","name_poll":"test","options":["1","23","3"],"question_text":"123"}
+[10:13:29.712] Browser LOG     Создание опроса с данными: {"is_public":"public","name_poll":"test","options":["1","23","3"],"question_text":"123"}
+[10:14:34.096] Browser LOG     Отправляемые данные: {"is_public":"public","name_poll":"test","options":["1","23","3"],"question_text":"123"}
+[10:14:34.096] Browser LOG     Создание опроса с данными: {"is_public":"public","name_poll":"test","options":["1","23","3"],"question_text":"123"}
+[10:14:34.096] Browser ERROR   Ошибка сети: true
+[10:16:05.301] Browser LOG     Отправляемые данные: {"is_public":"public","name_poll":"test","options":["1","23","3"],"question_text":"123"}
+[10:16:05.301] Browser LOG     Создание опроса с данными: {"is_public":"public","name_poll":"test","options":["1","23","3"],"question_text":"123"}
+[10:21:10.494] Browser LOG     Отправляемые данные: {"is_public":"public","name_poll":"test","options":["1","23","3"],"question_text":"123"}
+[10:21:10.494] Browser LOG     Создание опроса с данными: {"is_public":"public","name_poll":"test","options":["1","23","3"],"question_text":"123"}
+[10:21:10.494] Browser ERROR   Ошибка сети: true
+[10:21:14.241] Browser LOG     Отправляемые данные: {"is_public":"public","name_poll":"test","options":["1","23","3"],"question_text":"123"}
+[10:21:14.241] Browser LOG     Создание опроса с данными: {"is_public":"public","name_poll":"test","options":["1","23","3"],"question_text":"123"}
+[10:22:03.214] Browser LOG     Отправляемые данные: {"is_public":"public","name_poll":"test","options":["1","23","3"],"question_text":"123"}
+[10:22:03.214] Browser LOG     Создание опроса с данными: {"is_public":"public","name_poll":"test","options":["1","23","3"],"question_text":"123"}
+[10:22:03.214] Browser ERROR   Ошибка сети: true
+[10:22:06.401] Browser LOG     Отправляемые данные: {"is_public":"public","name_poll":"test","options":["1","23","3"],"question_text":"123"}
+[10:22:06.401] Browser LOG     Создание опроса с данными: {"is_public":"public","name_poll":"test","options":["1","23","3"],"question_text":"123"}
+[11:55:01.364] Browser LOG     Отправляемые данные: {"is_public":"public","name_poll":"test","options":["1","2","3"],"question_text":"123"}
+[11:55:01.364] Browser LOG     Отправка данных: {"description":"123","options":["1","2","3"],"title":"test"}
+[11:55:04.290] Server  LOG      ○ Compiling /_not-found ...
+[11:55:05.715] Browser ERROR   Ошибка сети: {}
+[11:59:50.708] Browser LOG     Отправляемые данные: {"is_public":"public","name_poll":"test","options":["1","2","3"],"question_text":"123"}
+[11:59:50.709] Browser LOG     Отправка данных: {"description":"123","options":["1","2","3"],"title":"test"}
+[11:59:50.709] Browser ERROR   Ошибка сети: {}

@@ -1,43 +1,124 @@
-// src/controllers/pollController.js
+import { Request, Response } from "express";
 import { pollService } from "../services/pollService";
-import db from "../config/db";
+import { sendPollUpdate } from "../server";
 
-// getPolls нужен для получения всех опросов пользователей
-export const getPolls = (req, res) => {
-  const userId = req.user.id;
+export const vote = async (req: Request, res: Response): Promise<void> => {
+  try {
+    if (!req.user) {
+      res.status(401).json({ error: "Не авторизован" });
+      return;
+    }
 
-  pollService.getAll(userId, (err, todos) => {
-    if (err) return res.status(500).json({ error: "DB Error" });
-    res.json(todos);
-  });
+    const { id } = req.params;
+    const { optionId } = req.body;
+    const userId = req.user.id;
+
+    const poll = await pollService.vote(parseInt(id), optionId, userId);
+
+    // Получаем обновленные голоса
+    const votes = await pollService.getVotes(parseInt(id));
+
+    // Отправляем обновление через WebSocket
+    sendPollUpdate(parseInt(id), votes);
+
+    res.json(poll);
+  } catch (error: any) {
+    if (error.message === "Вы уже голосовали в этом опросе") {
+      res.status(400).json({ error: error.message });
+    } else if (error.message === "Опрос не найден") {
+      res.status(404).json({ error: error.message });
+    } else {
+      res.status(500).json({ error: "Ошибка сервера" });
+    }
+  }
 };
 
-// createPoll нужен для создания нового опроса
-export const createPoll = (req, res) => {
-  const { task } = req.body;
-  const userId = req.user.id;
+// Остальные функции остаются без изменений
+export const createPoll = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  try {
+    if (!req.user) {
+      res.status(401).json({ error: "Не авторизован" });
+      return;
+    }
 
-  pollService.create(task, userId, function (err) {
-    if (err) return res.status(500).json({ error: "DB Error" });
+    const pollData = req.body;
+    const userId = req.user.id;
 
-    // Возвращаем новую задачу с ID
-    // surveyService.getAll(userId, (err, todos) => {
-    //   const newTodo = todos.find((t) => t.task === task);
-    //   res.status(201).json(newTodo);
-    // });
-  });
+    const pollId = await pollService.create(pollData, userId);
+    const poll = await pollService.getById(pollId);
+
+    res.status(201).json(poll);
+  } catch (error: any) {
+    res.status(500).json({ error: "Ошибка сервера" });
+  }
 };
 
-// deletePoll нужен для удаления задачи
-export const deletePoll = (req, res) => {
-  const { id } = req.params;
-  const userId = req.user.id;
+export const getAllPolls = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  try {
+    const polls = await pollService.getAll();
+    res.json(polls);
+  } catch (error: any) {
+    res.status(500).json({ error: "Ошибка сервера" });
+  }
+};
 
-  pollService.delete(id, userId, function (err) {
-    if (err) return res.status(500).json({ error: "DB Error" });
-    if (this.changes === 0)
-      // Проверка успеха удаления
-      return res.status(404).json({ error: "Not found or not yours" });
-    res.json({ message: "Deleted" });
-  });
+export const getPoll = async (req: Request, res: Response): Promise<void> => {
+  try {
+    const { id } = req.params;
+    const poll = await pollService.getById(parseInt(id));
+    res.json(poll);
+  } catch (error: any) {
+    res.status(404).json({ error: "Опрос не найден" });
+  }
+};
+
+export const deletePoll = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  try {
+    if (!req.user) {
+      res.status(401).json({ error: "Не авторизован" });
+      return;
+    }
+
+    const { id } = req.params;
+    const userId = req.user.id;
+
+    const changes = await pollService.delete(parseInt(id), userId);
+
+    if (changes === 0) {
+      res.status(404).json({ error: "Опрос не найден или нет прав" });
+      return;
+    }
+
+    res.json({ message: "Опрос удален" });
+  } catch (error: any) {
+    res.status(500).json({ error: "Ошибка сервера" });
+  }
+};
+
+export const getUserPolls = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  try {
+    if (!req.user) {
+      res.status(401).json({ error: "Не авторизован" });
+      return;
+    }
+
+    const userId = req.user.id;
+    const polls = await pollService.getByUser(userId);
+
+    res.json(polls);
+  } catch (error: any) {
+    res.status(500).json({ error: "Ошибка сервера" });
+  }
 };

@@ -1,21 +1,17 @@
 import jwt from "jsonwebtoken";
 import { env } from "../config/env";
 
-export interface IJWTPayload {
+export const signToken = (payload: {
   id: number;
-  email: string;
-  name: string;
-}
-
-export const signToken = (payload: IJWTPayload): string => {
-  return jwt.sign(payload, env.JWT_SECRET, {
-    expiresIn: env.JWT_EXPIRES_IN,
-  });
+  username: string;
+}): string => {
+  // Без expiresIn
+  return jwt.sign(payload, env.JWT_SECRET);
 };
 
-export const verifyToken = (token: string): IJWTPayload | null => {
+export const verifyToken = (token: string): any => {
   try {
-    return jwt.verify(token, env.JWT_SECRET) as IJWTPayload;
+    return jwt.verify(token, env.JWT_SECRET);
   } catch (error) {
     return null;
   }

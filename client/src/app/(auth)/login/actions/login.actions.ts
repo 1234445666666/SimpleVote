@@ -1,20 +1,15 @@
 import { toast } from "react-toastify";
-export async function login(
-  loginValue: string,
-  password: string,
-  isEmail: boolean
-): Promise<void> {
+export async function login(email: string, password: string): Promise<void> {
   try {
-    const requestBody = isEmail
-      ? { email: loginValue, password }
-      : { name: loginValue, password };
-
     const response = await fetch("http://localhost:6700/api/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(requestBody),
+      body: JSON.stringify({
+        email,
+        password,
+      }),
     });
 
     const data = await response.json();

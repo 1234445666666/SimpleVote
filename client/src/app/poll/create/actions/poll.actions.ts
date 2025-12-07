@@ -10,15 +10,21 @@ export async function createPoll(data: ISurvey) {
       return { success: false, error: "No token" };
     }
 
-    console.log("Создание опроса с данными:", data);
+    const backendData = {
+      title: data.name_poll,
+      description: data.question_text,
+      options: data.options,
+    };
 
-    const response = await fetch("http://localhost:6700/api/polls", {
+    console.log("Отправка данных:", backendData);
+
+    const response = await fetch("http://localhost:3000/api/polls", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${token}`,
       },
-      body: JSON.stringify(data),
+      body: JSON.stringify(backendData),
     });
 
     const result = await response.json();
@@ -27,11 +33,13 @@ export async function createPoll(data: ISurvey) {
       toast.success("Опрос успешно создан!");
       return { success: true, data: result };
     } else {
-      toast.error(result.message || "Ошибка при создании опроса");
+      const errorMsg =
+        result.error || result.message || "Ошибка при создании опроса";
+      toast.error(errorMsg);
       return { success: false, error: result };
     }
   } catch (error: unknown) {
-    console.error("Ошибка сети:", error instanceof Error);
+    console.error("Ошибка сети:", error);
     toast.error("Сетевая ошибка");
     return { success: false, error };
   }

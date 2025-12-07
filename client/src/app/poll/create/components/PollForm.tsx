@@ -7,12 +7,35 @@ import FormActions from "./FormActions";
 import { useRouter } from "next/navigation";
 import { createPoll } from "../actions/poll.actions";
 import { ISurvey } from "@/types/poll";
+import { SubmitHandler, useForm } from "react-hook-form";
 
-export default function SurveyForm() {
+export default function PollForm() {
   const [options, setOptions] = useState<string[]>(["", "", ""]);
-  const [question, setQuestion] = useState<string>("");
-  const [nameSurvey, setNameSurvey] = useState<string>("");
+
   const router = useRouter();
+
+  const { register, handleSubmit } = useForm<ISurvey>({
+    mode: "onBlur",
+  });
+
+  const onSubmit: SubmitHandler<ISurvey> = async (data) => {
+    // Добавляем options в data перед отправкой
+    const formData = {
+      ...data,
+      options: options.filter((option) => option.trim() !== ""), // Фильтруем пустые
+    };
+
+    console.log("Отправляемые данные:", formData);
+
+    // Отправляем данные на сервер
+    const result = await createPoll(formData);
+
+    if (result.success) {
+      console.log("Опрос создан:", result.data);
+      // Можно добавить редирект
+      // router.push(`/poll/${result.data.id}`);
+    }
+  };
 
   const addOption = () => {
     setOptions([...options, ""]);
@@ -31,29 +54,17 @@ export default function SurveyForm() {
     }
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    const surveyData: ISurvey = {
-      name_poll: question,
-      question_text: question,
-      is_public: true,
-      options: options
-        .filter((opt) => opt.trim() !== "")
-        .map((option_text) => ({ option_text })),
-    };
-    createPoll(surveyData);
-  };
-
   return (
-    <form className="survey-form" onSubmit={handleSubmit}>
-      <QuestionInput question={question} setQuestion={setQuestion} />
+    <form className="survey-form" onSubmit={handleSubmit(onSubmit)}>
+      <QuestionInput register={register} />
       <OptionsList
+        register={register}
         options={options}
         updateOption={updateOption}
         removeOption={removeOption}
         addOption={addOption}
       />
-      <PrivacySettings />
+      <PrivacySettings register={register} />
       <FormActions />
     </form>
   );

@@ -1,90 +1,68 @@
 import Joi from "joi";
-import { NextFunction, Request, Response } from "express";
+import { Request, Response, NextFunction } from "express";
 
-// Middleware для проверки тела запроса на соответствие схеме Joi
-export const validate =
-  (schema: Joi.ObjectSchema) =>
-  (req: Request, res: Response, next: NextFunction) => {
-    const { error } = schema.validate(req.body);
+export const validate = (schema: Joi.ObjectSchema) => {
+  return (req: Request, res: Response, next: NextFunction): void => {
+    const { error } = schema.validate(req.body, { abortEarly: false });
+
     if (error) {
-      return res.status(400).json({
-        error: error.details.map((d) => d.message),
+      res.status(400).json({
+        error: "Validation error",
+        details: error.details.map((d) => ({
+          message: d.message,
+          path: d.path,
+        })),
       });
+      return;
     }
+
     next();
   };
+};
 
-// Исправленные схемы валидации для новой структуры БД
 export const schemas = {
-  // Регистрация пользователя
   register: Joi.object({
-    email: Joi.string().email().required(),
-    password: Joi.string().min(6).required(),
-    name: Joi.string().min(2).required(),
+    email: Joi.string().email().required().messages({
+      "string.email": "Email должен быть валидным",
+      "any.required": "Email обязателен",
+    }),
+    password: Joi.string().min(6).required().messages({
+      "string.min": "Пароль должен быть не менее 6 символов",
+      "any.required": "Пароль обязателен",
+    }),
+    username: Joi.string().min(2).required().messages({
+      "string.min": "Имя пользователя должно быть не менее 2 символов",
+      "any.required": "Имя пользователя обязательно",
+    }),
   }),
 
-  // Вход пользователя
   login: Joi.object({
-    email: Joi.string().email().optional(),
-    name: Joi.string().min(2).optional(),
-    password: Joi.string().required(),
-  }).xor("email", "name"), // Должен быть указан email ИЛИ name
-
-  // Создание опроса
-  poll: Joi.object({
-    name_poll: Joi.string().min(1).required(),
-    question_text: Joi.string().min(1).required(),
-    is_public: Joi.boolean().default(true),
-    options: Joi.array().items(Joi.object()).min(1), // упростили
+    email: Joi.string().email().required().messages({
+      "string.email": "Email должен быть валидным",
+      "any.required": "Email обязателен",
+    }),
+    password: Joi.string().required().messages({
+      "any.required": "Пароль обязателен",
+    }),
   }),
 
-  // Обновление опроса
-  pollUpdate: Joi.object({
-    name_poll: Joi.string().min(3).max(200),
-    description: Joi.string().max(1000).allow(""),
-    question_text: Joi.string().min(3).max(500),
-    is_public: Joi.boolean(),
+  createPoll: Joi.object({
+    title: Joi.string().min(3).required().messages({
+      "string.min": "Название должно быть не менее 3 символов",
+      "any.required": "Название обязательно",
+    }),
+    description: Joi.string().allow("").optional(),
+    options: Joi.array().items(Joi.string().min(1)).min(2).required().messages({
+      "array.min": "Должно быть не менее 2 вариантов ответа",
+      "any.required": "Варианты ответа обязательны",
+    }),
   }),
 
-  // Добавление варианта ответа (теперь ссылается на poll_id вместо question_id)
-  option: Joi.object({
-    poll_id: Joi.number().integer().min(1).required(),
-    option_text: Joi.string().min(1).max(200).required(),
-  }),
-
-  // Обновление варианта ответа
-  optionUpdate: Joi.object({
-    option_text: Joi.string().min(1).max(200),
-  }),
-
-  // Голосование
   vote: Joi.object({
-    option_id: Joi.number().integer().min(1).required(),
-    // user_id будет браться из токена/сессии
-  }),
-
-  // Создание опроса (упрощенная версия для быстрого тестирования)
-  quickSurvey: Joi.object({
-    name_poll: Joi.string().min(3).max(200).required(),
-    question_text: Joi.string().min(3).max(500).required(),
-    // Массив строк для вариантов ответа
-    options: Joi.array()
-      .items(Joi.string().min(1).max(200))
-      .min(2)
-      .max(10)
-      .required(),
-  }),
-
-  // Комментарий к опросу (если нужно будет добавить)
-  comment: Joi.object({
-    survey_id: Joi.number().integer().min(1).required(),
-    text: Joi.string().min(1).max(1000).required(),
-  }),
-
-  // Поиск опросов
-  search: Joi.object({
-    query: Joi.string().min(1).max(100),
-    page: Joi.number().integer().min(1).default(1),
-    limit: Joi.number().integer().min(1).max(100).default(20),
+    optionId: Joi.number().integer().positive().required().messages({
+      "number.base": "ID варианта должен быть числом",
+      "number.positive": "ID варианта должен быть положительным",
+      "any.required": "ID варианта обязателен",
+    }),
   }),
 };

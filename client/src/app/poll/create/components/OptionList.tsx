@@ -1,10 +1,13 @@
 import OptionInput from "./Options";
+import { ISurvey } from "@/types/poll";
+import { UseFormRegister } from "react-hook-form";
 
-interface OptionsList {
+interface IOptionsList {
   options: string[];
   updateOption: (index: number, value: string) => void;
   removeOption: (index: number) => void;
   addOption: () => void;
+  register: UseFormRegister<ISurvey>;
 }
 
 export default function OptionsList({
@@ -12,7 +15,7 @@ export default function OptionsList({
   updateOption,
   removeOption,
   addOption,
-}: OptionsList) {
+}: IOptionsList) {
   return (
     <div className="form-group">
       <label className="form-label">Варианты ответов</label>

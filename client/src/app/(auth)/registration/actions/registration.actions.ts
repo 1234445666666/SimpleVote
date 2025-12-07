@@ -9,7 +9,7 @@ export function chekingPasswords(passOne: string, passTwo: string): boolean {
 }
 
 export async function registerFn(
-  name: string,
+  username: string,
   email: string,
   password: string
 ): Promise<void> {
@@ -20,7 +20,7 @@ export async function registerFn(
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        name,
+        username,
         email,
         password,
       }),
