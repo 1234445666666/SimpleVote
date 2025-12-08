@@ -19,21 +19,16 @@ export default function PollForm() {
   });
 
   const onSubmit: SubmitHandler<ISurvey> = async (data) => {
-    // Добавляем options в data перед отправкой
     const formData = {
       ...data,
-      options: options.filter((option) => option.trim() !== ""), // Фильтруем пустые
+      options: options.filter((option) => option.trim() !== ""),
     };
 
-    console.log("Отправляемые данные:", formData);
-
-    // Отправляем данные на сервер
     const result = await createPoll(formData);
 
     if (result.success) {
       console.log("Опрос создан:", result.data);
-      // Можно добавить редирект
-      // router.push(`/poll/${result.data.id}`);
+      router.push(`/poll/${result.data.id}`);
     }
   };
 

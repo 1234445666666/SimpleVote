@@ -1,7 +1,9 @@
 import { ISurvey } from "@/types/poll";
 import { toast } from "react-toastify";
 
-export async function createPoll(data: ISurvey) {
+export async function createPoll(
+  data: ISurvey
+): Promise<{ success: boolean; data?: any; error?: any }> {
   try {
     const token = localStorage.getItem("token");
 
@@ -10,21 +12,19 @@ export async function createPoll(data: ISurvey) {
       return { success: false, error: "No token" };
     }
 
-    const backendData = {
-      title: data.name_poll,
-      description: data.question_text,
-      options: data.options,
-    };
+    console.log("Создание опроса с данными:", data);
 
-    console.log("Отправка данных:", backendData);
-
-    const response = await fetch("http://localhost:3000/api/polls", {
+    const response = await fetch("http://localhost:6700/api/polls", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${token}`,
       },
-      body: JSON.stringify(backendData),
+      body: JSON.stringify({
+        title: data.name_poll,
+        description: data.question_text,
+        options: data.options,
+      }),
     });
 
     const result = await response.json();
