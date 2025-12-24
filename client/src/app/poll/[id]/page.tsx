@@ -199,7 +199,6 @@ export default function SurveyPage() {
 
       if (response.ok) {
         toast.success("Голос принят!");
-        // Не нужно вызывать fetchPoll() - WebSocket обновит автоматически
       } else {
         toast.error(data.error || "Ошибка голосования");
       }

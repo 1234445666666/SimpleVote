@@ -24,10 +24,6 @@ export default function AccountPage() {
     fetchUser();
   }, []);
 
-  function changingUserData() {
-    console.log("changingUserData");
-  }
-
   if (loading) {
     return (
       <div className="account-container-loading">
@@ -72,25 +68,6 @@ export default function AccountPage() {
                 <h3>Почта</h3>
                 <p>{user.email}</p>
               </div>
-            </div>
-
-            <div style={{ marginTop: "3rem", textAlign: "center" }}>
-              <button
-                onClick={changingUserData}
-                className="edit-profile-btn"
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "translateY(-2px)";
-                  e.currentTarget.style.boxShadow =
-                    "0 6px 20px rgba(102, 126, 234, 0.6)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = "translateY(0)";
-                  e.currentTarget.style.boxShadow =
-                    "0 4px 15px rgba(102, 126, 234, 0.4)";
-                }}
-              >
-                Редактировать профиль
-              </button>
             </div>
           </div>
         ) : (

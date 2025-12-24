@@ -1,7 +1,4 @@
 "use client";
-import { execFile } from "child_process";
-import Link from "next/link";
-import { useEffect, useState, useRef } from "react";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import Features from "./components/features";
