@@ -52,6 +52,24 @@ export const footerInfoProduct: IFooterInfo[] = [
   },
 ];
 
+export const footerInfoSupport: IFooterInfo[] = [
+  {
+    id: 1,
+    title: "Помощь",
+    link: "#",
+  },
+  {
+    id: 2,
+    title: "Документация",
+    link: "#",
+  },
+  {
+    id: 3,
+    title: "Поддержка",
+    link: "#",
+  },
+];
+
 export const footerInfoLegal: IFooterInfo[] = [
   {
     id: 1,

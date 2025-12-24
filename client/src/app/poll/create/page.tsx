@@ -1,6 +1,6 @@
 import "./style.css";
 import PollForm from "@/app/poll/create/components/PollForm";
-import ExitButton from "@/components/ui/exitButton/button";
+import ExitButton from "@/components/exitButton/button";
 import "@/components/ui/exitButton/button.css";
 
 export default function Page() {

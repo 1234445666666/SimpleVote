@@ -1,3 +1,4 @@
+import { featureCards, ICard } from "./featureCard";
 import "./features.css";
 export default function Features() {
   return (
@@ -11,52 +12,13 @@ export default function Features() {
           </p>
         </div>
         <div className="features-grid">
-          <div className="feature-card">
-            <div className="feature-icon">🔒</div>
-            <h3>Приватные опросы</h3>
-            <p>
-              Создавайте закрытые голосования для сотрудников, членов клуба или
-              любой другой группы
-            </p>
-          </div>
-          <div className="feature-card">
-            <div className="feature-icon">🌍</div>
-            <h3>Публичные голосования</h3>
-            <p>
-              Поделитесь ссылкой с миром и собирайте мнения от неограниченной
-              аудитории
-            </p>
-          </div>
-          <div className="feature-card">
-            <div className="feature-icon">📊</div>
-            <h3>Аналитика в реальном времени</h3>
-            <p>
-              Следите за результатами по мере поступления голосов с детальной
-              статистикой
-            </p>
-          </div>
-          <div className="feature-card">
-            <div className="feature-icon">⚙️</div>
-            <h3>Гибкие настройки</h3>
-            <p>
-              Ограничение по времени, multiple choice, обязательная
-              аутентификация и многое другое
-            </p>
-          </div>
-          <div className="feature-card">
-            <div className="feature-icon">📝</div>
-            <h3>Редактирование опросов</h3>
-            <p>
-              Добавляйте, удаляйте и изменяйте вопросы в процессе проведения
-              опроса
-            </p>
-          </div>
-          <div className="feature-card">
-            <div className="feature-icon">📊</div>
-            <h3>Поддержка многоязычности</h3>
-
-            <p>Поддержка английского, русского, украинского и других языков</p>
-          </div>
+          {featureCards.map((item: ICard) => (
+            <div className="feature-card" key={item.title}>
+              <div className="feature-icon">{item.icon}</div>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

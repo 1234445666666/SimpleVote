@@ -1,7 +1,7 @@
 "use client";
 import { ToastContainer } from "react-toastify";
-import ExitButton from "../../../../components/ui/exitButton/button";
-import "../../../../components/ui/exitButton/button.css";
+import ExitButton from "../../../../components/exitButton/button";
+import "../../../../components/exitButton/button.css";
 import { UseFormRegister } from "react-hook-form";
 import NameField from "./NameField";
 import EmailField from "./EmailField";

@@ -1,3 +1,4 @@
+import { ISteps, steps } from "./steps";
 import "./work.css";
 export default function Work() {
   return (
@@ -8,26 +9,13 @@ export default function Work() {
           <p>Создать и провести опрос - проще простого</p>
         </div>
         <div className="steps">
-          <div className="step">
-            <div className="step-number">1</div>
-            <h3>Зарегистрируйтесь</h3>
-            <p>Быстрая регистрация за 30 секунд</p>
-          </div>
-          <div className="step">
-            <div className="step-number">2</div>
-            <h3>Создайте опрос</h3>
-            <p>Добавьте вопрос и варианты ответов</p>
-          </div>
-          <div className="step">
-            <div className="step-number">3</div>
-            <h3>Настройте доступ</h3>
-            <p>Выберите приватный или публичный формат</p>
-          </div>
-          <div className="step">
-            <div className="step-number">4</div>
-            <h3>Поделитесь ссылкой</h3>
-            <p>Отправьте приглашение участникам</p>
-          </div>
+          {steps.map((step: ISteps) => (
+            <div className="step" key={step.id}>
+              <div className="step-number">{step.id}</div>
+              <h3>{step.title}</h3>
+              <p>{step.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
