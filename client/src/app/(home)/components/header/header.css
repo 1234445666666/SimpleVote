@@ -69,6 +69,7 @@ nav {
   border: none;
   white-space: nowrap;
   font-size: 1.1rem;
+  text-align: center;
 }
 
 .btn-register {

@@ -9,7 +9,7 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { IForm } from "@/types/auth";
 
 export default function Page() {
-  const router = useRouter();
+  // const router = useRouter();
 
   const { register, handleSubmit, formState } = useForm<IForm>({
     mode: "onBlur",
