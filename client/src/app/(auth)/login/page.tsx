@@ -2,7 +2,6 @@
 import "./style.css";
 import React, { useRef } from "react";
 import LoginForm from "./components/LoginForm";
-import { toast } from "react-toastify";
 import { login } from "./actions/login.actions";
 
 export default function Page() {

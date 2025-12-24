@@ -1,16 +1,11 @@
 "use client";
 import "./style.css";
-import React, { useEffect } from "react";
-import { useRouter } from "next/navigation";
 import FormRegister from "./components/FormRegister";
-import { chekingPasswords, registerFn } from "./actions/registration.actions";
-import { toast } from "react-toastify";
+import { registerFn } from "./actions/registration.actions";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { IForm } from "@/types/auth";
 
 export default function Page() {
-  // const router = useRouter();
-
   const { register, handleSubmit, formState } = useForm<IForm>({
     mode: "onBlur",
   });
